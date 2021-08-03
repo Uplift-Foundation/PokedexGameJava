@@ -11,7 +11,7 @@ public class Plant extends PokedexShapedItem {  //add in PokedexItem as a parent
     private Boolean makesGlucose;
     
 
-    public Plant(String color,String shape, String smell, Boolean hasLeaves, Boolean hasRoots, Boolean collectsSunLight, Boolean makesGlucose) { //capital took off some of the sqiggles? 
+    public Plant(String color,String shape, String smell, Boolean hasLeaves, Boolean hasRoots, Boolean collectsSunLight, Boolean makesGlucose) { //this is the added thing from the quick fix 
         super(color,shape);
         this.setSmell(smell);
         this.setHasLeaves(hasLeaves);
