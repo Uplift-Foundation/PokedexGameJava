@@ -25,7 +25,7 @@ public class Plant extends PokedexShapedItem {  //add in PokedexItem as a parent
     public Boolean getHasLeaves(){
         return hasLeaves;
     }
-    public Boolean getHasRoots(){
+    public Boolean getHasRoots(){ //do all the yellows from 22-50 have to be uppercased? Ask Warren. 
         return hasRoots; 
     }
     public Boolean getCollectsSunLight(){
