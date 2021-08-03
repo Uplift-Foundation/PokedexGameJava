@@ -6,7 +6,7 @@ public class PokedexShapedItem extends PokedexItem {
     public PokedexShapedItem(String color,String shape) {
         super(color);
         this.shape = shape; 
-        //TODO Auto-generated constructor stub
+       
     }
 
 
