@@ -1,4 +1,4 @@
-public class Plant {
+public class Plant extends PokedexItem {  //add in PokedexItem as a parent to this. Plant is the child 
 
     private String smell;
 
@@ -11,7 +11,8 @@ public class Plant {
     private Boolean makesGlucose;
     
 
-    public Plant(String smell, Boolean hasLeaves, Boolean hasRoots, Boolean collectsSunLight, Boolean makesGlucose) { //capital took off some of the sqiggles? 
+    public Plant(String color, String smell, Boolean hasLeaves, Boolean hasRoots, Boolean collectsSunLight, Boolean makesGlucose) { //capital took off some of the sqiggles? 
+        super(color);
         this.setSmell(smell);
         this.setHasLeaves(hasLeaves);
         this.setHasRoots(hasRoots);
@@ -48,6 +49,29 @@ public class Plant {
     public void setMakesGlucose(Boolean makesGluecose){
         this.makesGlucose = makesGluecose;
     }
+
+    //methods 
+
+    public String Photosynthesizes() {
+        if (collectsSunLight && makesGlucose) {
+            return "This plant can do the photosynthesizing";
+        }
+        return "This plant is DEAD"; 
+        //Unreachable code?? 
+    }
     
-    
+    public String Grows(){
+        if (color == "green" && smell == "fresh" && hasLeaves && hasRoots) {
+            return "This is not a plant... not sure what in tarnation it's doing here";
+        }
+        return "This plant is not growing... maybe try actually taking care of the things you own?";
+    }
+
+    public Boolean hasDied() {
+        if (smell == "rotten" && color == "brown") {
+            return true;
+        }
+        return false; 
+    }
+
 }
