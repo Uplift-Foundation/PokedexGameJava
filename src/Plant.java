@@ -1,4 +1,4 @@
-public class Plant extends PokedexItem {  //add in PokedexItem as a parent to this. Plant is the child 
+public class Plant extends PokedexShapedItem {  //add in PokedexItem as a parent to this. Plant is the child 
 
     private String smell;
 
@@ -11,8 +11,8 @@ public class Plant extends PokedexItem {  //add in PokedexItem as a parent to th
     private Boolean makesGlucose;
     
 
-    public Plant(String color, String smell, Boolean hasLeaves, Boolean hasRoots, Boolean collectsSunLight, Boolean makesGlucose) { //capital took off some of the sqiggles? 
-        super(color);
+    public Plant(String color,String shape, String smell, Boolean hasLeaves, Boolean hasRoots, Boolean collectsSunLight, Boolean makesGlucose) { //capital took off some of the sqiggles? 
+        super(color,shape);
         this.setSmell(smell);
         this.setHasLeaves(hasLeaves);
         this.setHasRoots(hasRoots);
