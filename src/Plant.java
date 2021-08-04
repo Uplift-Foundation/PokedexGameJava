@@ -13,11 +13,11 @@ public class Plant extends PokedexShapedItem {  //add in PokedexItem as a parent
 
     public Plant(String color,String shape, String smell, Boolean hasLeaves, Boolean hasRoots, Boolean collectsSunLight, Boolean makesGlucose) { //this is the added thing from the quick fix 
         super(color,shape);
-        this.setSmell(smell);
-        this.setHasLeaves(hasLeaves);
-        this.setHasRoots(hasRoots);
-        this.setCollectsSunLight(collectsSunLight);
-        this.setMakesGlucose(makesGlucose);
+        this.smell = smell;
+        this.hasLeaves = hasLeaves;
+        this.hasRoots = hasRoots;
+        this.collectsSunLight = collectsSunLight;
+        this.makesGlucose = makesGlucose;
     }
     public String getSmell(){
         return smell; 
