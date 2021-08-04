@@ -12,5 +12,5 @@ public class ChallengerPokedex {
        public List<ActualPokemon>getpokemons(){
            return this.pokemons;
        } 
-       this.setpokemons = value;
+       Pokemon.value = Pokemon;
 }
