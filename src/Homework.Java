@@ -4,22 +4,22 @@ public class Homework extends PokedexShapeitem {  //add in PokedexShapedItem as 
 
     private int words;
 
-    private Boolean FoldAction;
+    private Boolean foldAction;
 
-    public Homework(String color,String shape,int words,Boolean FoldAction){ 
+    public Homework(String color,String shape,int words,Boolean foldAction){ 
         super(color,shape);
-        this.setShape(shape);
-        this.setWords(words);
-        this.setFoldAction(foldAction);
+        this.shape = shape;
+        this.words = words;
+        this.foldAction = foldAction;
     }
     public String getshape(){
-        return shape;
+        return this.shape;
     } 
     public int getwords(){
-        return words;
+        return this.words;
     }
     public Boolean getFoldAction(){
-        return FoldAction;
+        return this.foldAction;
     }
     public void setShape( String shape){
        this.shape = shape;
@@ -27,12 +27,12 @@ public class Homework extends PokedexShapeitem {  //add in PokedexShapedItem as 
     public void setWords( int words){
         this.words = words;
     }
-    public void setFoldAction(){
-        this.FoldAction = FoldAction;
+    public void setfoldAction(){
+        this.foldAction = foldAction;
     }
         //methods
         public String getsCrumbled(){
-            if (FoldAction && words > 1 && shape =="circle") {
+            if (foldAction && words > 1 && shape =="circle") {
                 return "This is someone's homework...I hope they're not missing it.";
             }
             return "This homework is still okay.";
