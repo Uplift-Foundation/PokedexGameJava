@@ -13,8 +13,8 @@ public class Pokemon extends ActualPokemon{
     private String typeWeakeness; 
 
     
-    public Pokemon(String name, String avgSize, String pokemonType, String region, Integer hp, Integer attack, Integer defense, Integer spDefense, Integer spAttack, Integer speed, String typeEffectiveness, String typeWeakness, String color, String ability) {
-        super(color, ability);
+    public Pokemon(String name, String avgSize, String pokemonType, String region, Integer hp, Integer attack, Integer defense, Integer spDefense, Integer spAttack, Integer speed, String typeEffectiveness, String typeWeakness, String color, String ability1,String ability2) {
+        super(color, ability1,ability2);
         this.setName(name);
         this.setAvgSize(avgSize);
         this.setPokemonType(pokemonType);
