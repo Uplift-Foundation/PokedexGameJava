@@ -1,20 +1,32 @@
 public class ActualPokemon extends PokedexItem {
    
-    private String ability; //change name to ability1
-    //add ability2
+    private String ability1; 
+     
+    private String ability2;
 
     //change this code accordingly and add code for ability2
-    public ActualPokemon(String color,String ability) {
+    public ActualPokemon(String color,String ability1, String ability2) {
         super(color);
-        this.setAbility(ability);
+        this.ability1 = ability1;
+        this.ability2 = ability2;
     }
     
-    public String getAbility()
+    public String getAbility1()
     {
-        return ability; 
+        return ability1; 
     }
-    public void setAbility(String ability)
+    public String ability2()
+    { 
+        return ability2; 
+    }
+    public void setAbility1(String ability1)
     {
-        this.ability = ability; 
+        this.ability1 = ability1; 
+    }
+    
+    public void setAbility2(String ability2)
+    {
+        this.ability2 = ability2;
+
     }
 }
