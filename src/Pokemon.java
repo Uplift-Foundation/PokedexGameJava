@@ -33,8 +33,96 @@ public class Pokemon extends ActualPokemon{
     {
         return name;
     }
-    public void setName(String name){
+    public void setName(String name)
+    {
         this.name = name; 
     }
-
+    public String getAvgSize()
+    {
+        return avgSize;
+    }
+    public void setAvgSize(String avgSize)
+    {
+        this.avgSize = avgSize;
+    }
+    public String getPokemonType()
+    {
+        return pokemonType;
+    }
+    public void setPokemonType(String pokemonType)
+    {
+        this.pokemonType = pokemonType; 
+    }
+    public String getRegion()
+    {
+        return region; 
+    }
+    public void setRegion(String region)
+    {
+        this.region = region;
+    }
+    public Integer getHp()
+    {
+        return hp; 
+    }
+    public void setHp(Integer hp)
+    {
+        this.hp = hp;
+    }
+    public Integer getAttack()
+    {
+        return attack;
+    }
+    public void setAttack(Integer attack)
+    {
+        this.attack = attack; 
+    }
+    public Integer getDefense()
+    {
+        return defense; 
+    }
+    public void setDefense(Integer defense)
+    {
+        this.defense = defense;
+    }
+    public Integer getSpDefense()
+    {
+        return spDefense;
+    }
+    public void setSpDefense(Integer spDefense)
+    {
+        this.spDefense = spDefense;
+    }
+    public Integer getSpAttack()
+    {
+        return spAttack;
+    }
+    public void setSpAttack(Integer spAttack)
+    {
+        this.spAttack = spAttack;
+    }
+    public Integer getSpeed()
+    {
+        return speed;
+    }
+    public void setSpeed(Integer speed)
+    {
+        this.speed = speed;
+    }
+    public String getTypeEffectiveness()
+    {
+        return typeEffectiveness;
+    }
+    public void setTypeEffectiveness(String typeEffectiveness)
+    {
+        this.typeEffectiveness = typeEffectiveness;
+    }
+    public String getTypeWeakness()
+    {
+        return typeWeakeness;
+    }
+    public void setTypeWeakness(String typeWeakness)
+    {
+        this.typeWeakeness = typeWeakness;
+    }
 }
