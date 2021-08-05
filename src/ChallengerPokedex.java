@@ -1,11 +1,11 @@
 public class ChallengerPokedex {
    Boolean screenIsLitUp2;
-   List<ActualPokemon> pokemons = new List<ActualPokemon>();
+   List<ActualPokemon> pokemons = new ArrayList()<ActualPokemon>;
     
-   public ChallengerPokedex(boolean screenIsLitUp2){
+   public ChallengerPokedex(Boolean screenIsLitUp2){
        this.screenIsLitUp2 = screenIsLitUp2;
    }
-   public boolean getscreenIsLitUp2(){
+   public Boolean getscreenIsLitUp2(){
       return this.screenIsLitUp2;
    }
 
