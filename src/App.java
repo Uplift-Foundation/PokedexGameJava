@@ -58,7 +58,7 @@ public class App {
           
 
             System.out.println("It looks like you've found an object! Will you pick it up? (Yes or No)");
-            String userResponse = readline(); //ask how to fix this line. Why is userResponse not highlighted blue like this line? 
+            String userResponse = System.console().readLine(); //ask how to fix this line. Why is userResponse not highlighted blue like this line? 
             if(userResponse == "Yes") {
 //pokedex 1
                 Pokedex foundPokedex = new Pokedex(true);
@@ -71,13 +71,13 @@ public class App {
                 Random rd = new Random();
 
                 System.out.println("You might have found a pokedex...what shape is it?");
-                userResponse = System.out.ReadLine(); 
+                userResponse = System.console().readLine(); 
                 if (userResponse == Pokedex.shape) {
                     System.out.println("Oh, that sounds like it might be a Pokedex...what color is it?");
-                    userResponse = Console.ReadLine(); 
+                    userResponse = System.console().readLine(); 
                     if (userResponse == Pokedex.color) {
                         System.out.println("Wow you found a pokedex! Would you like to hear about some pokemon?");
-                        userResponse = Console.ReadLine();
+                        userResponse = System.console().readLine();
                         //do {
                         if(userResponse == "Yes") {
                             while (userResponse == "Yes") {
@@ -95,7 +95,7 @@ public class App {
                                     System.out.println("You got it boss. Here's one, this is a " + ((Pokemon)randomPokemonItem).Name + ". " + ((Pokemon)randomPokemonItem).Name + " is " + ((Pokemon)randomPokemonItem).color + ". They are usually " + ((Pokemon)randomPokemonItem).AvgSize + ". " + ((Pokemon)randomPokemonItem).Name + " is a " + ((Pokemon)randomPokemonItem).PokemonType + " type pokemon and can be found in the " + ((Pokemon)randomPokemonItem).Region + " Region.");
                                 }
                                 System.out.println("Would you like to hear about another pokemon?");
-                                userResponse = Console.ReadLine();
+                                userResponse = System.console().readLine();
                             }
                         }
                         else {
@@ -106,7 +106,7 @@ public class App {
 
                         //A stranger approaches
             System.out.println("...A stranger approaches, they ask if you would like to compare pokemon. Would you like to? (Yes or No)");
-            userResponse = Console.ReadLine();
+            userResponse = System.console().readLine();
             if (userResponse == "Yes") {
 
                 while (userResponse == "Yes") {
@@ -121,7 +121,7 @@ public class App {
                 System.out.println("-- Stranger's Pokemon --" + System.lineSeparator() + "Pokemon: " + ((Pokemon)randomActualPokemon).Name + System.lineSeparator() + "HP: " + ((Pokemon)randomActualPokemon).Hp + System.lineSeparator() + "Attack: " + ((Pokemon)randomActualPokemon).Attack + System.lineSeparator() + "Defense: " + ((Pokemon)randomActualPokemon).Defense + System.lineSeparator() + "spDefense: " + ((Pokemon)randomActualPokemon).SpDefense + System.lineSeparator() + "spAttack: " + ((Pokemon)randomActualPokemon).SpAttack + System.lineSeparator() + "Speed: " + ((Pokemon)randomActualPokemon).Speed + System.lineSeparator() + "Ability: " + ((Pokemon)randomActualPokemon).Ability + System.lineSeparator() + "Type: " + ((Pokemon)randomActualPokemon).PokemonType + System.lineSeparator() + "Effectiveness: " + ((Pokemon)randomActualPokemon).TypeEffectiveness + System.lineSeparator() + "Weakness: " + ((Pokemon)randomActualPokemon).TypeWeekness);
 
                 System.out.println("Would you like to compare another pokemon?");
-                userResponse = Console.ReadLine();
+                userResponse = System.console().readLine();
                     }
                     System.out.println("The stranger wishes you a good day and walks off.");
             }
