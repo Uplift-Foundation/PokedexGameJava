@@ -12,47 +12,47 @@ public class App {
         //Ask Warren if importing List by right clicking List will fix the problem and why. 
             List<PokedexItem> PokedexContents = new ArrayList<PokedexItem>();
             //to fix list we have to add in ability 2. 
-            PokedexContents.Add(new Pokemon("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye","SomeOtherAbility", "bug and grass","eletcric, ice, and rock"));
-            PokedexContents.Add(new Pokemon("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","grass, ice, bug, steel and fairy","water, ground, and rock" ));
-            PokedexContents.Add(new Pokemon("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
-            PokedexContents.Add(new Pokemon("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo", "None","Fighting and Ghost" ));
-            PokedexContents.Add(new Pokemon("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force"," Bug and Grass ", "Electric, Ice, and Rock"));
-            PokedexContents.Add(new Pokemon("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Fire, Electric, Poison, Bug, Rock, Steel, Flying","Water, Grass, Fighting"));
-            PokedexContents.Add(new Pokemon("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Fire,Ground,Fighting,Rock,Bug,Grass","Electric"));
-            PokedexContents.Add(new Plant("green", "fresh", true, true, true, true));
-            PokedexContents.Add(new Bear("brown", "circle", 200, true)); //swap 200 and true. Did we write this the same way as C#???? Some of the Strings/Booleans/Integers might not be in the right place. 
+            PokedexContents.add(new Pokemon("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye","SomeOtherAbility", "bug and grass","eletcric, ice, and rock"));
+            PokedexContents.add(new Pokemon("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","grass, ice, bug, steel and fairy","water, ground, and rock" ));
+            PokedexContents.add(new Pokemon("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
+            PokedexContents.add(new Pokemon("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo", "None","Fighting and Ghost" ));
+            PokedexContents.add(new Pokemon("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force"," Bug and Grass ", "Electric, Ice, and Rock"));
+            PokedexContents.add(new Pokemon("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Fire, Electric, Poison, Bug, Rock, Steel, Flying","Water, Grass, Fighting"));
+            PokedexContents.add(new Pokemon("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Fire,Ground,Fighting,Rock,Bug,Grass","Electric"));
+            PokedexContents.add(new Plant("green", "fresh", true, true, true, true));
+            PokedexContents.add(new Bear("brown", "circle", 200, true)); //swap 200 and true. Did we write this the same way as C#???? Some of the Strings/Booleans/Integers might not be in the right place. 
             PokedexContents.Add(new Homework("white","circle" ,20, true));
-            PokedexContents.Add(new Pokemon("Squritle", "small", "blue", "water", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent", "ground, rock, & dragon", "water, grass, & dragon"));
-            PokedexContents.Add(new Pokemon("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate", "grass & fairy", "poison, ground, rock, ghost, & steel"));
-            PokedexContents.Add(new Pokemon("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74, "Chlorophyll", "ground, rock, & water", "rock, ghost, steel, flying, poison, bug, fire, grass, & dragon")); //stop
+            PokedexContents.add(new Pokemon("Squritle", "small", "blue", "water", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent", "ground, rock, & dragon", "water, grass, & dragon"));
+            PokedexContents.add(new Pokemon("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate", "grass & fairy", "poison, ground, rock, ghost, & steel"));
+            PokedexContents.add(new Pokemon("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74, "Chlorophyll", "ground, rock, & water", "rock, ghost, steel, flying, poison, bug, fire, grass, & dragon")); //stop
 
             List<ActualPokemon> TempPokemon = new ArrayList<ActualPokemon>();
-            TempPokemon.Add(new Pokemon("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye", "bug and grass","eletcric, ice, and rock"));
-            TempPokemon.Add(new Pokemon("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","grass, ice, bug, steel and fairy","water, ground, and rock" ));
-            TempPokemon.Add(new Pokemon("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
-            TempPokemon.Add(new Pokemon("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo", "None","Fighting and Ghost" ));
-            TempPokemon.Add(new Pokemon("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force"," Bug and Grass ", "Electric, Ice, and Rock"));
-            TempPokemon.Add(new Pokemon("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Fire, Electric, Poison, Bug, Rock, Steel, Flying","Water, Grass, Fighting"));
-            TempPokemon.Add(new Pokemon("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Fire,Ground,Fighting,Rock,Bug,Grass","Electric"));
-            TempPokemon.Add(new Pokemon("Squritle", "small", "blue", "water", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent", "ground, rock, & dragon", "water, grass, & dragon"));
-            TempPokemon.Add(new Pokemon("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate", "grass & fairy", "poison, ground, rock, ghost, & steel"));
-            TempPokemon.Add(new Pokemon("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74, "Chlorophyll", "ground, rock, & water", "rock, ghost, steel, flying, poison, bug, fire, grass, & dragon"));
+            TempPokemon.add(new Pokemon("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye", "bug and grass","eletcric, ice, and rock"));
+            TempPokemon.add(new Pokemon("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","grass, ice, bug, steel and fairy","water, ground, and rock" ));
+            TempPokemon.add(new Pokemon("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
+            TempPokemon.add(new Pokemon("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo", "None","Fighting and Ghost" ));
+            TempPokemon.add(new Pokemon("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force"," Bug and Grass ", "Electric, Ice, and Rock"));
+            TempPokemon.add(new Pokemon("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Fire, Electric, Poison, Bug, Rock, Steel, Flying","Water, Grass, Fighting"));
+            TempPokemon.add(new Pokemon("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Fire,Ground,Fighting,Rock,Bug,Grass","Electric"));
+            TempPokemon.add(new Pokemon("Squritle", "small", "blue", "water", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent", "ground, rock, & dragon", "water, grass, & dragon"));
+            TempPokemon.add(new Pokemon("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate", "grass & fairy", "poison, ground, rock, ghost, & steel"));
+            TempPokemon.add(new Pokemon("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74, "Chlorophyll", "ground, rock, & water", "rock, ghost, steel, flying, poison, bug, fire, grass, & dragon"));
 
             List<ActualPokemon> ChallengerContents = new ArrayList<ActualPokemon>();
-            ChallengerContents.Add(new Pokemon ("Diglett", "small", "brown", "ground", "Kanto", 10, 55, 25, 45, 35, 95, "Sand Veil", "poison, rock, steel ,fire, & electric", "flying, bug, & grass"));
-            ChallengerContents.Add(new Pokemon ("Drowzee", "small", "yellow & brown", "psychic", "Kanto", 60, 48,45, 90, 43, 42, "Insomnia", "fighting & poison", "steel, psychic, & dark"));
-            ChallengerContents.Add(new Pokemon ("Eevee", "small", "brown", "normal", "Kanto", 55, 55, 50, 65, 45, 55, "Adaptability", "none", "rock, ghost, & steel"));
-            ChallengerContents.Add(new Pokemon ("Ekans", "small", "purple & yellow", "poison", "Kanto", 35, 60, 44, 54, 40, 55, "Shed Skin", "grass & fairy", "poison, ground, rock, steel, & ghost"));
-            ChallengerContents.Add(new Pokemon ("Fearow", "large", "brown", "normal & flying", "Kanto", 65, 90, 65, 61, 61, 100, "Keen Eye", "fighting, bug, & grass", "rock, steel , & electric"));
-            ChallengerContents.Add(new Pokemon ("Tepig","small","orange and red","fire","Unova",65,63,45,45,45,45,"Blaze","Grass, Steel, Bug, and Ice","Ground, Rock, and Water"));
-            ChallengerContents.Add(new Pokemon ("Toldeen", "small", "white & orange", "water", "Kanto", 45, 67, 60, 50, 35, 63, "Swift Swim", "ground, rock, & fire", "water, grass, & dragon"));
-            ChallengerContents.Add(new Pokemon ("Illumise", "small", "blue, purple, & black", "bug", "Hoenn", 65, 47, 75, 85, 73, 85, "Tinted Lense", "grass, psychic, & dark", "fighting, flying, poison, ghost, steel, fire, & fairy"));
-            ChallengerContents.Add(new Pokemon ("Kabuto", "small", "brown", "rock & water", "Kanto", 30, 80, 90, 45, 55, 55, "Battle Armor", "flying, bug, fire, ice, & ground", "fighting, ground, steel, water, grass, & dragon"));
-            ChallengerContents.Add(new Pokemon ("Lapras","large","blue","water and ice","Kanto",130,85,80,95,85,60,"Water Absorb","ground, dragon, flying, rock","steel and rock"));
-            ChallengerContents.Add(new Pokemon ("Marill","small","blue and white","water and fairy","Johto",70,20,50,50,20,40,"Thick Fat","fire,rock,ground,fighting,dark,dragon","electric, grass, poison"));
-            ChallengerContents.Add(new Pokemon ("Snorlax","large","white and blue","normal","Kanto",160,110,65,110,65,30,"Immunity","None","fighting"));
-            ChallengerContents.Add(new Pokemon ("Lunatone", "large", "tan", "rock & psychic", "Hoenn", 90, 55, 65, 85, 95, 70, "Levitate", "flying, bug, fire, ice, fighting, & poison", "fighting, ground, steel, psychic, & dark"));
-            ChallengerContents.Add(new Pokemon ("Snivy","small","green","grass","Unova",45,45,55,55,45,63,"Overgrow","Ground,Rock, and Water","Bug,Fire,Flying,Ice, Poison"));
+            ChallengerContents.add(new Pokemon ("Diglett", "small", "brown", "ground", "Kanto", 10, 55, 25, 45, 35, 95, "Sand Veil", "poison, rock, steel ,fire, & electric", "flying, bug, & grass"));
+            ChallengerContents.add(new Pokemon ("Drowzee", "small", "yellow & brown", "psychic", "Kanto", 60, 48,45, 90, 43, 42, "Insomnia", "fighting & poison", "steel, psychic, & dark"));
+            ChallengerContents.add(new Pokemon ("Eevee", "small", "brown", "normal", "Kanto", 55, 55, 50, 65, 45, 55, "Adaptability", "none", "rock, ghost, & steel"));
+            ChallengerContents.add(new Pokemon ("Ekans", "small", "purple & yellow", "poison", "Kanto", 35, 60, 44, 54, 40, 55, "Shed Skin", "grass & fairy", "poison, ground, rock, steel, & ghost"));
+            ChallengerContents.add(new Pokemon ("Fearow", "large", "brown", "normal & flying", "Kanto", 65, 90, 65, 61, 61, 100, "Keen Eye", "fighting, bug, & grass", "rock, steel , & electric"));
+            ChallengerContents.add(new Pokemon ("Tepig","small","orange and red","fire","Unova",65,63,45,45,45,45,"Blaze","Grass, Steel, Bug, and Ice","Ground, Rock, and Water"));
+            ChallengerContents.add(new Pokemon ("Toldeen", "small", "white & orange", "water", "Kanto", 45, 67, 60, 50, 35, 63, "Swift Swim", "ground, rock, & fire", "water, grass, & dragon"));
+            ChallengerContents.add(new Pokemon ("Illumise", "small", "blue, purple, & black", "bug", "Hoenn", 65, 47, 75, 85, 73, 85, "Tinted Lense", "grass, psychic, & dark", "fighting, flying, poison, ghost, steel, fire, & fairy"));
+            ChallengerContents.add(new Pokemon ("Kabuto", "small", "brown", "rock & water", "Kanto", 30, 80, 90, 45, 55, 55, "Battle Armor", "flying, bug, fire, ice, & ground", "fighting, ground, steel, water, grass, & dragon"));
+            ChallengerContents.add(new Pokemon ("Lapras","large","blue","water and ice","Kanto",130,85,80,95,85,60,"Water Absorb","ground, dragon, flying, rock","steel and rock"));
+            ChallengerContents.add(new Pokemon ("Marill","small","blue and white","water and fairy","Johto",70,20,50,50,20,40,"Thick Fat","fire,rock,ground,fighting,dark,dragon","electric, grass, poison"));
+            ChallengerContents.add(new Pokemon ("Snorlax","large","white and blue","normal","Kanto",160,110,65,110,65,30,"Immunity","None","fighting"));
+            ChallengerContents.add(new Pokemon ("Lunatone", "large", "tan", "rock & psychic", "Hoenn", 90, 55, 65, 85, 95, 70, "Levitate", "flying, bug, fire, ice, fighting, & poison", "fighting, ground, steel, psychic, & dark"));
+            ChallengerContents.add(new Pokemon ("Snivy","small","green","grass","Unova",45,45,55,55,45,63,"Overgrow","Ground,Rock, and Water","Bug,Fire,Flying,Ice, Poison"));
             //add pokemon
           
 
