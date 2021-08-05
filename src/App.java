@@ -13,16 +13,16 @@ public class App {
         //Imported java List and ArrayList. What does this do? 
             List<PokedexItem> PokedexContents = new ArrayList<PokedexItem>();
             //to fix list we have to add in ability 2. 
-            PokedexContents.add(new Pokemon("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye","SomeOtherAbility", "bug and grass","eletcric, ice, and rock"));
-            PokedexContents.add(new Pokemon("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","Something cooler than this","grass, ice, bug, steel and fairy","water, ground, and rock" ));
-            PokedexContents.add(new Pokemon("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","SomeAbility2","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
-            PokedexContents.add(new Pokemon("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo", "Ability2" ,"None","Fighting and Ghost" ));
-            PokedexContents.add(new Pokemon("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force","Ability2"," Bug and Grass ", "Electric, Ice, and Rock"));
-            PokedexContents.add(new Pokemon("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Ability2","Fire, Electric, Poison, Bug, Rock, Steel, Flying","Water, Grass, Fighting"));
-            PokedexContents.add(new Pokemon("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Ability2","Fire,Ground,Fighting,Rock,Bug,Grass","Electric"));
+            PokedexContents.add(new Pokemon("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto,", 40, 45, 40, 35, 35, 56, "Keen Eye", "bug and grass","eletcric, ice, and rock"));
+            PokedexContents.add(new Pokemon("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","grass, ice, bug, steel and fairy","water, ground, and rock" ));
+            PokedexContents.add(new Pokemon("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
+            PokedexContents.add(new Pokemon("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo","None","Fighting and Ghost" ));
+            PokedexContents.add(new Pokemon("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force"," Bug and Grass ", "Electric, Ice, and Rock"));
+            PokedexContents.add(new Pokemon("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Fire, Electric, Poison, Bug, Rock, Steel, Flying","Water, Grass, Fighting"));
+            PokedexContents.add(new Pokemon("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Fire,Ground,Fighting,Rock,Bug,Grass","Electric"));
             PokedexContents.add(new Plant("green","short", "fresh", true, true, true, true));
-            PokedexContents.add(new Bear("brown", "circle", 200, true)); //swap 200 and true. Did we write this the same way as C#???? Some of the Strings/Booleans/Integers might not be in the right place. 
-            PokedexContents.Add(new Homework("white","circle" ,20, true));
+            PokedexContents.add(new Bear("brown", "circle", true, 200)); //swap 200 and true. Did we write this the same way as C#???? Some of the Strings/Booleans/Integers might not be in the right place. 
+            PokedexContents.add(new Homework("white","circle" ,20, true));
             PokedexContents.add(new Pokemon("Squritle", "small", "blue", "water", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent", "ground, rock, & dragon", "water, grass, & dragon"));
             PokedexContents.add(new Pokemon("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate", "grass & fairy", "poison, ground, rock, ghost, & steel"));
             PokedexContents.add(new Pokemon("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74, "Chlorophyll", "ground, rock, & water", "rock, ghost, steel, flying, poison, bug, fire, grass, & dragon")); //stop
@@ -58,7 +58,7 @@ public class App {
           
 
             System.out.println("It looks like you've found an object! Will you pick it up? (Yes or No)");
-            String userResponse = System.out.ReadLine(); //ask how to fix this line. Why is userResponse not highlighted blue like this line? 
+            String userResponse = readline(); //ask how to fix this line. Why is userResponse not highlighted blue like this line? 
             if(userResponse == "Yes") {
 //pokedex 1
                 Pokedex foundPokedex = new Pokedex(true);
@@ -72,10 +72,10 @@ public class App {
 
                 System.out.println("You might have found a pokedex...what shape is it?");
                 userResponse = System.out.ReadLine(); 
-                if (userResponse == Pokedex.Shape) {
+                if (userResponse == Pokedex.shape) {
                     System.out.println("Oh, that sounds like it might be a Pokedex...what color is it?");
                     userResponse = Console.ReadLine(); 
-                    if (userResponse == Pokedex.Color) {
+                    if (userResponse == Pokedex.color) {
                         System.out.println("Wow you found a pokedex! Would you like to hear about some pokemon?");
                         userResponse = Console.ReadLine();
                         //do {
@@ -92,7 +92,7 @@ public class App {
                                     System.out.println(((Homework)randomPokemonItem).getsCrumbled());
                                 }
                                 else if (randomPokemonItem is Pokemon) {
-                                    System.out.println("You got it boss. Here's one, this is a " + ((Pokemon)randomPokemonItem).Name + ". " + ((Pokemon)randomPokemonItem).Name + " is " + ((Pokemon)randomPokemonItem).Color + ". They are usually " + ((Pokemon)randomPokemonItem).AvgSize + ". " + ((Pokemon)randomPokemonItem).Name + " is a " + ((Pokemon)randomPokemonItem).PokemonType + " type pokemon and can be found in the " + ((Pokemon)randomPokemonItem).Region + " Region.");
+                                    System.out.println("You got it boss. Here's one, this is a " + ((Pokemon)randomPokemonItem).Name + ". " + ((Pokemon)randomPokemonItem).Name + " is " + ((Pokemon)randomPokemonItem).color + ". They are usually " + ((Pokemon)randomPokemonItem).AvgSize + ". " + ((Pokemon)randomPokemonItem).Name + " is a " + ((Pokemon)randomPokemonItem).PokemonType + " type pokemon and can be found in the " + ((Pokemon)randomPokemonItem).Region + " Region.");
                                 }
                                 System.out.println("Would you like to hear about another pokemon?");
                                 userResponse = Console.ReadLine();
@@ -113,12 +113,12 @@ public class App {
                     var randomTempPokemon = foundPokedex.TempPokemon[rd.Next(0,9)];
 
                     // { display table with player's pokemon stats }
-                System.out.println("-- Your Pokemon --" + Environment.NewLine + "Pokemon: " + ((Pokemon)randomTempPokemon).Name + Environment.NewLine + "HP: " + ((Pokemon)randomTempPokemon).Hp + Environment.NewLine + "Attack: " + ((Pokemon)randomTempPokemon).Attack + Environment.NewLine + "Defense: " + ((Pokemon)randomTempPokemon).Defense + Environment.NewLine + "spDefense: " + ((Pokemon)randomTempPokemon).SpDefense + Environment.NewLine + "spAttack: " + ((Pokemon)randomTempPokemon).SpAttack + Environment.NewLine + "Speed: " + ((Pokemon)randomTempPokemon).Speed + Environment.NewLine + "Ability: " + ((Pokemon)randomTempPokemon).Ability + Environment.NewLine + "Type: " + ((Pokemon)randomTempPokemon).PokemonType + Environment.NewLine + "Effectiveness: " + ((Pokemon)randomTempPokemon).TypeEffectiveness + Environment.NewLine + "Weakness: " + ((Pokemon)randomTempPokemon).TypeWeekness);
+                System.out.println("-- Your Pokemon --" + System.lineSeparator() + "Pokemon: " + ((Pokemon)randomTempPokemon).name + System.lineSeparator() + "HP: " + ((Pokemon)randomTempPokemon).Hp + System.lineSeparator() + "Attack: " + ((Pokemon)randomTempPokemon).Attack + System.lineSeparator() + "Defense: " + ((Pokemon)randomTempPokemon).Defense + System.lineSeparator() + "spDefense: " + ((Pokemon)randomTempPokemon).SpDefense + System.lineSeparator() + "spAttack: " + ((Pokemon)randomTempPokemon).SpAttack + System.lineSeparator() + "Speed: " + ((Pokemon)randomTempPokemon).Speed + System.lineSeparator() + "Ability: " + ((Pokemon)randomTempPokemon).Ability + System.lineSeparator() + "Type: " + ((Pokemon)randomTempPokemon).PokemonType + System.lineSeparator() + "Effectiveness: " + ((Pokemon)randomTempPokemon).TypeEffectiveness + System.lineSeparator() + "Weakness: " + ((Pokemon)randomTempPokemon).TypeWeekness);
                     //does the above line have to be indented? 
                     var randomActualPokemon = StrangerPokedex.Pokemons[rd.Next(0,13)];
                 
                     // { display table with challenger's pokemon stats }
-                System.out.println("-- Stranger's Pokemon --" + Environment.NewLine + "Pokemon: " + ((Pokemon)randomActualPokemon).Name + Environment.NewLine + "HP: " + ((Pokemon)randomActualPokemon).Hp + Environment.NewLine + "Attack: " + ((Pokemon)randomActualPokemon).Attack + Environment.NewLine + "Defense: " + ((Pokemon)randomActualPokemon).Defense + Environment.NewLine + "spDefense: " + ((Pokemon)randomActualPokemon).SpDefense + Environment.NewLine + "spAttack: " + ((Pokemon)randomActualPokemon).SpAttack + Environment.NewLine + "Speed: " + ((Pokemon)randomActualPokemon).Speed + Environment.NewLine + "Ability: " + ((Pokemon)randomActualPokemon).Ability + Environment.NewLine + "Type: " + ((Pokemon)randomActualPokemon).PokemonType + Environment.NewLine + "Effectiveness: " + ((Pokemon)randomActualPokemon).TypeEffectiveness + Environment.NewLine + "Weakness: " + ((Pokemon)randomActualPokemon).TypeWeekness);
+                System.out.println("-- Stranger's Pokemon --" + System.lineSeparator() + "Pokemon: " + ((Pokemon)randomActualPokemon).Name + System.lineSeparator() + "HP: " + ((Pokemon)randomActualPokemon).Hp + System.lineSeparator() + "Attack: " + ((Pokemon)randomActualPokemon).Attack + System.lineSeparator() + "Defense: " + ((Pokemon)randomActualPokemon).Defense + System.lineSeparator() + "spDefense: " + ((Pokemon)randomActualPokemon).SpDefense + System.lineSeparator() + "spAttack: " + ((Pokemon)randomActualPokemon).SpAttack + System.lineSeparator() + "Speed: " + ((Pokemon)randomActualPokemon).Speed + System.lineSeparator() + "Ability: " + ((Pokemon)randomActualPokemon).Ability + System.lineSeparator() + "Type: " + ((Pokemon)randomActualPokemon).PokemonType + System.lineSeparator() + "Effectiveness: " + ((Pokemon)randomActualPokemon).TypeEffectiveness + System.lineSeparator() + "Weakness: " + ((Pokemon)randomActualPokemon).TypeWeekness);
 
                 System.out.println("Would you like to compare another pokemon?");
                 userResponse = Console.ReadLine();
