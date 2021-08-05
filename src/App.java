@@ -10,16 +10,17 @@ public class App {
         //Console.WriteLine = System.out.println
         //Ask Warren how to convert Console.ReadLine() to Java
         //Ask Warren if importing List by right clicking List will fix the problem and why. 
+        //Imported java List and ArrayList. What does this do? 
             List<PokedexItem> PokedexContents = new ArrayList<PokedexItem>();
             //to fix list we have to add in ability 2. 
             PokedexContents.add(new Pokemon("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye","SomeOtherAbility", "bug and grass","eletcric, ice, and rock"));
-            PokedexContents.add(new Pokemon("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","grass, ice, bug, steel and fairy","water, ground, and rock" ));
-            PokedexContents.add(new Pokemon("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
-            PokedexContents.add(new Pokemon("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo", "None","Fighting and Ghost" ));
-            PokedexContents.add(new Pokemon("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force"," Bug and Grass ", "Electric, Ice, and Rock"));
-            PokedexContents.add(new Pokemon("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Fire, Electric, Poison, Bug, Rock, Steel, Flying","Water, Grass, Fighting"));
-            PokedexContents.add(new Pokemon("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Fire,Ground,Fighting,Rock,Bug,Grass","Electric"));
-            PokedexContents.add(new Plant("green", "fresh", true, true, true, true));
+            PokedexContents.add(new Pokemon("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","Something cooler than this","grass, ice, bug, steel and fairy","water, ground, and rock" ));
+            PokedexContents.add(new Pokemon("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","SomeAbility2","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
+            PokedexContents.add(new Pokemon("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo", "Ability2" ,"None","Fighting and Ghost" ));
+            PokedexContents.add(new Pokemon("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force","Ability2"," Bug and Grass ", "Electric, Ice, and Rock"));
+            PokedexContents.add(new Pokemon("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Ability2","Fire, Electric, Poison, Bug, Rock, Steel, Flying","Water, Grass, Fighting"));
+            PokedexContents.add(new Pokemon("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Ability2","Fire,Ground,Fighting,Rock,Bug,Grass","Electric"));
+            PokedexContents.add(new Plant("green","short", "fresh", true, true, true, true));
             PokedexContents.add(new Bear("brown", "circle", 200, true)); //swap 200 and true. Did we write this the same way as C#???? Some of the Strings/Booleans/Integers might not be in the right place. 
             PokedexContents.Add(new Homework("white","circle" ,20, true));
             PokedexContents.add(new Pokemon("Squritle", "small", "blue", "water", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent", "ground, rock, & dragon", "water, grass, & dragon"));
