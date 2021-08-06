@@ -1,4 +1,4 @@
-public class Bear extends PokedexShapedItem {
+public class Bear extends PokedexItem {
 
     //states
     private String shape;
@@ -7,7 +7,7 @@ public class Bear extends PokedexShapedItem {
 
 
     public Bear(String color, String shape, Boolean scary, Integer weight) {
-        super(color, shape);
+        super(color);
         this.shape = shape;
         this.weight = weight;
         this.scary = scary;
