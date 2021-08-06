@@ -1,4 +1,4 @@
-public class Homework extends PokedexShapeitem {  //add in PokedexShapedItem as parent
+public class Homework extends PokedexItem {  //add in PokedexShapedItem as parent
     
     private String shape; 
 
