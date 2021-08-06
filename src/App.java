@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -56,46 +58,49 @@ public class App {
             ChallengerContents.add(new PokemonWithSecondAbility("Snivy","small","green","grass","Unova",45,45,55,55,45,63,"Overgrow","Ability2","Ground,Rock, and Water","Bug,Fire,Flying,Ice, Poison"));
             //add pokemon
           
-
+            Scanner userScanner = new Scanner(System.in);
             System.out.println("It looks like you've found an object! Will you pick it up? (Yes or No)");
-            String userResponse = System.console().readLine(); //ask how to fix this line. Why is userResponse not highlighted blue like this line? 
-            if(userResponse == "Yes") {
+            String userResponse = userScanner.nextLine();; //ask how to fix this line. Why is userResponse not highlighted blue like this line? 
+            if(userResponse.equals("Yes")) {
+                //userResponse.equals ("Yes"));
 //pokedex 1
                 Pokedex foundPokedex = new Pokedex(true);
                 foundPokedex.setPokemonsAndStuff(PokedexContents);
                 foundPokedex.setTempPokemon(TempPokemon);
+                //foundPokedex.getPokemonsAndStuff(PokedexContents); //do we need to the get/set commands here? 
+                //foundPokedex.getTempPokemon(TempPokemon); //use the create method quick fix on line 70
 //pokedex 2
                 ChallengerPokedex StrangerPokedex = new ChallengerPokedex(true);
-                StrangerPokedex.Pokemons = ChallengerContents;
+                StrangerPokedex.setChallengerContents(ChallengerContents); //made a public void using quick fix into ChallengerPokedex
 
-                Random rd = new Random();
+                Random rd = new Random(); //I made a imported java file for random. Line 3 
 
                 System.out.println("You might have found a pokedex...what shape is it?");
-                userResponse = System.console().readLine(); 
-                if (userResponse == Pokedex.shape) {
+                userResponse = userScanner.nextLine(); 
+                if (userResponse.equals(Pokedex.shape)) {
                     System.out.println("Oh, that sounds like it might be a Pokedex...what color is it?");
-                    userResponse = System.console().readLine(); 
-                    if (userResponse == Pokedex.color) {
+                    userResponse = userScanner.nextLine(); 
+                    if (userResponse.equals(Pokedex.color)) {
                         System.out.println("Wow you found a pokedex! Would you like to hear about some pokemon?");
-                        userResponse = System.console().readLine();
+                        userResponse = userScanner.nextLine();
                         //do {
-                        if(userResponse == "Yes") {
-                            while (userResponse == "Yes") {
-                                var randomPokemonItem = foundPokedex.PokemonsAndStuff[rd.Next(0,13)]; //find random pokedexItem
-                                if (randomPokemonItem is Plant) {
+                        if(userResponse.equals("Yes")) {
+                            while (userResponse.equals("Yes")) {
+                                var randomPokemonItem = PokedexContents.get(rd.nextInt(12)); //[rd.nextInt(13)]; //find random pokedexItem
+                                if (randomPokemonItem instanceof Plant) { //changed is to instanceof
                                     System.out.println(((Plant)randomPokemonItem).Grows());
                                 }
-                                else if (randomPokemonItem is Bear) {
+                                else if (randomPokemonItem instanceof Bear) {
                                     System.out.println(((Bear)randomPokemonItem).roll());
                                 }
-                                else if (randomPokemonItem is Homework) {
-                                    System.out.println(((Homework)randomPokemonItem).getsCrumbled());
-                                }
-                                else if (randomPokemonItem is Pokemon) {
-                                    System.out.println("You got it boss. Here's one, this is a " + ((Pokemon)randomPokemonItem).Name + ". " + ((Pokemon)randomPokemonItem).Name + " is " + ((Pokemon)randomPokemonItem).color + ". They are usually " + ((Pokemon)randomPokemonItem).AvgSize + ". " + ((Pokemon)randomPokemonItem).Name + " is a " + ((Pokemon)randomPokemonItem).PokemonType + " type pokemon and can be found in the " + ((Pokemon)randomPokemonItem).Region + " Region.");
+                                else if (randomPokemonItem instanceof Homework) {
+                                System.out.println(((Homework)randomPokemonItem).getsCrumbled());
+                                } 
+                                else if (randomPokemonItem instanceof Pokemon) {
+                                    System.out.println("You got it boss. Here's one, this is a " + ((Pokemon)randomPokemonItem).getName() + ". " + ((Pokemon)randomPokemonItem).getName() + " is " + ((Pokemon)randomPokemonItem).getColor() + ". They are usually " + ((Pokemon)randomPokemonItem).getAvgSize() + ". " + ((Pokemon)randomPokemonItem).getName() + " is a " + ((Pokemon)randomPokemonItem).getPokemonType() + " type pokemon and can be found in the " + ((Pokemon)randomPokemonItem).getRegion() + " Region.");
                                 }
                                 System.out.println("Would you like to hear about another pokemon?");
-                                userResponse = System.console().readLine();
+                                userResponse = userScanner.nextLine();
                             }
                         }
                         else {
@@ -105,38 +110,39 @@ public class App {
                         //Console.WriteLine("Aw okay. Maybe another time then.");
 
                         //A stranger approaches
-            System.out.println("...A stranger approaches, they ask if you would like to compare pokemon. Would you like to? (Yes or No)");
-            userResponse = System.console().readLine();
-            if (userResponse == "Yes") {
+                        System.out.println("...A stranger approaches, they ask if you would like to compare pokemon. Would you like to? (Yes or No)");
+                        userResponse = userScanner.nextLine();
+                        if (userResponse.equals("Yes")) {
+                            while (userResponse.equals("Yes")) { //chooses random Pokemon from TempList
+                                var randomTempPokemon = TempPokemon.get(rd.nextInt(9)); //[rd.nextInt(9)]; //tempPokemon is supposed to be lowercase? In the pokedex file lines 8-9 show them lowercased. 
 
-                while (userResponse == "Yes") {
-                    var randomTempPokemon = foundPokedex.TempPokemon[rd.Next(0,9)];
+                                    // { display table with player's pokemon stats }
+                                System.out.println("-- Your Pokemon --" + System.lineSeparator() + "Pokemon: " + ((Pokemon)randomTempPokemon).getName() + System.lineSeparator() + "HP: " + ((Pokemon)randomTempPokemon).getHp() + System.lineSeparator() + "Attack: " + ((Pokemon)randomTempPokemon).getAttack() + System.lineSeparator() + "Defense: " + ((Pokemon)randomTempPokemon).getDefense() + System.lineSeparator() + "spDefense: " + ((Pokemon)randomTempPokemon).getSpDefense() + System.lineSeparator() + "spAttack: " + ((Pokemon)randomTempPokemon).getSpAttack() + System.lineSeparator() + "Speed: " + ((Pokemon)randomTempPokemon).getSpeed() + System.lineSeparator() + "Ability: " + ((Pokemon)randomTempPokemon).getAbility1() + System.lineSeparator() + "Type: " + ((Pokemon)randomTempPokemon).getPokemonType() + System.lineSeparator() + "Effectiveness: " + ((Pokemon)randomTempPokemon).getTypeEffectiveness() + System.lineSeparator() + "Weakness: " + ((Pokemon)randomTempPokemon).getTypeWeakness());
+                                    //does the above line have to be indented? 
+                                    //chooses random Pokemon from ChallengerPokedex
+                                var randomActualPokemon = ChallengerContents.get(rd.nextInt(13)); //[rd.nextInt(13)]; //put lowercase p for pokemons because that's how it is in the ChallengerPokedex 
+                                
+                                    // { display table with challenger's pokemon stats }
+                                System.out.println("-- Stranger's Pokemon --" + System.lineSeparator() + "Pokemon: " + ((Pokemon)randomActualPokemon).getName() + System.lineSeparator() + "HP: " + ((Pokemon)randomActualPokemon).getHp() + System.lineSeparator() + "Attack: " + ((Pokemon)randomActualPokemon).getAttack() + System.lineSeparator() + "Defense: " + ((Pokemon)randomActualPokemon).getDefense() + System.lineSeparator() + "spDefense: " + ((Pokemon)randomActualPokemon).getSpDefense() + System.lineSeparator() + "spAttack: " + ((Pokemon)randomActualPokemon).getSpAttack() + System.lineSeparator() + "Speed: " + ((Pokemon)randomActualPokemon).getSpeed() + System.lineSeparator() + "Ability: " + ((Pokemon)randomActualPokemon).getAbility1() + System.lineSeparator() + "Type: " + ((Pokemon)randomActualPokemon).getPokemonType() + System.lineSeparator() + "Effectiveness: " + ((Pokemon)randomActualPokemon).getTypeEffectiveness() + System.lineSeparator() + "Weakness: " + ((Pokemon)randomActualPokemon).getTypeWeakness());
 
-                    // { display table with player's pokemon stats }
-                System.out.println("-- Your Pokemon --" + System.lineSeparator() + "Pokemon: " + ((Pokemon)randomTempPokemon).getName() + System.lineSeparator() + "HP: " + ((Pokemon)randomTempPokemon).getHp() + System.lineSeparator() + "Attack: " + ((Pokemon)randomTempPokemon).getAttack() + System.lineSeparator() + "Defense: " + ((Pokemon)randomTempPokemon).getDefense() + System.lineSeparator() + "spDefense: " + ((Pokemon)randomTempPokemon).getSpDefense() + System.lineSeparator() + "spAttack: " + ((Pokemon)randomTempPokemon).getSpAttack() + System.lineSeparator() + "Speed: " + ((Pokemon)randomTempPokemon).getSpeed() + System.lineSeparator() + "Ability: " + ((Pokemon)randomTempPokemon).getAbility1() + System.lineSeparator() + "Type: " + ((Pokemon)randomTempPokemon).getPokemonType() + System.lineSeparator() + "Effectiveness: " + ((Pokemon)randomTempPokemon).getTypeEffectiveness() + System.lineSeparator() + "Weakness: " + ((Pokemon)randomTempPokemon).getTypeWeakness());
-                    //does the above line have to be indented? 
-                    var randomActualPokemon = StrangerPokedex.Pokemons[rd.Next(0,13)];
-                
-                    // { display table with challenger's pokemon stats }
-                System.out.println("-- Stranger's Pokemon --" + System.lineSeparator() + "Pokemon: " + ((Pokemon)randomActualPokemon).getName() + System.lineSeparator() + "HP: " + ((Pokemon)randomActualPokemon).getHp() + System.lineSeparator() + "Attack: " + ((Pokemon)randomActualPokemon).getAttack() + System.lineSeparator() + "Defense: " + ((Pokemon)randomActualPokemon).getDefense() + System.lineSeparator() + "spDefense: " + ((Pokemon)randomActualPokemon).getSpDefense() + System.lineSeparator() + "spAttack: " + ((Pokemon)randomActualPokemon).getSpAttack() + System.lineSeparator() + "Speed: " + ((Pokemon)randomActualPokemon).getSpeed() + System.lineSeparator() + "Ability: " + ((Pokemon)randomActualPokemon).getAbility1() + System.lineSeparator() + "Type: " + ((Pokemon)randomActualPokemon).getPokemonType() + System.lineSeparator() + "Effectiveness: " + ((Pokemon)randomActualPokemon).getTypeEffectiveness() + System.lineSeparator() + "Weakness: " + ((Pokemon)randomActualPokemon).getTypeWeakness());
-
-                System.out.println("Would you like to compare another pokemon?");
-                userResponse = System.console().readLine();
-                    }
-                    System.out.println("The stranger wishes you a good day and walks off.");
-            }
-            else {System.out.println("The stranger looks disappointed, but they wish you a good day and walk off"); //The stranger wishes you a good day and walks off.
-            }
+                                System.out.println("Would you like to compare another pokemon?");
+                                userResponse = userScanner.nextLine();
+                            }
+                            System.out.println("The stranger wishes you a good day and walks off.");
+                        }
+                        else {
+                            System.out.println("The stranger looks disappointed, but they wish you a good day and walk off"); //The stranger wishes you a good day and walks off.
+                        }
                         //
                     //what color is it?
                     }  
                     else {
-                      System.out.println("I'm sorry I don't think that's a Pokedex.");
+                        System.out.println("I'm sorry I don't think that's a Pokedex.");
                     }
                 //what shape is it?  
                 }
                 else {
-                 System.out.println("hmm...I don't think that's a pokedex. Better luck next time.");
+                    System.out.println("hmm...I don't think that's a pokedex. Better luck next time.");
                 }
             } 
             //will you pick it up?   
@@ -144,10 +150,6 @@ public class App {
                 System.out.println("You needed to enter Yes or No, the instructions were pretty simple...not sure how you messed that one up.");
             } 
 
-        
-
-
-
-        
+            userScanner.close();
     }
 }

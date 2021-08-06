@@ -1,41 +1,46 @@
-public class Homework extends PokedexItem {  //add in PokedexShapedItem as parent
-    
-    private String shape; 
+public class Homework extends PokedexItem {
 
-    private int words;
+    private String shape;
+
+    private Integer words;
 
     private Boolean foldAction;
 
-    public Homework(String color,String shape,int words,Boolean foldAction){ 
-        super(color,shape);
-        this.shape = shape;
-        this.words = words;
-        this.foldAction = foldAction;
+    public Homework(String color, String shape,Integer words, Boolean foldAction){
+        super (color);
+        this.shape = shape; 
+        this.words = words; 
+        this.foldAction = foldAction; 
+
     }
-    public String getshape(){
+
+    public String getShape(){
         return this.shape;
-    } 
-    public int getwords(){
+    }
+    public Integer getWords(){
         return this.words;
     }
     public Boolean getFoldAction(){
         return this.foldAction;
     }
-    public void setShape( String shape){
-       this.shape = shape;
+    public void setShape(String shape){
+        this.shape = shape;
     }
-    public void setWords( int words){
+    public void setWords(Integer words){
         this.words = words;
     }
-    public void setfoldAction(){
+    public void setfoldAction(Boolean foldAction){
         this.foldAction = foldAction;
     }
-        //methods
-        public String getsCrumbled(){
-            if (foldAction && words > 1 && shape =="circle") {
-                return "This is someone's homework...I hope they're not missing it.";
-            }
-            return "This homework is still okay.";
+
+
+    public String getsCrumbled(){
+        if (foldAction && words > 1 && shape == "circle"){
+            return "This is someone's homework ... maybe you should give it back";
         }
+        return "This homework is still isn't crumbled";
+    }
+
+
     
 }

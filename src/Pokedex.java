@@ -27,7 +27,7 @@ public class Pokedex {
         this.screenIsLitUp = screenIsLitUp;
     }
 
-    public List<PokedexItem> getPokemonsAndStuff() {
+    public List<PokedexItem> getPokemonsAndStuff() { //ask Warren about what this does because trying to run Java says the arguements are not applicable. 
         return pokemonsAndStuff;
     }
 
