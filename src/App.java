@@ -62,8 +62,8 @@ public class App {
             if(userResponse == "Yes") {
 //pokedex 1
                 Pokedex foundPokedex = new Pokedex(true);
-                foundPokedex.PokemonsAndStuff = PokedexContents;
-                foundPokedex.TempPokemon = TempPokemon;
+                foundPokedex.setPokemonsAndStuff(PokedexContents);
+                foundPokedex.setTempPokemon(TempPokemon);
 //pokedex 2
                 ChallengerPokedex StrangerPokedex = new ChallengerPokedex(true);
                 StrangerPokedex.Pokemons = ChallengerContents;
