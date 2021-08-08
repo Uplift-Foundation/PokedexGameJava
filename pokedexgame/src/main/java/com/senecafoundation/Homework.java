@@ -1,3 +1,5 @@
+package com.senecafoundation;
+
 public class Homework extends PokedexItem {
 
     private String shape;
