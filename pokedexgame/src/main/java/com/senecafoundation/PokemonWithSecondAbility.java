@@ -1,6 +1,7 @@
+package com.senecafoundation;
+
 public class PokemonWithSecondAbility extends Pokemon {
     protected String ability2;
-
 
     public PokemonWithSecondAbility(String name, String avgSize, String color, String pokemonType, String region,
             Integer hp, Integer attack, Integer defense, Integer spDefense, Integer spAttack, Integer speed,

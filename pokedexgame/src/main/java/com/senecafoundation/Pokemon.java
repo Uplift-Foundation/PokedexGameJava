@@ -1,3 +1,5 @@
+package com.senecafoundation;
+
 public class Pokemon extends ActualPokemon{
     private String name;
     private String avgSize; 
@@ -11,7 +13,6 @@ public class Pokemon extends ActualPokemon{
     private Integer speed; 
     private String typeEffectiveness;
     private String typeWeakeness; 
-
     
     public Pokemon(
         String name, 

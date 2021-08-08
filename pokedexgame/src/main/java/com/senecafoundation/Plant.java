@@ -1,3 +1,5 @@
+package com.senecafoundation;
+
 public class Plant extends PokedexItem {  //add in PokedexItem as a parent to this. Plant is the child 
 
     private String smell;

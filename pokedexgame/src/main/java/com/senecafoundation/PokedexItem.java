@@ -1,3 +1,5 @@
+package com.senecafoundation;
+
 public class PokedexItem {
     //states
     protected String color;

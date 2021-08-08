@@ -1,3 +1,5 @@
+package com.senecafoundation;
+
 public class ActualPokemon extends PokedexItem {
    
     private String ability1; 

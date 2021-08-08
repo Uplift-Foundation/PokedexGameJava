@@ -1,3 +1,5 @@
+package com.senecafoundation;
+
 public class Bear extends PokedexItem {
 
     //states
