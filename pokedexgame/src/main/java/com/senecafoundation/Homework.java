@@ -8,7 +8,7 @@ public class Homework extends PokedexItem {
 
     private Boolean foldAction;
 
-    public Homework(String color, String shape,Integer words, Boolean foldAction){
+    public Homework(String color, String shape, Integer words, Boolean foldAction){
         super (color);
         this.shape = shape; 
         this.words = words; 
