@@ -17,7 +17,7 @@ public class App
         PokedexContents.add(new PokemonWithSecondAbility("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force","Ability2"," Bug and Grass ", "Electric, Ice, and Rock"));
         PokedexContents.add(new PokemonWithSecondAbility("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Ability2","Fire, Electric, Poison, Bug, Rock, Steel, Flying","Water, Grass, Fighting"));
         PokedexContents.add(new PokemonWithSecondAbility("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Ability2","Fire,Ground,Fighting,Rock,Bug,Grass","Electric"));
-        PokedexContents.add(new Plant("green","short", "fresh", true, true, true, true));
+        PokedexContents.add(new Plant("green","fresh", true, true, true, true));
         PokedexContents.add(new Bear("brown", "circle", true, 200)); //swap 200 and true. Did we write this the same way as C#???? Some of the Strings/Booleans/Integers might not be in the right place. 
         PokedexContents.add(new Homework("white","circle" ,20, true));
         PokedexContents.add(new PokemonWithSecondAbility("Squritle", "small", "blue", "water", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent","Ability2", "ground, rock, & dragon", "water, grass, & dragon"));
