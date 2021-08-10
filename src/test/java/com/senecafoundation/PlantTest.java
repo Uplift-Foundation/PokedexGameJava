@@ -30,6 +30,23 @@ public class PlantTest {
         assertEquals(true, this.systemUnderTest.getMakesGlucose());
     }
 
-    
+    @Test 
+    void PhotosynthesizesisTrue(){
+        assertEquals(
+            "This plant can do the photosynthesizing",
+            systemUnderTest.Photosynthesizes()
+        );
+    }
+
+    @Test
+    void PhotosynthesizesisFalse(){
+        systemUnderTest.setCollectsSunLight(false);
+        assertEquals(
+            "This plant is DEAD",
+            systemUnderTest.Photosynthesizes()
+        );
+    }
+
+
     
 }
