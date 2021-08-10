@@ -46,6 +46,22 @@ public class PlantTest {
             systemUnderTest.Photosynthesizes()
         );
     }
+    @Test 
+    void GrowsIsTrue(){
+        assertEquals(
+            "This is not a plant... not sure what in tarnation it's doing here",
+            systemUnderTest.Grows()
+        );
+    }
+    @Test 
+    void GrowsIsFalse(){
+        systemUnderTest.setHasLeaves(false);
+        assertEquals(
+            "This plant is not growing... maybe try actually taking care of the things you own?",
+            systemUnderTest.Grows()
+        );
+    }
+    
 
 
     
