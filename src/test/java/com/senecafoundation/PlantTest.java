@@ -61,7 +61,24 @@ public class PlantTest {
             systemUnderTest.Grows()
         );
     }
+    @Test 
+    void hasDiedTrue(){
+        systemUnderTest.setSmell("rotten");
+        systemUnderTest.setColor("brown");
+        assertEquals(
+            true,
+            systemUnderTest.hasDied()
+        );
+    }
     
+    @Test 
+    void hasDiedFalse(){
+        assertEquals(
+            false,
+            systemUnderTest.hasDied()
+        );
+    }
+
 
 
     
