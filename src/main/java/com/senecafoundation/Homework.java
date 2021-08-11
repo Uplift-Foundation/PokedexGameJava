@@ -8,12 +8,14 @@ public class Homework extends PokedexItem {
 
     private Boolean foldAction;
 
-    public Homework(String color, String shape, Integer words, Boolean foldAction){
+    private PokemonWithSecondAbility myCharmander;
+
+    public Homework(String color, String shape, Integer words, Boolean foldAction, PokemonWithSecondAbility charmanderFromUser) {
         super (color);
         this.shape = shape; 
         this.words = words; 
         this.foldAction = foldAction; 
-
+        this.myCharmander = charmanderFromUser;
     }
 
     public String getShape(){
@@ -35,7 +37,6 @@ public class Homework extends PokedexItem {
         this.foldAction = foldAction;
     }
 
-
     public String getsCrumbled(){
         if (foldAction && words > 1 && shape == "circle"){
             return "This is someone's homework ... maybe you should give it back";
@@ -43,6 +44,10 @@ public class Homework extends PokedexItem {
         return "This homework is still isn't crumbled";
     }
 
-
+    public String getAnExcuse() {
+        //this.myCharmander = charmanderFromUser;
+        //PokemonWithSecondAbility myCharmander = ;
+        return "My " + myCharmander.getName() + " ate it";
+    }
     
 }

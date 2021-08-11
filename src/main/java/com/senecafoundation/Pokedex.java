@@ -6,7 +6,7 @@ import java.util.List;
 public class Pokedex {
     public static final String shape = "Rectangle";
     public static final String color = "Red";
-    boolean screenIsLitUp;
+    private boolean screenIsLitUp;
     List<PokedexItem> pokemonsAndStuff = new ArrayList<PokedexItem>();
     List<ActualPokemon> tempPokemon = new ArrayList<ActualPokemon>();
 
