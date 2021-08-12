@@ -9,6 +9,7 @@ public class App
 {
     public static void main( String[] args )
     {
+//      Edgardo and Cristian helped too Warren :)
 //      - Lists for type abilities -
         List<String> NormalAbilities = new ArrayList<String>();
         NormalAbilities.add("Intimidate");
