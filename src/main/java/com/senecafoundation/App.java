@@ -1,9 +1,12 @@
 package com.senecafoundation;
 
+//import java.time.temporal.Temporal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+
+//import javax.swing.RowFilter.ComparisonType;
 
 public class App 
 {
@@ -102,16 +105,10 @@ public class App
                     if (userResponse.equals("Yes")) {
                         while (userResponse.equals("Yes")) { //chooses random Pokemon from TempList
                             ActualPokemon randomTempPokemon = TempPokemon.get(rd.nextInt(9)); 
-
-                                // { display table with player's pokemon stats }
-                            System.out.println("-- Your Pokemon --" + System.lineSeparator() + "Pokemon: " + ((Pokemon)randomTempPokemon).getName() + System.lineSeparator() + "HP: " + ((Pokemon)randomTempPokemon).getHp() + System.lineSeparator() + "Attack: " + ((Pokemon)randomTempPokemon).getAttack() + System.lineSeparator() + "Defense: " + ((Pokemon)randomTempPokemon).getDefense() + System.lineSeparator() + "spDefense: " + ((Pokemon)randomTempPokemon).getSpDefense() + System.lineSeparator() + "spAttack: " + ((Pokemon)randomTempPokemon).getSpAttack() + System.lineSeparator() + "Speed: " + ((Pokemon)randomTempPokemon).getSpeed() + System.lineSeparator() + "Ability: " + ((Pokemon)randomTempPokemon).getAbility1() + System.lineSeparator() + "Type: " + ((Pokemon)randomTempPokemon).getPokemonType() + System.lineSeparator() + "Effectiveness: " + ((Pokemon)randomTempPokemon).getTypeEffectiveness() + System.lineSeparator() + "Weakness: " + ((Pokemon)randomTempPokemon).getTypeWeakness());
-                                
-                                //chooses random Pokemon from ChallengerPokedex
-                            ActualPokemon randomActualPokemon = ChallengerContents.get(rd.nextInt(13)); 
-                            
-                                // { display table with challenger's pokemon stats }
-                            System.out.println("-- Stranger's Pokemon --" + System.lineSeparator() + "Pokemon: " + ((Pokemon)randomActualPokemon).getName() + System.lineSeparator() + "HP: " + ((Pokemon)randomActualPokemon).getHp() + System.lineSeparator() + "Attack: " + ((Pokemon)randomActualPokemon).getAttack() + System.lineSeparator() + "Defense: " + ((Pokemon)randomActualPokemon).getDefense() + System.lineSeparator() + "spDefense: " + ((Pokemon)randomActualPokemon).getSpDefense() + System.lineSeparator() + "spAttack: " + ((Pokemon)randomActualPokemon).getSpAttack() + System.lineSeparator() + "Speed: " + ((Pokemon)randomActualPokemon).getSpeed() + System.lineSeparator() + "Ability: " + ((Pokemon)randomActualPokemon).getAbility1() + System.lineSeparator() + "Type: " + ((Pokemon)randomActualPokemon).getPokemonType() + System.lineSeparator() + "Effectiveness: " + ((Pokemon)randomActualPokemon).getTypeEffectiveness() + System.lineSeparator() + "Weakness: " + ((Pokemon)randomActualPokemon).getTypeWeakness());
-
+                            //randomTempPokemon = RandomPokemon1;
+                            ActualPokemon randomActualPokemon = ChallengerContents.get(rd.nextInt(13));
+                            //randomActualPokemon = RandomPokemon2;
+                            //System.out.println(Comparer.get.(String Comparer));
                             System.out.println("Would you like to compare another pokemon?");
                             userResponse = userScanner.nextLine();
                         }
