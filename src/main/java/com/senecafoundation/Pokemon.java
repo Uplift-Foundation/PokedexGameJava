@@ -1,9 +1,10 @@
 package com.senecafoundation;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Pokemon extends ActualPokemon{
     private String name;
     private String avgSize; 
-    private String pokemonType;
     private String region; 
     private Integer hp; 
     private Integer attack; 
@@ -11,14 +12,14 @@ public class Pokemon extends ActualPokemon{
     private Integer spDefense;
     private Integer spAttack; 
     private Integer speed; 
-    private String typeEffectiveness;
-    private String typeWeakeness; 
+    private List<PokemonType> types = new ArrayList<PokemonType>();
+    //new file called pokemon type
+    //
     
     public Pokemon(
         String name, 
         String avgSize,
         String color, 
-        String pokemonType, 
         String region, 
         Integer hp, 
         Integer attack, 
@@ -26,14 +27,12 @@ public class Pokemon extends ActualPokemon{
         Integer spDefense, 
         Integer spAttack, 
         Integer speed,
-        String ability1, 
-        String typeEffectiveness, 
-        String typeWeakness
+        String ability1, //active ability in future
+        List<PokemonType> types
         ) {
         super(color, ability1);
         this.setName(name);
         this.setAvgSize(avgSize);
-        this.setPokemonType(pokemonType);
         this.setRegion(region);
         this.setHp(hp);
         this.setAttack(attack);
@@ -41,8 +40,7 @@ public class Pokemon extends ActualPokemon{
         this.setSpDefense(spDefense);
         this.setSpAttack(spAttack);
         this.setSpeed(speed);
-        this.setTypeEffectiveness(typeEffectiveness);
-        this.setTypeWeakness(typeWeakness);
+        this.setTypes(types);
     }
 
     public String getName()
@@ -60,14 +58,6 @@ public class Pokemon extends ActualPokemon{
     public void setAvgSize(String avgSize)
     {
         this.avgSize = avgSize;
-    }
-    public String getPokemonType()
-    {
-        return pokemonType;
-    }
-    public void setPokemonType(String pokemonType)
-    {
-        this.pokemonType = pokemonType; 
     }
     public String getRegion()
     {
@@ -125,20 +115,11 @@ public class Pokemon extends ActualPokemon{
     {
         this.speed = speed;
     }
-    public String getTypeEffectiveness()
-    {
-        return typeEffectiveness;
+    public List<PokemonType> getTypes(){
+        return types;
     }
-    public void setTypeEffectiveness(String typeEffectiveness)
+    public void setTypes(List<PokemonType> types)
     {
-        this.typeEffectiveness = typeEffectiveness;
-    }
-    public String getTypeWeakness()
-    {
-        return typeWeakeness;
-    }
-    public void setTypeWeakness(String typeWeakness)
-    {
-        this.typeWeakeness = typeWeakness;
+        this.types = types;
     }
 }
