@@ -8,21 +8,37 @@ import java.util.Scanner;
 public class App 
 {
     public static void main( String[] args )
-    {
+    {//change to pokemon
+    //create all different pokemon types and assign states
+//add more pokemon types
+
+        List<String> FlyingAbilities = new ArrayList<String>();
+        FlyingAbilities.add("dive bomb");
+
+        List<PokemonType> PidgyType = new ArrayList<PokemonType>();
+
+        PokemonType flying = new PokemonType();
+        flying.setName("flying");
+        flying.setWeakness("arrows");
+        flying.setEffectiveness("water");
+        flying.setAbilities(FlyingAbilities);
+        PidgyType.add(flying);
+
         List<PokedexItem> PokedexContents = new ArrayList<PokedexItem>();
-        PokedexContents.add(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto,", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric, ice, and rock"));
-        PokedexContents.add(new PokemonWithSecondAbility("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","Ability2","grass, ice, bug, steel and fairy","water, ground, and rock" ));
-        PokedexContents.add(new PokemonWithSecondAbility("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Ability2","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
-        PokedexContents.add(new PokemonWithSecondAbility("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo","Ability2","None","Fighting and Ghost" ));
-        PokedexContents.add(new PokemonWithSecondAbility("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force","Ability2"," Bug and Grass ", "Electric, Ice, and Rock"));
-        PokedexContents.add(new PokemonWithSecondAbility("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Ability2","Fire, Electric, Poison, Bug, Rock, Steel, Flying","Water, Grass, Fighting"));
-        PokedexContents.add(new PokemonWithSecondAbility("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Ability2","Fire,Ground,Fighting,Rock,Bug,Grass","Electric"));
-        PokedexContents.add(new Plant("green","short", "fresh", true, true, true, true));
-        PokedexContents.add(new Bear("brown", "circle", true, 200)); //swap 200 and true. Did we write this the same way as C#???? Some of the Strings/Booleans/Integers might not be in the right place. 
-        PokedexContents.add(new Homework("white","circle" ,20, true));
-        PokedexContents.add(new PokemonWithSecondAbility("Squritle", "small", "blue", "water", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent","Ability2", "ground, rock, & dragon", "water, grass, & dragon"));
-        PokedexContents.add(new PokemonWithSecondAbility("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate","Ability2", "grass & fairy", "poison, ground, rock, ghost, & steel"));
-        PokedexContents.add(new PokemonWithSecondAbility("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74,"Ability2","Chlorophyll", "ground, rock, & water", "rock, ghost, steel, flying, poison, bug, fire, grass, & dragon")); //stop
+        // PokedexContents.add(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto,", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric, ice, and rock"));
+        PokedexContents.add(new Pokemon("Pidgey", "small and chubby", "brown", "Kanto & Johto,", 40, 45, 40, 35, 35, 56, "blah", PidgyType));
+        // PokedexContents.add(new PokemonWithSecondAbility("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","Ability2","grass, ice, bug, steel and fairy","water, ground, and rock" ));
+        // PokedexContents.add(new PokemonWithSecondAbility("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Ability2","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
+        // PokedexContents.add(new PokemonWithSecondAbility("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo","Ability2","None","Fighting and Ghost" ));
+        // PokedexContents.add(new PokemonWithSecondAbility("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force","Ability2"," Bug and Grass ", "Electric, Ice, and Rock"));
+        // PokedexContents.add(new PokemonWithSecondAbility("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Ability2","Fire, Electric, Poison, Bug, Rock, Steel, Flying","Water, Grass, Fighting"));
+        // PokedexContents.add(new PokemonWithSecondAbility("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Ability2","Fire,Ground,Fighting,Rock,Bug,Grass","Electric"));
+        // PokedexContents.add(new Plant("green","short", "fresh", true, true, true, true));
+        // PokedexContents.add(new Bear("brown", "circle", true, 200)); //swap 200 and true. Did we write this the same way as C#???? Some of the Strings/Booleans/Integers might not be in the right place. 
+        // PokedexContents.add(new Homework("white","circle" ,20, true));
+        // PokedexContents.add(new PokemonWithSecondAbility("Squritle", "small", "blue", "water", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent","Ability2", "ground, rock, & dragon", "water, grass, & dragon"));
+        // PokedexContents.add(new PokemonWithSecondAbility("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate","Ability2", "grass & fairy", "poison, ground, rock, ghost, & steel"));
+        // PokedexContents.add(new PokemonWithSecondAbility("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74,"Ability2","Chlorophyll", "ground, rock, & water", "rock, ghost, steel, flying, poison, bug, fire, grass, & dragon")); //stop
 
         List<ActualPokemon> TempPokemon = new ArrayList<ActualPokemon>();
         TempPokemon.add(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric, ice, and rock"));
@@ -88,7 +104,7 @@ public class App
                             System.out.println(((Homework)randomPokemonItem).getsCrumbled());
                             } 
                             else if (randomPokemonItem instanceof Pokemon) {
-                                System.out.println("You got it boss. Here's one, this is a " + ((Pokemon)randomPokemonItem).getName() + ". " + ((Pokemon)randomPokemonItem).getName() + " is " + ((Pokemon)randomPokemonItem).getColor() + ". They are usually " + ((Pokemon)randomPokemonItem).getAvgSize() + ". " + ((Pokemon)randomPokemonItem).getName() + " is a " + ((Pokemon)randomPokemonItem).getPokemonType() + " type pokemon and can be found in the " + ((Pokemon)randomPokemonItem).getRegion() + " Region.");
+                                System.out.println("You got it boss. Here's one, this is a " + ((Pokemon)randomPokemonItem).getName() + ". " + ((Pokemon)randomPokemonItem).getName() + " is " + ((Pokemon)randomPokemonItem).getColor() + ". They are usually " + ((Pokemon)randomPokemonItem).getAvgSize() + ". " + ((Pokemon)randomPokemonItem).getName() + " is a " + ((Pokemon)randomPokemonItem).getPokemonType() + " pokemon and can be found in the " + ((Pokemon)randomPokemonItem).getRegion() + " Region.");
                             }
                             System.out.println("Would you like to hear about another pokemon?");
                             userResponse = userScanner.nextLine();
@@ -104,13 +120,26 @@ public class App
                             ActualPokemon randomTempPokemon = TempPokemon.get(rd.nextInt(9)); 
 
                                 // { display table with player's pokemon stats }
-                            System.out.println("-- Your Pokemon --" + System.lineSeparator() + "Pokemon: " + ((Pokemon)randomTempPokemon).getName() + System.lineSeparator() + "HP: " + ((Pokemon)randomTempPokemon).getHp() + System.lineSeparator() + "Attack: " + ((Pokemon)randomTempPokemon).getAttack() + System.lineSeparator() + "Defense: " + ((Pokemon)randomTempPokemon).getDefense() + System.lineSeparator() + "spDefense: " + ((Pokemon)randomTempPokemon).getSpDefense() + System.lineSeparator() + "spAttack: " + ((Pokemon)randomTempPokemon).getSpAttack() + System.lineSeparator() + "Speed: " + ((Pokemon)randomTempPokemon).getSpeed() + System.lineSeparator() + "Ability: " + ((Pokemon)randomTempPokemon).getAbility1() + System.lineSeparator() + "Type: " + ((Pokemon)randomTempPokemon).getPokemonType() + System.lineSeparator() + "Effectiveness: " + ((Pokemon)randomTempPokemon).getTypeEffectiveness() + System.lineSeparator() + "Weakness: " + ((Pokemon)randomTempPokemon).getTypeWeakness());
+                            System.out.println("-- Your Pokemon --" + System.lineSeparator() + "Pokemon: " + ((Pokemon)randomTempPokemon).getName() + System.lineSeparator() + "HP: " + ((Pokemon)randomTempPokemon).getHp() + System.lineSeparator() + "Attack: " + ((Pokemon)randomTempPokemon).getAttack() + System.lineSeparator() + "Defense: " + ((Pokemon)randomTempPokemon).getDefense() + System.lineSeparator() + "spDefense: " + ((Pokemon)randomTempPokemon).getSpDefense() + System.lineSeparator() + "spAttack: " + ((Pokemon)randomTempPokemon).getSpAttack() + System.lineSeparator() + "Speed: " + ((Pokemon)randomTempPokemon).getSpeed() + System.lineSeparator() + "Ability: " + ((Pokemon)randomTempPokemon).getAbility1() + System.lineSeparator() + "Type: " + ((Pokemon)randomTempPokemon).getPokemonType() + System.lineSeparator());
+                            //+ "Effectiveness: " + ((Pokemon)randomTempPokemon).getTypeEffectiveness() + System.lineSeparator() + "Weakness: " + ((Pokemon)randomTempPokemon).getTypeWeakness());
                                 
                                 //chooses random Pokemon from ChallengerPokedex
                             ActualPokemon randomActualPokemon = ChallengerContents.get(rd.nextInt(13)); 
                             
                                 // { display table with challenger's pokemon stats }
-                            System.out.println("-- Stranger's Pokemon --" + System.lineSeparator() + "Pokemon: " + ((Pokemon)randomActualPokemon).getName() + System.lineSeparator() + "HP: " + ((Pokemon)randomActualPokemon).getHp() + System.lineSeparator() + "Attack: " + ((Pokemon)randomActualPokemon).getAttack() + System.lineSeparator() + "Defense: " + ((Pokemon)randomActualPokemon).getDefense() + System.lineSeparator() + "spDefense: " + ((Pokemon)randomActualPokemon).getSpDefense() + System.lineSeparator() + "spAttack: " + ((Pokemon)randomActualPokemon).getSpAttack() + System.lineSeparator() + "Speed: " + ((Pokemon)randomActualPokemon).getSpeed() + System.lineSeparator() + "Ability: " + ((Pokemon)randomActualPokemon).getAbility1() + System.lineSeparator() + "Type: " + ((Pokemon)randomActualPokemon).getPokemonType() + System.lineSeparator() + "Effectiveness: " + ((Pokemon)randomActualPokemon).getTypeEffectiveness() + System.lineSeparator() + "Weakness: " + ((Pokemon)randomActualPokemon).getTypeWeakness());
+                            System.out.println("-- Stranger's Pokemon --" + System.lineSeparator() 
+                            + "Pokemon: " + ((Pokemon)randomActualPokemon).getName() + System.lineSeparator() 
+                            + "HP: " + ((Pokemon)randomActualPokemon).getHp() + System.lineSeparator() 
+                            + "Attack: " + ((Pokemon)randomActualPokemon).getAttack() + System.lineSeparator() 
+                            + "Defense: " + ((Pokemon)randomActualPokemon).getDefense() + System.lineSeparator() 
+                            + "spDefense: " + ((Pokemon)randomActualPokemon).getSpDefense() + System.lineSeparator() 
+                            + "spAttack: " + ((Pokemon)randomActualPokemon).getSpAttack() + System.lineSeparator() 
+                            + "Speed: " + ((Pokemon)randomActualPokemon).getSpeed() + System.lineSeparator() 
+                            + "Ability: " + ((Pokemon)randomActualPokemon).getAbility1() + System.lineSeparator() 
+                           // + "Type: " + ((Pokemon)randomActualPokemon).getPokemonType() + System.lineSeparator()
+                           + "Type" 
+                            );
+                            //+ "Effectiveness: " + ((Pokemon)randomActualPokemon).getTypeEffectiveness() + System.lineSeparator() + "Weakness: " + ((Pokemon)randomActualPokemon).getTypeWeakness());
 
                             System.out.println("Would you like to compare another pokemon?");
                             userResponse = userScanner.nextLine();
