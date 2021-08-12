@@ -106,9 +106,16 @@ public class App
                         while (userResponse.equals("Yes")) { //chooses random Pokemon from TempList
                             ActualPokemon randomTempPokemon = TempPokemon.get(rd.nextInt(9)); 
                             //randomTempPokemon = RandomPokemon1;
+
                             ActualPokemon randomActualPokemon = ChallengerContents.get(rd.nextInt(13));
                             //randomActualPokemon = RandomPokemon2;
-                            //System.out.println(Comparer.get.(String Comparer));
+                            
+//                          Comparer compare1And2 = new Comparer
+//                          compare1And2.setRandomPokemon1(randomTempPokemon);
+//                          compare1And2.setRandomPokemon2(randomActualPokemon2);
+//                          System.out.println(Comparison);
+
+
                             System.out.println("Would you like to compare another pokemon?");
                             userResponse = userScanner.nextLine();
                         }
