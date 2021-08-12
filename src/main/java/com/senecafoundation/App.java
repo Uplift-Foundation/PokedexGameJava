@@ -8,65 +8,237 @@ import java.util.Scanner;
 public class App 
 {
     public static void main( String[] args )
-    {//change to pokemon
-    //create all different pokemon types and assign states
-//add more pokemon types
+    {
+//      - Lists for type abilities -
+        List<String> NormalAbilities = new ArrayList<String>();
+        NormalAbilities.add("Intimidate");
+
+        List<String> FireAbilities = new ArrayList<String>();
+        FireAbilities.add("Flame Absorb");
+
+        List<String> WaterAbilities = new ArrayList<String>();
+        WaterAbilities.add("Water Absorb");
+
+        List<String> ElectricAbilities = new ArrayList<String>();
+        ElectricAbilities.add("Magnet Pull");
+
+        List<String> GrassAbilities = new ArrayList<String>();
+        GrassAbilities.add("Overgrow");
+
+        List<String> IceAbilities = new ArrayList<String>();
+        IceAbilities.add("Snow Cloak");
+        
+        List<String> FightingAbilities = new ArrayList<String>();
+        FightingAbilities.add("Reckless");
+
+        List<String> PoisonAbilities = new ArrayList<String>();
+        PoisonAbilities.add("Immunity");
+
+        List<String> GroundAbilities = new ArrayList<String>();
+        GroundAbilities.add("Sand Viel");
 
         List<String> FlyingAbilities = new ArrayList<String>();
         FlyingAbilities.add("dive bomb");
+        
+        List<String> PsychicAbilities = new ArrayList<String>();
+        PsychicAbilities.add("Synchronize");
 
+        List<String> BugAbilities = new ArrayList<String>();
+        BugAbilities.add("Swarm");
+
+        List<String> RockAbilities = new ArrayList<String>();
+        RockAbilities.add("Solid Rock");
+
+        List<String> GhostAbilities = new ArrayList<String>();
+        GhostAbilities.add("Levitate");
+        
+        List<String> DragonAbilities = new ArrayList<String>();
+        DragonAbilities.add("Sniper");
+        
+        List<String> DarkAbilities = new ArrayList<String>();
+        DarkAbilities.add("RandomMove");
+        
+        List<String> SteelAbilities = new ArrayList<String>();
+        SteelAbilities.add("Steel Ability");
+
+        List<String> FairyAbilities = new ArrayList<String>();
+        FairyAbilities.add("Fairy Ability");
+
+//     - Lists for specific pokemon -
         List<PokemonType> PidgyType = new ArrayList<PokemonType>();
+//      ask Travis if we need any code here. No right? 
 
-        PokemonType flying = new PokemonType();
-        flying.setName("flying");
-        flying.setWeakness("arrows");
-        flying.setEffectiveness("water");
-        flying.setAbilities(FlyingAbilities);
-        PidgyType.add(flying);
+//     - Lists for pokemon types -
+        PokemonType normalType = new PokemonType();
+        normalType.setName("normal");
+        normalType.setWeakness("rock, ghost, steel");
+        normalType.setEffectiveness("none");
+        normalType.setAbilities(NormalAbilities);
+        //pokemon.add(type)
 
+        PokemonType fireType = new PokemonType();
+        fireType.setName("fire");
+        fireType.setWeakness("Rock, Fire, Water, Dragon");
+        fireType.setEffectiveness("Bug, Steel, Grass, Ice");
+        fireType.setAbilities(FireAbilities);
+        //pokemon.add(type)
+
+        PokemonType waterType = new PokemonType();
+        waterType.setName("water");
+        waterType.setWeakness("Water, Grass, Dragon");
+        waterType.setEffectiveness("Ground, Rock, Fire");
+        waterType.setAbilities(WaterAbilities);
+        //pokemon.add(type)
+
+        PokemonType electricType = new PokemonType();
+        electricType.setName("electric");
+        electricType.setWeakness("Ground, Grass, Electric, Dragon");
+        electricType.setEffectiveness("Flying, Water");
+        electricType.setAbilities(ElectricAbilities);
+        //pokemon.add(type)
+        
+        PokemonType grassType = new PokemonType();
+        grassType.setName("grass");
+        grassType.setWeakness("Flying, Poison, Bug, Steel, Fire, Grass, Dragon");
+        grassType.setEffectiveness("Ground, Rock, Water");
+        grassType.setAbilities(GrassAbilities);
+        //pokemon.add(type)
+
+        PokemonType iceType = new PokemonType();
+        iceType.setName("ice");
+        iceType.setWeakness("Steel, Fire, Water, Ice");
+        iceType.setEffectiveness("Flying, Ground, Grass, Dragon");
+        iceType.setAbilities(IceAbilities);
+        //pokemon.add(type)
+
+        PokemonType fightingType = new PokemonType();
+        fightingType.setName("fighting");
+        fightingType.setWeakness("Flying, Poison, Psychic, Bug, Ghost, Fairy");
+        fightingType.setEffectiveness("Normal, Rock, Steel, Ice, Dark");
+        fightingType.setAbilities(FightingAbilities);
+        //pokemon.add(type)
+
+        PokemonType poisonType = new PokemonType();
+        poisonType.setName("poison");
+        poisonType.setWeakness("Poison, Ground, Rock, Ghost, Steel");
+        poisonType.setEffectiveness("Grass, Fairy");
+        poisonType.setAbilities(PoisonAbilities);
+        //pokemon.add(type)
+
+        PokemonType groundType = new PokemonType();
+        groundType.setName("ground");
+        groundType.setWeakness("Flying, Bug, Grass");
+        groundType.setEffectiveness("Poison, Rock, Steel, Fire, Electric");
+        groundType.setAbilities(GroundAbilities);
+        //pokemon.add(type)
+
+        PokemonType flyingType = new PokemonType();
+        flyingType.setName("flying");
+        flyingType.setWeakness("rock, steel, electric");
+        flyingType.setEffectiveness("fighting, bug, grass");
+        flyingType.setAbilities(FlyingAbilities);
+        PidgyType.add(flyingType);
+         //pokemon.add(type)
+
+        PokemonType psychicType = new PokemonType();
+        psychicType.setName("psychic");
+        psychicType.setWeakness("Steel, Psychic, Dark");
+        psychicType.setEffectiveness("Fighting, Poison");
+        psychicType.setAbilities(PsychicAbilities);
+        //pokemon.add(type)
+        
+        PokemonType bugType = new PokemonType();
+        psychicType.setName("bug");
+        psychicType.setWeakness("Fighting, Flying, Poison, Ghost, Steel, Fire, Fairy");
+        psychicType.setEffectiveness("Grass, Psychic, Dark");
+        psychicType.setAbilities(BugAbilities);
+        //pokemon.add(type)
+
+        PokemonType rockType = new PokemonType();
+        psychicType.setName("rock");
+        psychicType.setWeakness("Fighting, Ground, Steel");
+        psychicType.setEffectiveness("Flying, Bug, Fire, Ice");
+        psychicType.setAbilities(RockAbilities);
+        //pokemon.add(type)
+
+        PokemonType ghostType = new PokemonType();
+        psychicType.setName("ghost");
+        psychicType.setWeakness("Normal, Dark");
+        psychicType.setEffectiveness("Ghost, Pshycic");
+        psychicType.setAbilities(GhostAbilities);
+        //pokemon.add(type)
+
+        PokemonType dragonType = new PokemonType();
+        psychicType.setName("Dragon");
+        psychicType.setWeakness("Dragon, Steel, Fairy");
+        psychicType.setEffectiveness("Dragon");
+        psychicType.setAbilities(DragonAbilities);
+        //pokemon.add(type)
+
+        PokemonType darkType = new PokemonType();
+        psychicType.setName("dark");
+        psychicType.setWeakness("Fighting, Dark, Fairy");
+        psychicType.setEffectiveness("Ghost, Psychic");
+        psychicType.setAbilities(DarkAbilities);
+        //pokemon.add(type)
+
+        PokemonType steelType = new PokemonType();
+        psychicType.setName("steel");
+        psychicType.setWeakness("Steel, Fire, Water?, Eletric");
+        psychicType.setEffectiveness("Rock, Ice, Fairy, Not Steel Even Though It's weak to Steel"); //change this
+        psychicType.setAbilities(SteelAbilities);
+        //pokemon.add(type)
+
+        PokemonType fairyType = new PokemonType();
+        psychicType.setName("fairy");
+        psychicType.setWeakness("Poison, Steel, Fire");
+        psychicType.setEffectiveness("Fighting, Dragon, Dark");
+        psychicType.setAbilities(FairyAbilities);
+        //pokemon.add(type)
+
+//      - Lists of Pokemon -
         List<PokedexItem> PokedexContents = new ArrayList<PokedexItem>();
-        // PokedexContents.add(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto,", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric, ice, and rock"));
-        PokedexContents.add(new Pokemon("Pidgey", "small and chubby", "brown", "Kanto & Johto,", 40, 45, 40, 35, 35, 56, "blah", PidgyType));
-        // PokedexContents.add(new PokemonWithSecondAbility("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","Ability2","grass, ice, bug, steel and fairy","water, ground, and rock" ));
-        // PokedexContents.add(new PokemonWithSecondAbility("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Ability2","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
-        // PokedexContents.add(new PokemonWithSecondAbility("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo","Ability2","None","Fighting and Ghost" ));
-        // PokedexContents.add(new PokemonWithSecondAbility("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force","Ability2"," Bug and Grass ", "Electric, Ice, and Rock"));
-        // PokedexContents.add(new PokemonWithSecondAbility("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Ability2","Fire, Electric, Poison, Bug, Rock, Steel, Flying","Water, Grass, Fighting"));
-        // PokedexContents.add(new PokemonWithSecondAbility("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Ability2","Fire,Ground,Fighting,Rock,Bug,Grass","Electric"));
-        // PokedexContents.add(new Plant("green","short", "fresh", true, true, true, true));
-        // PokedexContents.add(new Bear("brown", "circle", true, 200)); //swap 200 and true. Did we write this the same way as C#???? Some of the Strings/Booleans/Integers might not be in the right place. 
-        // PokedexContents.add(new Homework("white","circle" ,20, true));
-        // PokedexContents.add(new PokemonWithSecondAbility("Squritle", "small", "blue", "water", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent","Ability2", "ground, rock, & dragon", "water, grass, & dragon"));
-        // PokedexContents.add(new PokemonWithSecondAbility("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate","Ability2", "grass & fairy", "poison, ground, rock, ghost, & steel"));
-        // PokedexContents.add(new PokemonWithSecondAbility("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74,"Ability2","Chlorophyll", "ground, rock, & water", "rock, ghost, steel, flying, poison, bug, fire, grass, & dragon")); //stop
+        PokedexContents.add(new Pokemon("Pidgey", "small and chubby", "brown", "flying & normal", 40, 45, 40, 35, 35, 56, "Keen Eye", PidgyType));
+        PokedexContents.add(new Pokemon("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire", ));
+        PokedexContents.add(new Pokemon("Charmander", "small", "orange", "Kanto", 39,52,43,50,60,62,"Blaze", ));
+        PokedexContents.add(new Pokemon("Glameow", "small", "grey", "Sinnoh",49,55,42,37,42,85,"Own Tempo", ));
+        PokedexContents.add(new Pokemon("Rufflet", "small", "white & dark blue", "Unova",70,83,50,50,37,60,"Sheer Force", ));
+        PokedexContents.add(new Pokemon("Onix", "humongous", "grey", "Kanto",35,45,160,45,30,70,"Sturdy", ));
+        PokedexContents.add(new Pokemon("Mantine", "humongous", "blue & white", "Alola",85,40,70,140,80,70,"Swift Swim", ));
+        PokedexContents.add(new Plant("green","short", "fresh", true, true, true, true));
+        PokedexContents.add(new Bear("brown", "circle", true, 200)); 
+        PokedexContents.add(new Homework("white","circle" ,20, true));
+        PokedexContents.add(new Pokemon("Squritle", "small", "blue", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent", ));
+        PokedexContents.add(new Pokemon("Arbok", "large", "purple", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate", ));
+        PokedexContents.add(new Pokemon("Deerling", "small", "pink & white with yellow accents", "Unova", 60, 60, 50, 50, 40, 74,"Chlorophyll", )); //stop
 
         List<ActualPokemon> TempPokemon = new ArrayList<ActualPokemon>();
-        TempPokemon.add(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric, ice, and rock"));
-        TempPokemon.add(new PokemonWithSecondAbility("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","Ability2","grass, ice, bug, steel and fairy","water, ground, and rock" ));
-        TempPokemon.add(new PokemonWithSecondAbility("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Ability2","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
-        TempPokemon.add(new PokemonWithSecondAbility("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo","Ability2", "None","Fighting and Ghost" ));
-        TempPokemon.add(new PokemonWithSecondAbility("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force","Ability2"," Bug and Grass ", "Electric, Ice, and Rock"));
-        TempPokemon.add(new PokemonWithSecondAbility("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Ability2","Fire, Electric, Poison, Bug, Rock, Steel, Flying","Water, Grass, Fighting"));
-        TempPokemon.add(new PokemonWithSecondAbility("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Ability2","Fire,Ground,Fighting,Rock,Bug,Grass","Electric"));
-        TempPokemon.add(new PokemonWithSecondAbility("Squritle", "small", "blue", "water", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent","Ability2", "ground, rock, & dragon", "water, grass, & dragon"));
-        TempPokemon.add(new PokemonWithSecondAbility("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate","Ability2", "grass & fairy", "poison, ground, rock, ghost, & steel"));
-        TempPokemon.add(new PokemonWithSecondAbility("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74, "Chlorophyll","Ability2", "ground, rock, & water", "rock, ghost, steel, flying, poison, bug, fire, grass, & dragon"));
+        TempPokemon.add(new Pokemon("Pidgey", "small and chubby", "brown", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye", ));
+        TempPokemon.add(new Pokemon("Ponyta", "small", "yellow", " Galar ",50,85,55,65,65,90,"Flash Fire", ));
+        TempPokemon.add(new Pokemon("Charmander", "small", "orange", "Kanto", 39,52,43,50,60,62,"Blaze", ));
+        TempPokemon.add(new Pokemon("Glameow", "small", "grey", "Sinnoh",49,55,42,37,42,85,"Own Tempo", ));
+        TempPokemon.add(new Pokemon("Rufflet", "small", "white & dark blue", "Unova",70,83,50,50,37,60,"Sheer Force", ));
+        TempPokemon.add(new Pokemon("Onix", "humongous", "grey", "Kanto",35,45,160,45,30,70,"Sturdy", ));
+        TempPokemon.add(new Pokemon("Mantine", "humongous", "blue & white", "Alola",85,40,70,140,80,70,"Swift Swim", ));
+        TempPokemon.add(new Pokemon("Squritle", "small", "blue", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent", ));
+        TempPokemon.add(new Pokemon("Arbok", "large", "purple", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate", ));
+        TempPokemon.add(new Pokemon("Deerling", "small", "pink & white with yellow accents", "Unova", 60, 60, 50, 50, 40, 74, "Chlorophyll", ));
 
         List<ActualPokemon> ChallengerContents = new ArrayList<ActualPokemon>();
-        ChallengerContents.add(new PokemonWithSecondAbility("Diglett", "small", "brown", "ground", "Kanto", 10, 55, 25, 45, 35, 95, "Sand Veil","Ability2", "poison, rock, steel ,fire, & electric", "flying, bug, & grass"));
-        ChallengerContents.add(new PokemonWithSecondAbility("Drowzee", "small", "yellow & brown", "psychic", "Kanto", 60, 48,45, 90, 43, 42, "Insomnia","Ability2", "fighting & poison", "steel, psychic, & dark"));
-        ChallengerContents.add(new PokemonWithSecondAbility("Eevee", "small", "brown", "normal", "Kanto", 55, 55, 50, 65, 45, 55, "Adaptability","Ability2", "none", "rock, ghost, & steel"));
-        ChallengerContents.add(new PokemonWithSecondAbility("Ekans", "small", "purple & yellow", "poison", "Kanto", 35, 60, 44, 54, 40, 55, "Shed Skin","Ability2", "grass & fairy", "poison, ground, rock, steel, & ghost"));
-        ChallengerContents.add(new PokemonWithSecondAbility("Fearow", "large", "brown", "normal & flying", "Kanto", 65, 90, 65, 61, 61, 100, "Keen Eye","Ability2", "fighting, bug, & grass", "rock, steel , & electric"));
-        ChallengerContents.add(new PokemonWithSecondAbility("Tepig","small","orange and red","fire","Unova",65,63,45,45,45,45,"Blaze","Ability2","Grass, Steel, Bug, and Ice","Ground, Rock, and Water"));
-        ChallengerContents.add(new PokemonWithSecondAbility("Toldeen", "small", "white & orange", "water", "Kanto", 45, 67, 60, 50, 35, 63, "Swift Swim","Ability2", "ground, rock, & fire", "water, grass, & dragon"));
-        ChallengerContents.add(new PokemonWithSecondAbility("Illumise", "small", "blue, purple, & black", "bug", "Hoenn", 65, 47, 75, 85, 73, 85, "Tinted Lense","Ability2", "grass, psychic, & dark", "fighting, flying, poison, ghost, steel, fire, & fairy"));
-        ChallengerContents.add(new PokemonWithSecondAbility("Kabuto", "small", "brown", "rock & water", "Kanto", 30, 80, 90, 45, 55, 55, "Battle Armor","Ability2", "flying, bug, fire, ice, & ground", "fighting, ground, steel, water, grass, & dragon"));
-        ChallengerContents.add(new PokemonWithSecondAbility("Lapras","large","blue","water and ice","Kanto",130,85,80,95,85,60,"Water Absorb","Ability2","ground, dragon, flying, rock","steel and rock"));
-        ChallengerContents.add(new PokemonWithSecondAbility("Marill","small","blue and white","water and fairy","Johto",70,20,50,50,20,40,"Thick Fat","Ability2","fire,rock,ground,fighting,dark,dragon","electric, grass, poison"));
-        ChallengerContents.add(new PokemonWithSecondAbility("Snorlax","large","white and blue","normal","Kanto",160,110,65,110,65,30,"Immunity","Ability2","None","fighting"));
-        ChallengerContents.add(new PokemonWithSecondAbility("Lunatone", "large", "tan", "rock & psychic", "Hoenn", 90, 55, 65, 85, 95, 70, "Levitate","Ability2", "flying, bug, fire, ice, fighting, & poison", "fighting, ground, steel, psychic, & dark"));
-        ChallengerContents.add(new PokemonWithSecondAbility("Snivy","small","green","grass","Unova",45,45,55,55,45,63,"Overgrow","Ability2","Ground,Rock, and Water","Bug,Fire,Flying,Ice, Poison"));
+        ChallengerContents.add(new Pokemon("Diglett", "small", "brown", "Kanto", 10, 55, 25, 45, 35, 95, "Sand Veil", ));
+        ChallengerContents.add(new Pokemon("Drowzee", "small", "yellow & brown", "Kanto", 60, 48,45, 90, 43, 42, "Insomnia", ));
+        ChallengerContents.add(new Pokemon("Eevee", "small", "brown", "Kanto", 55, 55, 50, 65, 45, 55, "Adaptability", ));
+        ChallengerContents.add(new Pokemon("Ekans", "small", "purple & yellow", "Kanto", 35, 60, 44, 54, 40, 55, "Shed Skin", ));
+        ChallengerContents.add(new Pokemon("Fearow", "large", "brown", "Kanto", 65, 90, 65, 61, 61, 100, "Keen Eye", ));
+        ChallengerContents.add(new Pokemon("Tepig","small","orange and red", "Unova",65,63,45,45,45,45,"Blaze", ));
+        ChallengerContents.add(new Pokemon("Toldeen", "small", "white & orange", "Kanto", 45, 67, 60, 50, 35, 63, "Swift Swim", ));
+        ChallengerContents.add(new Pokemon("Illumise", "small", "blue, purple, & black", "Hoenn", 65, 47, 75, 85, 73, 85, "Tinted Lense", ));
+        ChallengerContents.add(new Pokemon("Kabuto", "small", "brown", "Kanto", 30, 80, 90, 45, 55, 55, "Battle Armor", ));
+        ChallengerContents.add(new Pokemon("Lapras","large","blue", "Kanto",130,85,80,95,85,60,"Water Absorb", ));
+        ChallengerContents.add(new Pokemon("Marill","small","blue and white", "Johto",70,20,50,50,20,40,"Thick Fat", ));
+        ChallengerContents.add(new Pokemon("Snorlax","large","white and blue", "Kanto",160,110,65,110,65,30,"Immunity", ));
+        ChallengerContents.add(new Pokemon("Lunatone", "large", "tan", "Hoenn", 90, 55, 65, 85, 95, 70, "Levitate", ));
+        ChallengerContents.add(new Pokemon("Snivy","small","green", "Unova",45,45,55,55,45,63,"Overgrow", ));
         
         Scanner userScanner = new Scanner(System.in);
         System.out.println("It looks like you've found an object! Will you pick it up? (Yes or No)");
@@ -104,7 +276,13 @@ public class App
                             System.out.println(((Homework)randomPokemonItem).getsCrumbled());
                             } 
                             else if (randomPokemonItem instanceof Pokemon) {
-                                System.out.println("You got it boss. Here's one, this is a " + ((Pokemon)randomPokemonItem).getName() + ". " + ((Pokemon)randomPokemonItem).getName() + " is " + ((Pokemon)randomPokemonItem).getColor() + ". They are usually " + ((Pokemon)randomPokemonItem).getAvgSize() + ". " + ((Pokemon)randomPokemonItem).getName() + " is a " + ((Pokemon)randomPokemonItem).getPokemonType() + " pokemon and can be found in the " + ((Pokemon)randomPokemonItem).getRegion() + " Region.");
+                                System.out.println("You got it boss. Here's one, this is a " + ((Pokemon)randomPokemonItem).getName() + ". " 
+                                + ((Pokemon)randomPokemonItem).getName() + " is " + ((Pokemon)randomPokemonItem).getColor() 
+                                + ". They are usually " + ((Pokemon)randomPokemonItem).getAvgSize() + ". " 
+                                + ((Pokemon)randomPokemonItem).getName() + " is a " 
+                                //+ ((Pokemon)randomPokemonItem).getPokemonType() 
+                                + " pokemon and can be found in the " + ((Pokemon)randomPokemonItem).getRegion() + " Region."
+                                );
                             }
                             System.out.println("Would you like to hear about another pokemon?");
                             userResponse = userScanner.nextLine();
@@ -120,9 +298,22 @@ public class App
                             ActualPokemon randomTempPokemon = TempPokemon.get(rd.nextInt(9)); 
 
                                 // { display table with player's pokemon stats }
-                            System.out.println("-- Your Pokemon --" + System.lineSeparator() + "Pokemon: " + ((Pokemon)randomTempPokemon).getName() + System.lineSeparator() + "HP: " + ((Pokemon)randomTempPokemon).getHp() + System.lineSeparator() + "Attack: " + ((Pokemon)randomTempPokemon).getAttack() + System.lineSeparator() + "Defense: " + ((Pokemon)randomTempPokemon).getDefense() + System.lineSeparator() + "spDefense: " + ((Pokemon)randomTempPokemon).getSpDefense() + System.lineSeparator() + "spAttack: " + ((Pokemon)randomTempPokemon).getSpAttack() + System.lineSeparator() + "Speed: " + ((Pokemon)randomTempPokemon).getSpeed() + System.lineSeparator() + "Ability: " + ((Pokemon)randomTempPokemon).getAbility1() + System.lineSeparator() + "Type: " + ((Pokemon)randomTempPokemon).getPokemonType() + System.lineSeparator());
-                            //+ "Effectiveness: " + ((Pokemon)randomTempPokemon).getTypeEffectiveness() + System.lineSeparator() + "Weakness: " + ((Pokemon)randomTempPokemon).getTypeWeakness());
-                                
+                            System.out.println("-- Your Pokemon --" + System.lineSeparator() 
+                            + "Pokemon: " + ((Pokemon)randomTempPokemon).getName() + System.lineSeparator() 
+                            + "HP: " + ((Pokemon)randomTempPokemon).getHp() + System.lineSeparator() 
+                            + "Attack: " + ((Pokemon)randomTempPokemon).getAttack() + System.lineSeparator() 
+                            + "Defense: " + ((Pokemon)randomTempPokemon).getDefense() + System.lineSeparator() 
+                            + "spDefense: " + ((Pokemon)randomTempPokemon).getSpDefense() + System.lineSeparator() 
+                            + "spAttack: " + ((Pokemon)randomTempPokemon).getSpAttack() + System.lineSeparator() 
+                            + "Speed: " + ((Pokemon)randomTempPokemon).getSpeed() + System.lineSeparator() 
+                            + "Ability: " + ((Pokemon)randomTempPokemon).getAbility1() + System.lineSeparator() 
+                            //+ "Type: " + ((Pokemon)randomTempPokemon).getPokemonType() + System.lineSeparator()
+                            + "Type"
+                            //+ "Effectiveness: " + ((Pokemon)randomTempPokemon).getTypeEffectiveness() + System.lineSeparator()
+                            + "Effectivness"
+                            //+ "Weakness: " + ((Pokemon)randomTempPokemon).getTypeWeakness()
+                            + "Weakness"
+                            );
                                 //chooses random Pokemon from ChallengerPokedex
                             ActualPokemon randomActualPokemon = ChallengerContents.get(rd.nextInt(13)); 
                             
@@ -137,10 +328,12 @@ public class App
                             + "Speed: " + ((Pokemon)randomActualPokemon).getSpeed() + System.lineSeparator() 
                             + "Ability: " + ((Pokemon)randomActualPokemon).getAbility1() + System.lineSeparator() 
                            // + "Type: " + ((Pokemon)randomActualPokemon).getPokemonType() + System.lineSeparator()
-                           + "Type" 
+                            + "Type" 
+                            //+ "Effectiveness: " + ((Pokemon)randomTempPokemon).getTypeEffectiveness() + System.lineSeparator()
+                            + "Effectivness"
+                            //+ "Weakness: " + ((Pokemon)randomTempPokemon).getTypeWeakness()
+                            + "Weakness"
                             );
-                            //+ "Effectiveness: " + ((Pokemon)randomActualPokemon).getTypeEffectiveness() + System.lineSeparator() + "Weakness: " + ((Pokemon)randomActualPokemon).getTypeWeakness());
-
                             System.out.println("Would you like to compare another pokemon?");
                             userResponse = userScanner.nextLine();
                         }
