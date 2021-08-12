@@ -66,7 +66,7 @@ public class App
         FairyAbilities.add("Fairy Ability");
 
 //     - Lists for specific pokemon -
-        List<PokemonType> PidgyType = new ArrayList<PokemonType>();
+        List<PokemonType> PidgeyType = new ArrayList<PokemonType>();
 //      ask Travis if we need any code here. No right? 
         List<PokemonType> PonytaType = new ArrayList<PokemonType>();
 
@@ -121,41 +121,57 @@ public class App
         normalType.setEffectiveness("none");
         normalType.setAbilities(NormalAbilities);
         //pokemon.add(type)
-
+        PidgeyType.add(normalType);
+        GlameowType.add(normalType);
+        SnorlaxType.add(normalType);
+        RuffletType.add(normalType);
+        
         PokemonType fireType = new PokemonType();
         fireType.setName("fire");
         fireType.setWeakness("Rock, Fire, Water, Dragon");
         fireType.setEffectiveness("Bug, Steel, Grass, Ice");
         fireType.setAbilities(FireAbilities);
         //pokemon.add(type)
-
+        PonytaType.add(fireType);
+        CharmanderType.add(fireType);
+        TepigType.add(fireType);
+        
         PokemonType waterType = new PokemonType();
         waterType.setName("water");
         waterType.setWeakness("Water, Grass, Dragon");
         waterType.setEffectiveness("Ground, Rock, Fire");
         waterType.setAbilities(WaterAbilities);
         //pokemon.add(type)
-
-        PokemonType electricType = new PokemonType();
-        electricType.setName("electric");
-        electricType.setWeakness("Ground, Grass, Electric, Dragon");
-        electricType.setEffectiveness("Flying, Water");
-        electricType.setAbilities(ElectricAbilities);
-        //pokemon.add(type)
+        MantineType.add(waterType);
+        SquirtleType.add(waterType);
+        GoldeenType.add(waterType);
+        KabutoType.add(waterType);
+        LaprasType.add(waterType);
+        MarillType.add(waterType);
         
+        // PokemonType electricType = new PokemonType();
+        // electricType.setName("electric");
+        // electricType.setWeakness("Ground, Grass, Electric, Dragon");
+        // electricType.setEffectiveness("Flying, Water");
+        // electricType.setAbilities(ElectricAbilities);
+        // //pokemon.add(type)
+
         PokemonType grassType = new PokemonType();
         grassType.setName("grass");
         grassType.setWeakness("Flying, Poison, Bug, Steel, Fire, Grass, Dragon");
         grassType.setEffectiveness("Ground, Rock, Water");
         grassType.setAbilities(GrassAbilities);
         //pokemon.add(type)
-
+        DeerlingType.add(grassType);
+        SnivyType.add(grassType);
+    
         PokemonType iceType = new PokemonType();
         iceType.setName("ice");
         iceType.setWeakness("Steel, Fire, Water, Ice");
         iceType.setEffectiveness("Flying, Ground, Grass, Dragon");
         iceType.setAbilities(IceAbilities);
         //pokemon.add(type)
+        LaprasType.add(iceType);
 
         PokemonType fightingType = new PokemonType();
         fightingType.setName("fighting");
@@ -163,35 +179,45 @@ public class App
         fightingType.setEffectiveness("Normal, Rock, Steel, Ice, Dark");
         fightingType.setAbilities(FightingAbilities);
         //pokemon.add(type)
-
+        
         PokemonType poisonType = new PokemonType();
         poisonType.setName("poison");
         poisonType.setWeakness("Poison, Ground, Rock, Ghost, Steel");
         poisonType.setEffectiveness("Grass, Fairy");
         poisonType.setAbilities(PoisonAbilities);
         //pokemon.add(type)
-
+        ArbokType.add(poisonType);
+        EkansType.add(poisonType);
+        
         PokemonType groundType = new PokemonType();
         groundType.setName("ground");
         groundType.setWeakness("Flying, Bug, Grass");
         groundType.setEffectiveness("Poison, Rock, Steel, Fire, Electric");
         groundType.setAbilities(GroundAbilities);
         //pokemon.add(type)
+        OnixType.add(groundType);
+        DiglettType.add(groundType);
 
         PokemonType flyingType = new PokemonType();
         flyingType.setName("flying");
         flyingType.setWeakness("rock, steel, electric");
         flyingType.setEffectiveness("fighting, bug, grass");
         flyingType.setAbilities(FlyingAbilities);
-        PidgyType.add(flyingType);
+        PidgeyType.add(flyingType);
          //pokemon.add(type)
-
+        RuffletType.add(flyingType);
+        MantineType.add(flyingType);
+        FearowType.add(flyingType);
+        
         PokemonType psychicType = new PokemonType();
         psychicType.setName("psychic");
         psychicType.setWeakness("Steel, Psychic, Dark");
         psychicType.setEffectiveness("Fighting, Poison");
         psychicType.setAbilities(PsychicAbilities);
         //pokemon.add(type)
+        DrowzeeType.add(psychicType);
+        LunatoneType.add(psychicType);
+       
         
         PokemonType bugType = new PokemonType();
         psychicType.setName("bug");
@@ -199,6 +225,7 @@ public class App
         psychicType.setEffectiveness("Grass, Psychic, Dark");
         psychicType.setAbilities(BugAbilities);
         //pokemon.add(type)
+        IllumiseType.add(bugType);
 
         PokemonType rockType = new PokemonType();
         psychicType.setName("rock");
@@ -206,34 +233,37 @@ public class App
         psychicType.setEffectiveness("Flying, Bug, Fire, Ice");
         psychicType.setAbilities(RockAbilities);
         //pokemon.add(type)
+        OnixType.add(rockType);
+        KabutoType.add(rockType);
+        LunatoneType.add(rockType);
 
-        PokemonType ghostType = new PokemonType();
-        psychicType.setName("ghost");
-        psychicType.setWeakness("Normal, Dark");
-        psychicType.setEffectiveness("Ghost, Pshycic");
-        psychicType.setAbilities(GhostAbilities);
-        //pokemon.add(type)
+        // PokemonType ghostType = new PokemonType();
+        // psychicType.setName("ghost");
+        // psychicType.setWeakness("Normal, Dark");
+        // psychicType.setEffectiveness("Ghost, Pshycic");
+        // psychicType.setAbilities(GhostAbilities);
+        // //pokemon.add(type)
 
-        PokemonType dragonType = new PokemonType();
-        psychicType.setName("Dragon");
-        psychicType.setWeakness("Dragon, Steel, Fairy");
-        psychicType.setEffectiveness("Dragon");
-        psychicType.setAbilities(DragonAbilities);
-        //pokemon.add(type)
+        // PokemonType dragonType = new PokemonType();
+        // psychicType.setName("Dragon");
+        // psychicType.setWeakness("Dragon, Steel, Fairy");
+        // psychicType.setEffectiveness("Dragon");
+        // psychicType.setAbilities(DragonAbilities);
+        // //pokemon.add(type)
 
-        PokemonType darkType = new PokemonType();
-        psychicType.setName("dark");
-        psychicType.setWeakness("Fighting, Dark, Fairy");
-        psychicType.setEffectiveness("Ghost, Psychic");
-        psychicType.setAbilities(DarkAbilities);
-        //pokemon.add(type)
+        // PokemonType darkType = new PokemonType();
+        // psychicType.setName("dark");
+        // psychicType.setWeakness("Fighting, Dark, Fairy");
+        // psychicType.setEffectiveness("Ghost, Psychic");
+        // psychicType.setAbilities(DarkAbilities);
+        // //pokemon.add(type)
 
-        PokemonType steelType = new PokemonType();
-        psychicType.setName("steel");
-        psychicType.setWeakness("Steel, Fire, Water?, Eletric");
-        psychicType.setEffectiveness("Rock, Ice, Fairy, Not Steel Even Though It's weak to Steel"); //change this
-        psychicType.setAbilities(SteelAbilities);
-        //pokemon.add(type)
+        // PokemonType steelType = new PokemonType();
+        // psychicType.setName("steel");
+        // psychicType.setWeakness("Steel, Fire, Water?, Eletric");
+        // psychicType.setEffectiveness("Rock, Ice, Fairy, Not Steel Even Though It's weak to Steel"); //change this
+        // psychicType.setAbilities(SteelAbilities);
+        // //pokemon.add(type)
 
         PokemonType fairyType = new PokemonType();
         psychicType.setName("fairy");
@@ -241,10 +271,11 @@ public class App
         psychicType.setEffectiveness("Fighting, Dragon, Dark");
         psychicType.setAbilities(FairyAbilities);
         //pokemon.add(type)
+        MarillType.add(fairyType);
 
 //      - Lists of Pokemon -
         List<PokedexItem> PokedexContents = new ArrayList<PokedexItem>();
-        PokedexContents.add(new Pokemon("Pidgey", "small and chubby", "brown", "flying & normal", 40, 45, 40, 35, 35, 56, "Keen Eye", PidgyType));
+        PokedexContents.add(new Pokemon("Pidgey", "small and chubby", "brown", "flying & normal", 40, 45, 40, 35, 35, 56, "Keen Eye", PidgeyType));
         PokedexContents.add(new Pokemon("Ponyta", "small", "yellow", "fire",50,85,55,65,65,90,"Flash Fire", PonytaType));
         PokedexContents.add(new Pokemon("Charmander", "small", "orange", "Kanto", 39,52,43,50,60,62,"Blaze", CharmanderType));
         PokedexContents.add(new Pokemon("Glameow", "small", "grey", "Sinnoh",49,55,42,37,42,85,"Own Tempo", GlameowType));
@@ -256,11 +287,11 @@ public class App
         PokedexContents.add(new Homework("white","circle" ,20, true));
         PokedexContents.add(new Pokemon("Squritle", "small", "blue", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent", SquirtleType));
         PokedexContents.add(new Pokemon("Arbok", "large", "purple", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate", ArbokType));
-        PokedexContents.add(new Pokemon("Deerling", "small", "pink & white with yellow accents", "Unova", 60, 60, 50, 50, 40, 74,"Chlorophyll", DeerlingType)); //stop
+        PokedexContents.add(new Pokemon("Deerling", "small", "pink & white with yellow accents", "Unova", 60, 60, 50, 50, 40, 74,"Chlorophyll", DeerlingType));
 
         List<ActualPokemon> TempPokemon = new ArrayList<ActualPokemon>();
-        TempPokemon.add(new Pokemon("Pidgey", "small and chubby", "brown", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye", PidgyType));
-        TempPokemon.add(new Pokemon("Ponyta", "small", "yellow", " Galar ",50,85,55,65,65,90,"Flash Fire",PidgyType ));
+        TempPokemon.add(new Pokemon("Pidgey", "small and chubby", "brown", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye", PidgeyType));
+        TempPokemon.add(new Pokemon("Ponyta", "small", "yellow", " Galar ",50,85,55,65,65,90,"Flash Fire",PidgeyType ));
         TempPokemon.add(new Pokemon("Charmander", "small", "orange", "Kanto", 39,52,43,50,60,62,"Blaze", PonytaType));
         TempPokemon.add(new Pokemon("Glameow", "small", "grey", "Sinnoh",49,55,42,37,42,85,"Own Tempo", GlameowType));
         TempPokemon.add(new Pokemon("Rufflet", "small", "white & dark blue", "Unova",70,83,50,50,37,60,"Sheer Force", RuffletType));
