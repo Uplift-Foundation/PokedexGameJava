@@ -1,20 +1,29 @@
 package com.senecafoundation;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.BeforeEach;
+
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import static org.mockito.Mockito.when;
 
 public class HomeworkTest {
 
     private Homework systemUnderTest;
+    @Mock private transient PokemonWithSecondAbility myChander;
     
     @BeforeEach
     void assignHomework() {
+        MockitoAnnotations.openMocks(this);
+        when(myChander.getName()).thenReturn("Edgardo");
+        
         this.systemUnderTest = new Homework(
             "White",
             "Rectangle",
             500,
-            true
+            true,
+            myChander
         );
     }
 
@@ -40,6 +49,14 @@ public class HomeworkTest {
         assertEquals(
             "This is someone's homework ... maybe you should give it back",
             systemUnderTest.getsCrumbled()
+        );
+    }
+
+    @Test
+    void getsExcuse() {
+        assertEquals(
+            "My Edgardo ate it",
+            systemUnderTest.getAnExcuse()
         );
     }
     
