@@ -13,8 +13,7 @@ public class Comparer {
     }
     public String Comparison() {
         //Pokemon pokemon1;
-        System.out.println("-- Your Pokemon --" + System.lineSeparator() 
-        + "Pokemon: " + pokemon1.getName() + System.lineSeparator() 
+        System.out.println("-- Your Pokemon --" + System.lineSeparator() + "Pokemon: " + pokemon1.getName() + System.lineSeparator() 
         + "HP: " + pokemon1.getHp() + System.lineSeparator() 
         + "Attack: " + pokemon1.getAttack() + System.lineSeparator() 
         + "Defense: " + pokemon1.getDefense() + System.lineSeparator() 
@@ -27,8 +26,7 @@ public class Comparer {
         + "Weakness: " + pokemon1.getTypeWeakness()
         );
         //Pokemon pokemon2;
-        System.out.println("-- Stranger's Pokemon --" + System.lineSeparator() 
-        + "Pokemon: " + pokemon2.getName() + System.lineSeparator() 
+        System.out.println("-- Stranger's Pokemon --" + System.lineSeparator() + "Pokemon: " + pokemon2.getName() + System.lineSeparator() 
         + "HP: " + pokemon2.getHp() + System.lineSeparator() 
         + "Attack: " + pokemon2.getAttack() + System.lineSeparator() 
         + "Defense: " + pokemon2.getDefense() + System.lineSeparator() 
@@ -46,8 +44,19 @@ public class Comparer {
         return this.pokemon1;
     }
 
-    public void setPokemon1(PokemonWithSecondAbility pokemonfromuser1){
+    public void setPokemon1(PokemonWithSecondAbility pokemonfromuser1)
+    {
         this.pokemon1 = pokemonfromuser1;
+    }
+
+    public PokemonWithSecondAbility getPokkemon2()
+    {
+        return this.pokemon2;
+    }
+
+    public void setPokemon2(PokemonWithSecondAbility pokemonfromuser2)
+    {
+        this.pokemon2 = pokemonfromuser2;
     }
     
 }
