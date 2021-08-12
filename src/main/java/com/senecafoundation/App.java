@@ -74,45 +74,45 @@ public class App
 
         List<PokemonType> GlameowType = new ArrayList<PokemonType>();
 
-        List<PokemonType> Rufflet = new ArrayList<PokemonType>();
+        List<PokemonType> RuffletType = new ArrayList<PokemonType>();
 
-        List<PokemonType> Onix = new ArrayList<PokemonType>();
+        List<PokemonType> OnixType = new ArrayList<PokemonType>();
         
-        List<PokemonType> Mantine = new ArrayList<PokemonType>();
+        List<PokemonType> MantineType = new ArrayList<PokemonType>();
         
-        List<PokemonType> Squirtle = new ArrayList<PokemonType>();
+        List<PokemonType> SquirtleType = new ArrayList<PokemonType>();
         
-        List<PokemonType> Arbok = new ArrayList<PokemonType>();
+        List<PokemonType> ArbokType = new ArrayList<PokemonType>();
 
-        List<PokemonType> Deerling = new ArrayList<PokemonType>();
+        List<PokemonType> DeerlingType = new ArrayList<PokemonType>();
 
-        List<PokemonType> Diglett = new ArrayList<PokemonType>();
+        List<PokemonType> DiglettType = new ArrayList<PokemonType>();
         
-        List<PokemonType> Drowzee = new ArrayList<PokemonType>();
+        List<PokemonType> DrowzeeType = new ArrayList<PokemonType>();
 
-        List<PokemonType> Eevee = new ArrayList<PokemonType>();
+        List<PokemonType> EeveeType = new ArrayList<PokemonType>();
 
-        List<PokemonType> Ekans = new ArrayList<PokemonType>();
+        List<PokemonType> EkansType = new ArrayList<PokemonType>();
         
-        List<PokemonType> Fearow = new ArrayList<PokemonType>();
+        List<PokemonType> FearowType = new ArrayList<PokemonType>();
 
-        List<PokemonType> Tepig = new ArrayList<PokemonType>();
+        List<PokemonType> TepigType = new ArrayList<PokemonType>();
         
-        List<PokemonType> Goldeen = new ArrayList<PokemonType>();
+        List<PokemonType> GoldeenType = new ArrayList<PokemonType>();
         
-        List<PokemonType> Illumise = new ArrayList<PokemonType>();
+        List<PokemonType> IllumiseType = new ArrayList<PokemonType>();
     
-        List<PokemonType> Kabuto = new ArrayList<PokemonType>();
+        List<PokemonType> KabutoType = new ArrayList<PokemonType>();
 
-        List<PokemonType> Lapras = new ArrayList<PokemonType>();
+        List<PokemonType> LaprasType = new ArrayList<PokemonType>();
         
-        List<PokemonType> Marill = new ArrayList<PokemonType>();
+        List<PokemonType> MarillType = new ArrayList<PokemonType>();
         
-        List<PokemonType> Snorlax = new ArrayList<PokemonType>();
+        List<PokemonType> SnorlaxType = new ArrayList<PokemonType>();
 
-        List<PokemonType> Lunatone = new ArrayList<PokemonType>();
+        List<PokemonType> LunatoneType = new ArrayList<PokemonType>();
         
-        List<PokemonType> Snivy = new ArrayList<PokemonType>();
+        List<PokemonType> SnivyType = new ArrayList<PokemonType>();
         
 //     - Lists for pokemon types -
         PokemonType normalType = new PokemonType();
@@ -245,46 +245,46 @@ public class App
 //      - Lists of Pokemon -
         List<PokedexItem> PokedexContents = new ArrayList<PokedexItem>();
         PokedexContents.add(new Pokemon("Pidgey", "small and chubby", "brown", "flying & normal", 40, 45, 40, 35, 35, 56, "Keen Eye", PidgyType));
-        PokedexContents.add(new Pokemon("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire", ));
-        PokedexContents.add(new Pokemon("Charmander", "small", "orange", "Kanto", 39,52,43,50,60,62,"Blaze", ));
-        PokedexContents.add(new Pokemon("Glameow", "small", "grey", "Sinnoh",49,55,42,37,42,85,"Own Tempo", ));
-        PokedexContents.add(new Pokemon("Rufflet", "small", "white & dark blue", "Unova",70,83,50,50,37,60,"Sheer Force", ));
-        PokedexContents.add(new Pokemon("Onix", "humongous", "grey", "Kanto",35,45,160,45,30,70,"Sturdy", ));
-        PokedexContents.add(new Pokemon("Mantine", "humongous", "blue & white", "Alola",85,40,70,140,80,70,"Swift Swim", ));
+        PokedexContents.add(new Pokemon("Ponyta", "small", "yellow", "fire",50,85,55,65,65,90,"Flash Fire", PonytaType));
+        PokedexContents.add(new Pokemon("Charmander", "small", "orange", "Kanto", 39,52,43,50,60,62,"Blaze", CharmanderType));
+        PokedexContents.add(new Pokemon("Glameow", "small", "grey", "Sinnoh",49,55,42,37,42,85,"Own Tempo", GlameowType));
+        PokedexContents.add(new Pokemon("Rufflet", "small", "white & dark blue", "Unova",70,83,50,50,37,60,"Sheer Force", RuffletType));
+        PokedexContents.add(new Pokemon("Onix", "humongous", "grey", "Kanto",35,45,160,45,30,70,"Sturdy", OnixType));
+        PokedexContents.add(new Pokemon("Mantine", "humongous", "blue & white", "Alola",85,40,70,140,80,70,"Swift Swim", MantineType));
         PokedexContents.add(new Plant("green","short", "fresh", true, true, true, true));
         PokedexContents.add(new Bear("brown", "circle", true, 200)); 
         PokedexContents.add(new Homework("white","circle" ,20, true));
-        PokedexContents.add(new Pokemon("Squritle", "small", "blue", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent", ));
-        PokedexContents.add(new Pokemon("Arbok", "large", "purple", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate", ));
-        PokedexContents.add(new Pokemon("Deerling", "small", "pink & white with yellow accents", "Unova", 60, 60, 50, 50, 40, 74,"Chlorophyll", )); //stop
+        PokedexContents.add(new Pokemon("Squritle", "small", "blue", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent", SquirtleType));
+        PokedexContents.add(new Pokemon("Arbok", "large", "purple", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate", ArbokType));
+        PokedexContents.add(new Pokemon("Deerling", "small", "pink & white with yellow accents", "Unova", 60, 60, 50, 50, 40, 74,"Chlorophyll", DeerlingType)); //stop
 
         List<ActualPokemon> TempPokemon = new ArrayList<ActualPokemon>();
-        TempPokemon.add(new Pokemon("Pidgey", "small and chubby", "brown", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye", ));
-        TempPokemon.add(new Pokemon("Ponyta", "small", "yellow", " Galar ",50,85,55,65,65,90,"Flash Fire", ));
-        TempPokemon.add(new Pokemon("Charmander", "small", "orange", "Kanto", 39,52,43,50,60,62,"Blaze", ));
-        TempPokemon.add(new Pokemon("Glameow", "small", "grey", "Sinnoh",49,55,42,37,42,85,"Own Tempo", ));
-        TempPokemon.add(new Pokemon("Rufflet", "small", "white & dark blue", "Unova",70,83,50,50,37,60,"Sheer Force", ));
-        TempPokemon.add(new Pokemon("Onix", "humongous", "grey", "Kanto",35,45,160,45,30,70,"Sturdy", ));
-        TempPokemon.add(new Pokemon("Mantine", "humongous", "blue & white", "Alola",85,40,70,140,80,70,"Swift Swim", ));
-        TempPokemon.add(new Pokemon("Squritle", "small", "blue", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent", ));
-        TempPokemon.add(new Pokemon("Arbok", "large", "purple", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate", ));
-        TempPokemon.add(new Pokemon("Deerling", "small", "pink & white with yellow accents", "Unova", 60, 60, 50, 50, 40, 74, "Chlorophyll", ));
+        TempPokemon.add(new Pokemon("Pidgey", "small and chubby", "brown", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye", PidgyType));
+        TempPokemon.add(new Pokemon("Ponyta", "small", "yellow", " Galar ",50,85,55,65,65,90,"Flash Fire",PidgyType ));
+        TempPokemon.add(new Pokemon("Charmander", "small", "orange", "Kanto", 39,52,43,50,60,62,"Blaze", PonytaType));
+        TempPokemon.add(new Pokemon("Glameow", "small", "grey", "Sinnoh",49,55,42,37,42,85,"Own Tempo", GlameowType));
+        TempPokemon.add(new Pokemon("Rufflet", "small", "white & dark blue", "Unova",70,83,50,50,37,60,"Sheer Force", RuffletType));
+        TempPokemon.add(new Pokemon("Onix", "humongous", "grey", "Kanto",35,45,160,45,30,70,"Sturdy", OnixType));
+        TempPokemon.add(new Pokemon("Mantine", "humongous", "blue & white", "Alola",85,40,70,140,80,70,"Swift Swim", MantineType));
+        TempPokemon.add(new Pokemon("Squritle", "small", "blue", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent", SquirtleType));
+        TempPokemon.add(new Pokemon("Arbok", "large", "purple", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate", ArbokType));
+        TempPokemon.add(new Pokemon("Deerling", "small", "pink & white with yellow accents", "Unova", 60, 60, 50, 50, 40, 74, "Chlorophyll", DeerlingType));
 
         List<ActualPokemon> ChallengerContents = new ArrayList<ActualPokemon>();
-        ChallengerContents.add(new Pokemon("Diglett", "small", "brown", "Kanto", 10, 55, 25, 45, 35, 95, "Sand Veil", ));
-        ChallengerContents.add(new Pokemon("Drowzee", "small", "yellow & brown", "Kanto", 60, 48,45, 90, 43, 42, "Insomnia", ));
-        ChallengerContents.add(new Pokemon("Eevee", "small", "brown", "Kanto", 55, 55, 50, 65, 45, 55, "Adaptability", ));
-        ChallengerContents.add(new Pokemon("Ekans", "small", "purple & yellow", "Kanto", 35, 60, 44, 54, 40, 55, "Shed Skin", ));
-        ChallengerContents.add(new Pokemon("Fearow", "large", "brown", "Kanto", 65, 90, 65, 61, 61, 100, "Keen Eye", ));
-        ChallengerContents.add(new Pokemon("Tepig","small","orange and red", "Unova",65,63,45,45,45,45,"Blaze", ));
-        ChallengerContents.add(new Pokemon("Goldeen", "small", "white & orange", "Kanto", 45, 67, 60, 50, 35, 63, "Swift Swim", ));
-        ChallengerContents.add(new Pokemon("Illumise", "small", "blue, purple, & black", "Hoenn", 65, 47, 75, 85, 73, 85, "Tinted Lense", ));
-        ChallengerContents.add(new Pokemon("Kabuto", "small", "brown", "Kanto", 30, 80, 90, 45, 55, 55, "Battle Armor", ));
-        ChallengerContents.add(new Pokemon("Lapras","large","blue", "Kanto",130,85,80,95,85,60,"Water Absorb", ));
-        ChallengerContents.add(new Pokemon("Marill","small","blue and white", "Johto",70,20,50,50,20,40,"Thick Fat", ));
-        ChallengerContents.add(new Pokemon("Snorlax","large","white and blue", "Kanto",160,110,65,110,65,30,"Immunity", ));
-        ChallengerContents.add(new Pokemon("Lunatone", "large", "tan", "Hoenn", 90, 55, 65, 85, 95, 70, "Levitate", ));
-        ChallengerContents.add(new Pokemon("Snivy","small","green", "Unova",45,45,55,55,45,63,"Overgrow", ));
+        ChallengerContents.add(new Pokemon("Diglett", "small", "brown", "Kanto", 10, 55, 25, 45, 35, 95, "Sand Veil", DiglettType));
+        ChallengerContents.add(new Pokemon("Drowzee", "small", "yellow & brown", "Kanto", 60, 48,45, 90, 43, 42, "Insomnia", DrowzeeType));
+        ChallengerContents.add(new Pokemon("Eevee", "small", "brown", "Kanto", 55, 55, 50, 65, 45, 55, "Adaptability", EeveeType));
+        ChallengerContents.add(new Pokemon("Ekans", "small", "purple & yellow", "Kanto", 35, 60, 44, 54, 40, 55, "Shed Skin", EkansType));
+        ChallengerContents.add(new Pokemon("Fearow", "large", "brown", "Kanto", 65, 90, 65, 61, 61, 100, "Keen Eye", FearowType));
+        ChallengerContents.add(new Pokemon("Tepig","small","orange and red", "Unova",65,63,45,45,45,45,"Blaze", TepigType));
+        ChallengerContents.add(new Pokemon("Goldeen", "small", "white & orange", "Kanto", 45, 67, 60, 50, 35, 63, "Swift Swim", GoldeenType));
+        ChallengerContents.add(new Pokemon("Illumise", "small", "blue, purple, & black", "Hoenn", 65, 47, 75, 85, 73, 85, "Tinted Lense", IllumiseType));
+        ChallengerContents.add(new Pokemon("Kabuto", "small", "brown", "Kanto", 30, 80, 90, 45, 55, 55, "Battle Armor", KabutoType));
+        ChallengerContents.add(new Pokemon("Lapras","large","blue", "Kanto",130,85,80,95,85,60,"Water Absorb", LaprasType));
+        ChallengerContents.add(new Pokemon("Marill","small","blue and white", "Johto",70,20,50,50,20,40,"Thick Fat", MarillType));
+        ChallengerContents.add(new Pokemon("Snorlax","large","white and blue", "Kanto",160,110,65,110,65,30,"Immunity", SnorlaxType));
+        ChallengerContents.add(new Pokemon("Lunatone", "large", "tan", "Hoenn", 90, 55, 65, 85, 95, 70, "Levitate", LunatoneType));
+        ChallengerContents.add(new Pokemon("Snivy","small","green", "Unova",45,45,55,55,45,63,"Overgrow", SnivyType));
         
         Scanner userScanner = new Scanner(System.in);
         System.out.println("It looks like you've found an object! Will you pick it up? (Yes or No)");
