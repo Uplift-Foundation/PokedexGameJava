@@ -68,7 +68,52 @@ public class App
 //     - Lists for specific pokemon -
         List<PokemonType> PidgyType = new ArrayList<PokemonType>();
 //      ask Travis if we need any code here. No right? 
+        List<PokemonType> PonytaType = new ArrayList<PokemonType>();
 
+        List<PokemonType> CharmanderType = new ArrayList<PokemonType>();
+
+        List<PokemonType> GlameowType = new ArrayList<PokemonType>();
+
+        List<PokemonType> Rufflet = new ArrayList<PokemonType>();
+
+        List<PokemonType> Onix = new ArrayList<PokemonType>();
+        
+        List<PokemonType> Mantine = new ArrayList<PokemonType>();
+        
+        List<PokemonType> Squirtle = new ArrayList<PokemonType>();
+        
+        List<PokemonType> Arbok = new ArrayList<PokemonType>();
+
+        List<PokemonType> Deerling = new ArrayList<PokemonType>();
+
+        List<PokemonType> Diglett = new ArrayList<PokemonType>();
+        
+        List<PokemonType> Drowzee = new ArrayList<PokemonType>();
+
+        List<PokemonType> Eevee = new ArrayList<PokemonType>();
+
+        List<PokemonType> Ekans = new ArrayList<PokemonType>();
+        
+        List<PokemonType> Fearow = new ArrayList<PokemonType>();
+
+        List<PokemonType> Tepig = new ArrayList<PokemonType>();
+        
+        List<PokemonType> Goldeen = new ArrayList<PokemonType>();
+        
+        List<PokemonType> Illumise = new ArrayList<PokemonType>();
+    
+        List<PokemonType> Kabuto = new ArrayList<PokemonType>();
+
+        List<PokemonType> Lapras = new ArrayList<PokemonType>();
+        
+        List<PokemonType> Marill = new ArrayList<PokemonType>();
+        
+        List<PokemonType> Snorlax = new ArrayList<PokemonType>();
+
+        List<PokemonType> Lunatone = new ArrayList<PokemonType>();
+        
+        List<PokemonType> Snivy = new ArrayList<PokemonType>();
+        
 //     - Lists for pokemon types -
         PokemonType normalType = new PokemonType();
         normalType.setName("normal");
@@ -232,7 +277,7 @@ public class App
         ChallengerContents.add(new Pokemon("Ekans", "small", "purple & yellow", "Kanto", 35, 60, 44, 54, 40, 55, "Shed Skin", ));
         ChallengerContents.add(new Pokemon("Fearow", "large", "brown", "Kanto", 65, 90, 65, 61, 61, 100, "Keen Eye", ));
         ChallengerContents.add(new Pokemon("Tepig","small","orange and red", "Unova",65,63,45,45,45,45,"Blaze", ));
-        ChallengerContents.add(new Pokemon("Toldeen", "small", "white & orange", "Kanto", 45, 67, 60, 50, 35, 63, "Swift Swim", ));
+        ChallengerContents.add(new Pokemon("Goldeen", "small", "white & orange", "Kanto", 45, 67, 60, 50, 35, 63, "Swift Swim", ));
         ChallengerContents.add(new Pokemon("Illumise", "small", "blue, purple, & black", "Hoenn", 65, 47, 75, 85, 73, 85, "Tinted Lense", ));
         ChallengerContents.add(new Pokemon("Kabuto", "small", "brown", "Kanto", 30, 80, 90, 45, 55, 55, "Battle Armor", ));
         ChallengerContents.add(new Pokemon("Lapras","large","blue", "Kanto",130,85,80,95,85,60,"Water Absorb", ));
