@@ -64,7 +64,6 @@ public class App
 
         List<String> FairyAbilities = new ArrayList<String>();
         FairyAbilities.add("Fairy Ability");
-
 //     - Lists for specific pokemon -
         List<PokemonType> PidgeyType = new ArrayList<PokemonType>();
 //      ask Travis if we need any code here. No right? 
@@ -113,7 +112,6 @@ public class App
         List<PokemonType> LunatoneType = new ArrayList<PokemonType>();
         
         List<PokemonType> SnivyType = new ArrayList<PokemonType>();
-        
 //     - Lists for pokemon types -
         PokemonType normalType = new PokemonType();
         normalType.setName("normal");
@@ -373,7 +371,6 @@ public class App
                     if (userResponse.equals("Yes")) {
                         while (userResponse.equals("Yes")) { //chooses random Pokemon from TempList
                             ActualPokemon randomTempPokemon = TempPokemon.get(rd.nextInt(9)); 
-
                                 // { display table with player's pokemon stats }
                             System.out.println("-- Your Pokemon --" + System.lineSeparator() 
                             + "Pokemon: " + ((Pokemon)randomTempPokemon).getName() + System.lineSeparator() 
@@ -393,7 +390,6 @@ public class App
                             );
                                 //chooses random Pokemon from ChallengerPokedex
                             ActualPokemon randomActualPokemon = ChallengerContents.get(rd.nextInt(13)); 
-                            
                                 // { display table with challenger's pokemon stats }
                             System.out.println("-- Stranger's Pokemon --" + System.lineSeparator() 
                             + "Pokemon: " + ((Pokemon)randomActualPokemon).getName() + System.lineSeparator() 
@@ -404,7 +400,7 @@ public class App
                             + "spAttack: " + ((Pokemon)randomActualPokemon).getSpAttack() + System.lineSeparator() 
                             + "Speed: " + ((Pokemon)randomActualPokemon).getSpeed() + System.lineSeparator() 
                             + "Ability: " + ((Pokemon)randomActualPokemon).getAbility1() + System.lineSeparator() 
-                           // + "Type: " + ((Pokemon)randomActualPokemon).getPokemonType() + System.lineSeparator()
+                            // + "Type: " + ((Pokemon)randomActualPokemon).getPokemonType() + System.lineSeparator()
                             + "Type" 
                             //+ "Effectiveness: " + ((Pokemon)randomTempPokemon).getTypeEffectiveness() + System.lineSeparator()
                             + "Effectivness"
@@ -419,7 +415,6 @@ public class App
                     else {
                         System.out.println("The stranger looks disappointed, but they wish you a good day and walk off"); 
                     }
-                    
                 //what color is it?
                 }  
                 else {
@@ -434,8 +429,7 @@ public class App
         //will you pick it up?   
         else {
             System.out.println("You needed to enter Yes or No, the instructions were pretty simple...not sure how you messed that one up.");
-        } 
-
+        }
         userScanner.close();
     }
 }
