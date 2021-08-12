@@ -16,7 +16,8 @@ public class HomeworkTest {
     @BeforeEach
     void assignHomework() {
         MockitoAnnotations.openMocks(this);
-        when(myChander.getName()).thenReturn("Cristian");
+        when(myChander.getName()).thenReturn("Edgardo");
+        
         this.systemUnderTest = new Homework(
             "White",
             "Rectangle",
@@ -54,7 +55,7 @@ public class HomeworkTest {
     @Test
     void getsExcuse() {
         assertEquals(
-            "My Cristian ate it",
+            "My Edgardo ate it",
             systemUnderTest.getAnExcuse()
         );
     }
