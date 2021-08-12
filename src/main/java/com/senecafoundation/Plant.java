@@ -13,7 +13,7 @@ public class Plant extends PokedexItem {  //add in PokedexItem as a parent to th
     private Boolean makesGlucose;
     
 
-    public Plant(String color,String shape, String smell, Boolean hasLeaves, Boolean hasRoots, Boolean collectsSunLight, Boolean makesGlucose) { //this is the added thing from the quick fix 
+    public Plant(String color, String smell, Boolean hasLeaves, Boolean hasRoots, Boolean collectsSunLight, Boolean makesGlucose) { 
         super(color);
         this.smell = smell;
         this.hasLeaves = hasLeaves;
