@@ -2,16 +2,17 @@ package com.senecafoundation;
 
 public class Comparer {
 
-    private pokemon1;
+    private PokemonWithSecondAbility pokemon1;
 
-    private pokemon2; 
+    private PokemonWithSecondAbility pokemon2; 
 
 
     public Comparer(PokemonWithSecondAbility pokemonfromuser1, PokemonWithSecondAbility pokekemonfromuser2) {
         this.pokemon1 = pokemonfromuser1; 
-        this.pokemon2 = pokemonfromuser2;
+        this.pokemon2 = pokekemonfromuser2;
     }
     public String Comparison() {
+        //Pokemon pokemon1;
         System.out.println("-- Your Pokemon --" + System.lineSeparator() 
         + "Pokemon: " + pokemon1.getName() + System.lineSeparator() 
         + "HP: " + pokemon1.getHp() + System.lineSeparator() 
@@ -25,15 +26,27 @@ public class Comparer {
         + "Effectiveness: " + pokemon1.getTypeEffectiveness() + System.lineSeparator() 
         + "Weakness: " + pokemon1.getTypeWeakness()
         );
-        System.out.println("-- Stranger's Pokemon --" + System.lineSeparator() + "Pokemon: " + pokemon2.getName() + System.lineSeparator() + "HP: " + pokemon2.getHp() + System.lineSeparator() + "Attack: " + pokemon2.getAttack() + System.lineSeparator() + "Defense: " + pokemon2.getDefense() + System.lineSeparator() + "spDefense: " + pokemon2.getSpDefense() + System.lineSeparator() + "spAttack: " + pokemon2.getSpAttack() + System.lineSeparator() + "Speed: " + pokemon2.getSpeed() + System.lineSeparator() + "Ability: " + pokemon2.getAbility1() + System.lineSeparator() + "Type: " + pokemon2.getPokemonType() + System.lineSeparator() + "Effectiveness: " + pokemon2.getTypeEffectiveness() + System.lineSeparator() + "Weakness: " + pokemon2 .getTypeWeakness());
+        //Pokemon pokemon2;
+        System.out.println("-- Stranger's Pokemon --" + System.lineSeparator() 
+        + "Pokemon: " + pokemon2.getName() + System.lineSeparator() 
+        + "HP: " + pokemon2.getHp() + System.lineSeparator() 
+        + "Attack: " + pokemon2.getAttack() + System.lineSeparator() 
+        + "Defense: " + pokemon2.getDefense() + System.lineSeparator() 
+        + "spDefense: " + pokemon2.getSpDefense() + System.lineSeparator() 
+        + "spAttack: " + pokemon2.getSpAttack() + System.lineSeparator() 
+        + "Speed: " + pokemon2.getSpeed() + System.lineSeparator() 
+        + "Ability: " + pokemon2.getAbility1() + System.lineSeparator() 
+        + "Type: " + pokemon2.getPokemonType() + System.lineSeparator() 
+        + "Effectiveness: " + pokemon2.getTypeEffectiveness() + System.lineSeparator() 
+        + "Weakness: " + pokemon2 .getTypeWeakness());
        
     }
-    public getPokemon1 
+    public PokemonWithSecondAbility getPokemon1()
     {
         return this.pokemon1;
     }
 
-    public setPokemon1(PokemonWithSecondAbility pokemonfromuser1){
+    public void setPokemon1(PokemonWithSecondAbility pokemonfromuser1){
         this.pokemon1 = pokemonfromuser1;
     }
     
