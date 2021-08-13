@@ -8,7 +8,7 @@ public class ChallengerPokedex extends Pokedex {
     public ChallengerPokedex(boolean screenIsLitUp) {
         super(screenIsLitUp);
     }
-    public void setChallengerContents(List<ActualPokemon> challengerContents) { //public void created using quickfix from Apps 
+    public void setChallengerContents(List<PokemonWithSecondAbility> challengerContents) { //public void created using quickfix from Apps 
     }
 
 }

@@ -2,19 +2,9 @@ package com.senecafoundation;
 
 public class Comparer {
 //  add extends ICompare 
-
-    private PokemonWithSecondAbility pokemon1;
-
-    private PokemonWithSecondAbility pokemon2; 
-
-    public Comparer(PokemonWithSecondAbility RandomPokemon1, PokemonWithSecondAbility RandomPokemon2) {
-        this.pokemon1 = RandomPokemon1; 
-        this.pokemon2 = RandomPokemon2;
-    }
-//  method
-    public String Comparison() {
+    public void comparePokemon(PokemonWithSecondAbility pokemon1, PokemonWithSecondAbility pokemon2) {
         //Pokemon pokemon1;
-        return("-- Your Pokemon --" + System.lineSeparator() + "Pokemon: " + pokemon1.getName() + System.lineSeparator() 
+        System.out.println("-- Your Pokemon --" + System.lineSeparator() + "Pokemon: " + pokemon1.getName() + System.lineSeparator() 
         + "HP: " + pokemon1.getHp() + System.lineSeparator() 
         + "Attack: " + pokemon1.getAttack() + System.lineSeparator() 
         + "Defense: " + pokemon1.getDefense() + System.lineSeparator() 
@@ -39,24 +29,4 @@ public class Comparer {
         + "Effectiveness: " + pokemon2.getTypeEffectiveness() + System.lineSeparator() 
         + "Weakness: " + pokemon2 .getTypeWeakness()));
     }
-    public PokemonWithSecondAbility getPokemon1()
-    {
-        return this.pokemon1;
-    }
-
-    public void setPokemon1(PokemonWithSecondAbility RandomPokemon1)
-    {
-        this.pokemon1 = RandomPokemon1;
-    }
-
-    public PokemonWithSecondAbility getPokemon2()
-    {
-        return this.pokemon2;
-    }
-
-    public void setPokemon2(PokemonWithSecondAbility RandomPokemon2)
-    {
-        this.pokemon2 = RandomPokemon2;
-    }
-    
 }
