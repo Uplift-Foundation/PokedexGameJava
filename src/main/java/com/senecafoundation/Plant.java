@@ -64,7 +64,7 @@ public class Plant extends PokedexItem {  //add in PokedexItem as a parent to th
     
     public String Grows(){
         if (color == "green" && smell == "fresh" && hasLeaves && hasRoots) {
-            return "This is not a plant... not sure what in tarnation it's doing here";
+            return "This is a plant... not sure what in tarnation it's doing here";
         }
         return "This plant is not growing... maybe try actually taking care of the things you own?";
     }
