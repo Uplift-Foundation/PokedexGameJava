@@ -1,9 +1,12 @@
 package com.senecafoundation;
 
+//import java.time.temporal.Temporal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+
+//import javax.swing.RowFilter.ComparisonType;
 
 public class App 
 {
@@ -24,7 +27,7 @@ public class App
         PokedexContents.add(new PokemonWithSecondAbility("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate","Ability2", "grass & fairy", "poison, ground, rock, ghost, & steel"));
         PokedexContents.add(new PokemonWithSecondAbility("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74,"Ability2","Chlorophyll", "ground, rock, & water", "rock, ghost, steel, flying, poison, bug, fire, grass, & dragon")); //stop
 
-        List<ActualPokemon> TempPokemon = new ArrayList<ActualPokemon>();
+        List<PokemonWithSecondAbility> TempPokemon = new ArrayList<PokemonWithSecondAbility>();
         TempPokemon.add(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric, ice, and rock"));
         TempPokemon.add(new PokemonWithSecondAbility("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","Ability2","grass, ice, bug, steel and fairy","water, ground, and rock" ));
         TempPokemon.add(new PokemonWithSecondAbility("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Ability2","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
@@ -36,7 +39,7 @@ public class App
         TempPokemon.add(new PokemonWithSecondAbility("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate","Ability2", "grass & fairy", "poison, ground, rock, ghost, & steel"));
         TempPokemon.add(new PokemonWithSecondAbility("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74, "Chlorophyll","Ability2", "ground, rock, & water", "rock, ghost, steel, flying, poison, bug, fire, grass, & dragon"));
 
-        List<ActualPokemon> ChallengerContents = new ArrayList<ActualPokemon>();
+        List<PokemonWithSecondAbility> ChallengerContents = new ArrayList<PokemonWithSecondAbility>();
         ChallengerContents.add(new PokemonWithSecondAbility("Diglett", "small", "brown", "ground", "Kanto", 10, 55, 25, 45, 35, 95, "Sand Veil","Ability2", "poison, rock, steel ,fire, & electric", "flying, bug, & grass"));
         ChallengerContents.add(new PokemonWithSecondAbility("Drowzee", "small", "yellow & brown", "psychic", "Kanto", 60, 48,45, 90, 43, 42, "Insomnia","Ability2", "fighting & poison", "steel, psychic, & dark"));
         ChallengerContents.add(new PokemonWithSecondAbility("Eevee", "small", "brown", "normal", "Kanto", 55, 55, 50, 65, 45, 55, "Adaptability","Ability2", "none", "rock, ghost, & steel"));
@@ -101,17 +104,11 @@ public class App
                     userResponse = userScanner.nextLine();
                     if (userResponse.equals("Yes")) {
                         while (userResponse.equals("Yes")) { //chooses random Pokemon from TempList
-                            ActualPokemon randomTempPokemon = TempPokemon.get(rd.nextInt(9)); 
-
-                                // { display table with player's pokemon stats }
-                            System.out.println("-- Your Pokemon --" + System.lineSeparator() + "Pokemon: " + ((Pokemon)randomTempPokemon).getName() + System.lineSeparator() + "HP: " + ((Pokemon)randomTempPokemon).getHp() + System.lineSeparator() + "Attack: " + ((Pokemon)randomTempPokemon).getAttack() + System.lineSeparator() + "Defense: " + ((Pokemon)randomTempPokemon).getDefense() + System.lineSeparator() + "spDefense: " + ((Pokemon)randomTempPokemon).getSpDefense() + System.lineSeparator() + "spAttack: " + ((Pokemon)randomTempPokemon).getSpAttack() + System.lineSeparator() + "Speed: " + ((Pokemon)randomTempPokemon).getSpeed() + System.lineSeparator() + "Ability: " + ((Pokemon)randomTempPokemon).getAbility1() + System.lineSeparator() + "Type: " + ((Pokemon)randomTempPokemon).getPokemonType() + System.lineSeparator() + "Effectiveness: " + ((Pokemon)randomTempPokemon).getTypeEffectiveness() + System.lineSeparator() + "Weakness: " + ((Pokemon)randomTempPokemon).getTypeWeakness());
-                                
-                                //chooses random Pokemon from ChallengerPokedex
-                            ActualPokemon randomActualPokemon = ChallengerContents.get(rd.nextInt(13)); 
-                            
-                                // { display table with challenger's pokemon stats }
-                            System.out.println("-- Stranger's Pokemon --" + System.lineSeparator() + "Pokemon: " + ((Pokemon)randomActualPokemon).getName() + System.lineSeparator() + "HP: " + ((Pokemon)randomActualPokemon).getHp() + System.lineSeparator() + "Attack: " + ((Pokemon)randomActualPokemon).getAttack() + System.lineSeparator() + "Defense: " + ((Pokemon)randomActualPokemon).getDefense() + System.lineSeparator() + "spDefense: " + ((Pokemon)randomActualPokemon).getSpDefense() + System.lineSeparator() + "spAttack: " + ((Pokemon)randomActualPokemon).getSpAttack() + System.lineSeparator() + "Speed: " + ((Pokemon)randomActualPokemon).getSpeed() + System.lineSeparator() + "Ability: " + ((Pokemon)randomActualPokemon).getAbility1() + System.lineSeparator() + "Type: " + ((Pokemon)randomActualPokemon).getPokemonType() + System.lineSeparator() + "Effectiveness: " + ((Pokemon)randomActualPokemon).getTypeEffectiveness() + System.lineSeparator() + "Weakness: " + ((Pokemon)randomActualPokemon).getTypeWeakness());
-
+                            PokemonWithSecondAbility randomTempPokemon = TempPokemon.get(rd.nextInt(9)); 
+                            PokemonWithSecondAbility randomActualPokemon = ChallengerContents.get(rd.nextInt(13));
+                           
+                            Comparer ComparePokemon1And2 = new Comparer();
+                            ComparePokemon1And2.comparePokemon(randomTempPokemon, randomActualPokemon);
                             System.out.println("Would you like to compare another pokemon?");
                             userResponse = userScanner.nextLine();
                         }
@@ -139,4 +136,5 @@ public class App
 
         userScanner.close();
     }
+
 }
