@@ -70,51 +70,6 @@ public class App
         List<String> NormalSkills = new ArrayList<String>();
         NormalSkills.add("normal skill");
 
-        // List<PokemonType> PonytaType = new ArrayList<PokemonType>();
-
-        // List<PokemonType> CharmanderType = new ArrayList<PokemonType>();
-
-        // List<PokemonType> GlameowType = new ArrayList<PokemonType>();
-
-        // List<PokemonType> RuffletType = new ArrayList<PokemonType>();
-
-        // List<PokemonType> OnixType = new ArrayList<PokemonType>();
-        
-        // List<PokemonType> MantineType = new ArrayList<PokemonType>();
-        
-        // List<PokemonType> SquirtleType = new ArrayList<PokemonType>();
-        
-        // List<PokemonType> ArbokType = new ArrayList<PokemonType>();
-
-        // List<PokemonType> DeerlingType = new ArrayList<PokemonType>();
-
-        // List<PokemonType> DiglettType = new ArrayList<PokemonType>();
-        
-        // List<PokemonType> DrowzeeType = new ArrayList<PokemonType>();
-
-        // List<PokemonType> EeveeType = new ArrayList<PokemonType>();
-
-        // List<PokemonType> EkansType = new ArrayList<PokemonType>();
-        
-        // List<PokemonType> FearowType = new ArrayList<PokemonType>();
-
-        // List<PokemonType> TepigType = new ArrayList<PokemonType>();
-        
-        // List<PokemonType> GoldeenType = new ArrayList<PokemonType>();
-        
-        // List<PokemonType> IllumiseType = new ArrayList<PokemonType>();
-    
-        // List<PokemonType> KabutoType = new ArrayList<PokemonType>();
-
-        // List<PokemonType> LaprasType = new ArrayList<PokemonType>();
-        
-        // List<PokemonType> MarillType = new ArrayList<PokemonType>();
-        
-        // List<PokemonType> SnorlaxType = new ArrayList<PokemonType>();
-
-        // List<PokemonType> LunatoneType = new ArrayList<PokemonType>();
-        
-        // List<PokemonType> SnivyType = new ArrayList<PokemonType>();
 //     - Lists for pokemon types -
         PokemonType normalType = new PokemonType();
         normalType.setName("normal");
