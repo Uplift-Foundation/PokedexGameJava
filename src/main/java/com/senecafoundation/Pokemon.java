@@ -12,10 +12,10 @@ public class Pokemon extends ActualPokemon{
     private Integer spDefense;
     private Integer spAttack; 
     private Integer speed; 
-    private List<PokemonType> types = new ArrayList<PokemonType>();
+    protected List<PokemonType> types = new ArrayList<PokemonType>();
+    //new list of skills
+
     //new file called pokemon type
-    //
-    
     public Pokemon(
         String name, 
         String avgSize,
@@ -27,8 +27,8 @@ public class Pokemon extends ActualPokemon{
         Integer spDefense, 
         Integer spAttack, 
         Integer speed,
-        String ability1, //active ability in future
-        List<PokemonType> types
+        String ability1 //active ability in future
+        //List<PokemonType> types
         ) {
         super(color, ability1);
         this.setName(name);
@@ -40,7 +40,7 @@ public class Pokemon extends ActualPokemon{
         this.setSpDefense(spDefense);
         this.setSpAttack(spAttack);
         this.setSpeed(speed);
-        this.setTypes(types);
+        //this.setTypes(types);
     }
 
     public String getName()
