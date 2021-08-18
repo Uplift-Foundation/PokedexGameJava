@@ -13,6 +13,8 @@ public class App
 //      - Lists for type abilities -
         List<String> NormalAbilities = new ArrayList<String>();
         NormalAbilities.add("Intimidate");
+        NormalAbilities.add("replace this");
+        NormalAbilities.add("replace this 2");
 
         List<String> FireAbilities = new ArrayList<String>();
         FireAbilities.add("Flame Absorb");
@@ -193,6 +195,11 @@ public class App
         psychicType.setEffectiveness("Flying, Bug, Fire, Ice");
         psychicType.setAbilities(RockAbilities);
 
+        PokemonType fairyType = new PokemonType();
+        psychicType.setName("fairy");
+        psychicType.setWeakness("Poison, Steel, Fire");
+        psychicType.setEffectiveness("Fighting, Dragon, Dark");
+        psychicType.setAbilities(FairyAbilities);
         // PokemonType ghostType = new PokemonType();
         // psychicType.setName("ghost");
         // psychicType.setWeakness("Normal, Dark");
@@ -217,12 +224,7 @@ public class App
         // psychicType.setEffectiveness("Rock, Ice, Fairy, Not Steel Even Though It's weak to Steel"); //change this
         // psychicType.setAbilities(SteelAbilities);
 
-        PokemonType fairyType = new PokemonType();
-        psychicType.setName("fairy");
-        psychicType.setWeakness("Poison, Steel, Fire");
-        psychicType.setEffectiveness("Fighting, Dragon, Dark");
-        psychicType.setAbilities(FairyAbilities);
-
+//      - Pokemon -
         Pokemon Pidgey = new Pokemon("Pidgey", "small and chubby", "brown", "flying & normal", 40, 45, 40, 35, 35, 56, "Keen Eye"); 
         Pidgey.types.add(normalType);
         Pidgey.types.add(flyingType);
