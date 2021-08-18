@@ -42,5 +42,10 @@ public class PokemonType {
     {
         this.abilities = abilities;
     }
+    public void displayPokemonType()
+    {
+        System.out.println(this.getName());
+    }
 }
 
+//System.out.println(Arrays.toString(list.toArray()));
