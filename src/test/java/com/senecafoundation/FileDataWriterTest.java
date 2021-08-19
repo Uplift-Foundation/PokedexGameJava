@@ -24,16 +24,17 @@ public class FileDataWriterTest {
     void testUpdate(){
         this.testBear.getIDataWriter().Create(testBear);
         this.testBear.setColor("Black");
-        Bear updatedBear = this.testBear.getIDataWriter().Update(testBear);
+        Bear updatedBear = (Bear) this.testBear.getIDataWriter().Update(testBear);
         //asserts
     }
     @Test
     void testRead(){
         this.testBear.getIDataWriter().Create(testBear);
         this.testBear.setShape("fluffy");
-        Bear readbBear = this.testBear.getIDataWriter().Read(testBear);
+        Bear readbBear = (Bear) this.testBear.getIDataWriter().Read(testBear);
+        
     }
-    
+
     @Test 
     void testDelete(){
         this.testBear.getIDataWriter().Create(testBear);
