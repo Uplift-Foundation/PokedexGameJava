@@ -1,4 +1,4 @@
-package objectmodel;
+package com.senecafoundation;
 
 import java.io.FileReader;
 import java.io.FileWriter;

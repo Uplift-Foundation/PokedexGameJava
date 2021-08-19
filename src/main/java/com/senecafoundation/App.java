@@ -6,14 +6,17 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
+import com.senecafoundation.DataHandler.FileDataWriter;
+
 //import javax.swing.RowFilter.ComparisonType;
 
 public class App 
 {
     public static void main( String[] args )
     {
+        FileDataWriter dataWriter = new FileDataWriter("./");
         List<PokedexItem> PokedexContents = new ArrayList<PokedexItem>();
-        PokedexContents.add(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto,", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric, ice, and rock"));
+        PokedexContents.add(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto,", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric, ice, and rock", dataWriter));
         PokedexContents.add(new PokemonWithSecondAbility("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","Ability2","grass, ice, bug, steel and fairy","water, ground, and rock" ));
         PokedexContents.add(new PokemonWithSecondAbility("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Ability2","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
         PokedexContents.add(new PokemonWithSecondAbility("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo","Ability2","None","Fighting and Ghost" ));

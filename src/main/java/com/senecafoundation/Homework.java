@@ -1,5 +1,7 @@
 package com.senecafoundation;
 
+import com.senecafoundation.DataHandler.IDataWriter;
+
 public class Homework extends PokedexItem {
 
     private String shape;
@@ -10,8 +12,8 @@ public class Homework extends PokedexItem {
 
     private PokemonWithSecondAbility myCharmander;
 
-    public Homework(String color, String shape, Integer words, Boolean foldAction, PokemonWithSecondAbility charmanderFromUser) {
-        super (color);
+    public Homework(String color, String shape, Integer words, Boolean foldAction, PokemonWithSecondAbility charmanderFromUser, IDataWriter dataHolder) {
+        super (color, dataHolder);
         this.shape = shape; 
         this.words = words; 
         this.foldAction = foldAction; 

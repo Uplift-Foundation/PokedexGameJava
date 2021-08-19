@@ -1,5 +1,7 @@
 package com.senecafoundation;
 
+import com.senecafoundation.DataHandler.IDataWriter;
+
 public class Bear extends PokedexItem {
 
     //states
@@ -8,8 +10,8 @@ public class Bear extends PokedexItem {
     private Boolean scary;
 
 
-    public Bear(String color, String shape, Boolean scary, Integer weight) {
-        super(color);
+    public Bear(String color, String shape, Boolean scary, Integer weight, IDataWriter dataHolder) {
+        super(color, dataHolder);
         this.shape = shape;
         this.weight = weight;
         this.scary = scary;
