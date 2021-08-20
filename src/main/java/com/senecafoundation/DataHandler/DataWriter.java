@@ -1,5 +1,7 @@
 package com.senecafoundation.DataHandler;
 
+import java.io.FileNotFoundException;
+
 import com.senecafoundation.PokedexItem;
 
 public abstract class DataWriter implements IDataWriter {
@@ -13,7 +15,7 @@ public abstract class DataWriter implements IDataWriter {
 	public abstract PokedexItem Update(PokedexItem itemToUpdate);
 
 	@Override
-	public abstract Boolean Delete(String ID);
+	public abstract Boolean Delete(String ID) throws Exception;
 
 	public String GetTypeOfProvider() {
 		return this.toString();

@@ -42,8 +42,12 @@ public class FileDataWriterTest {
     }
 
     @Test 
-    void testDelete(){
+    void testDelete() throws Exception{
         this.testBear.getIDataWriter().Create(testBear);
+        Bear readBear = (Bear) this.testBear.getIDataWriter().Read(testBear.getID());
+        assertEquals(testBear.getID(), readBear.getID());
+        this.testBear.getIDataWriter().Delete(testBear.getID());
+        readBear = (Bear) this.testBear.getIDataWriter().Read(testBear.getID());
     }
 
 

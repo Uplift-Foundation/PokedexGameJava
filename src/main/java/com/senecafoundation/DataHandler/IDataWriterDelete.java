@@ -1,5 +1,5 @@
 package com.senecafoundation.DataHandler;
 
 public interface IDataWriterDelete {
-    public Boolean Delete(String ID);
+    public Boolean Delete(String ID) throws Exception;
 }

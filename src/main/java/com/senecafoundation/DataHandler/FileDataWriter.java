@@ -2,6 +2,7 @@ package com.senecafoundation.DataHandler;
 import com.senecafoundation.Bear;
 import com.senecafoundation.PokedexItem;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -87,10 +88,40 @@ public class FileDataWriter extends DataWriter {
     }
 
     @Override
-    public Boolean Delete(String ID) {
-        //throws {
-        // Delete an item from a file
-        return null;
+    public Boolean Delete(String ID) throws Exception {
+        //now read the file line by line...
+        ArrayList<String> lines = new ArrayList<String>();
+        if (this.file != null) {
+            this.scanner = new Scanner(this.file);
+            while (this.scanner != null && this.scanner.hasNextLine()) {
+                String line = this.scanner.nextLine();
+                if(!line.contains(ID)) { 
+                    lines.add(line);
+                }
+            }
+        }
+
+        BufferedWriter bw;
+        try {
+            bw = new BufferedWriter(new FileWriter(this.fileLocation, true));
+            lines.forEach(lineToWrite ->
+                { 
+                    try {
+                        bw.write(lineToWrite);
+                        bw.newLine();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            );
+            bw.flush();
+            bw.close();
+            return true;
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+        // We throw a custom error here if we can't find anything with that ID
+        throw new Exception("Item not found with that ID");
     }
 
 }
