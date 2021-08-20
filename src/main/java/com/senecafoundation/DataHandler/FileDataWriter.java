@@ -41,7 +41,7 @@ public class FileDataWriter extends DataWriter {
             this.Read(item.getID());
         }
         catch (Exception e) { // We catch the custom error here (from line 60)
-            if (e.getMessage() == "Item not found with that ID") {
+            if (e.getMessage() == "Item not found with that ID" || e instanceof FileNotFoundException) {
                 // Was not found in the file - add it
                 BufferedWriter bw;
                 try {
@@ -69,7 +69,8 @@ public class FileDataWriter extends DataWriter {
                 if(line.contains(ID)) { 
                     String[] props = line.split(",");
                     if (props[0].equals("Bear")) {
-                        Bear bearToReturn = new Bear(props[1], props[2], Boolean.parseBoolean(props[3]), Integer.parseInt(props[4]), this);
+                        Bear bearToReturn = new Bear(props[2], props[3], Boolean.parseBoolean(props[4]), Integer.parseInt(props[5]), this);
+                        bearToReturn.setID(props[1]);
                         return bearToReturn;
                     }
                 }

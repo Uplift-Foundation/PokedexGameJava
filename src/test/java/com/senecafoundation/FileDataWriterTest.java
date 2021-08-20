@@ -1,5 +1,7 @@
 package com.senecafoundation;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.senecafoundation.DataHandler.FileDataWriter;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -36,6 +38,7 @@ public class FileDataWriterTest {
 
         }
         Bear readbBear = (Bear) this.testBear.getIDataWriter().Read(testBear.getID());
+        assertEquals(testBear.getID(), readbBear.getID());
     }
 
     @Test 
