@@ -64,10 +64,8 @@ public class FileDataWriter extends DataWriter {
         //now read the file line by line...
         if (this.file != null) {
             this.scanner = new Scanner(this.file);
-            int lineNum = 0;
             while (this.scanner != null && this.scanner.hasNextLine()) {
                 String line = this.scanner.nextLine();
-                lineNum++;
                 if(line.contains(ID)) { 
                     String[] props = line.split(",");
                     if (props[0].equals("Bear")) {
