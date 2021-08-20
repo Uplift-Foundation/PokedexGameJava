@@ -1,19 +1,28 @@
 package com.senecafoundation;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import com.senecafoundation.DataHandler.FileDataWriter;
+
 import org.junit.jupiter.api.BeforeEach;
 
 public class BearTest {
 
     private Bear systemUnderTest;
+    @Mock private transient FileDataWriter fileDataWriter;
+
+
     @BeforeEach
     void assignBear() {
         this.systemUnderTest = new Bear(
             "brown", 
             "circle", 
             true, 
-            200
+            200,
+            fileDataWriter
         );
     }
 

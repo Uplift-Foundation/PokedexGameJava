@@ -1,12 +1,19 @@
 package com.senecafoundation;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import com.senecafoundation.DataHandler.FileDataWriter;
+
 import org.junit.jupiter.api.BeforeEach;
 
 public class PlantTest {
 
     private Plant systemUnderTest;
+    @Mock private transient FileDataWriter fileDataWriter;
+
 
     @BeforeEach
     void assignPlant(){
@@ -16,8 +23,9 @@ public class PlantTest {
             true,
             true,
             true,
-            true
-            );
+            true,
+            fileDataWriter
+        );
     }
 
     @Test 

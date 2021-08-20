@@ -11,7 +11,7 @@ public class FileDataWriterTest {
 
     @BeforeEach
     void assignPlant(){
-        this.systemUnderTest = new FileDataWriter('./');
+        this.systemUnderTest = new FileDataWriter("./Objects.csv");
         this.testBear = new Bear("White", "Fluffy", false, 500, this.systemUnderTest);
     }
 
@@ -30,9 +30,7 @@ public class FileDataWriterTest {
     @Test
     void testRead(){
         this.testBear.getIDataWriter().Create(testBear);
-        this.testBear.setShape("fluffy");
-        Bear readbBear = (Bear) this.testBear.getIDataWriter().Read(testBear);
-        
+        Bear readbBear = (Bear) this.testBear.getIDataWriter().Read(testBear.getID());
     }
 
     @Test 
