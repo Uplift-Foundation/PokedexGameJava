@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2021-08-20T20:30:46.336Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1 Safari/605.1.15" etag="rp_OTvQsziq728kyXYxn" version="14.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-20T20:36:34.246Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1 Safari/605.1.15" etag="7m_I2_XeC1K9fQ3BrRtq" version="14.9.6" type="github">
   <diagram id="O69VrWLyUkfvJmlE3TCs" name="Page-1">
-    <mxGraphModel dx="632" dy="733" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="629" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="yJ2jvNVVwV338_-RRMub-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.995;entryY=0.122;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="aK0FY7as-frvQtqpI070-10" target="aK0FY7as-frvQtqpI070-59">
+        <mxCell id="yJ2jvNVVwV338_-RRMub-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.995;entryY=0.122;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="aK0FY7as-frvQtqpI070-10" target="aK0FY7as-frvQtqpI070-59" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="aK0FY7as-frvQtqpI070-10" value="ActualPokemon" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
@@ -13,7 +13,7 @@
         <mxCell id="aK0FY7as-frvQtqpI070-11" value="- ability1: String " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="aK0FY7as-frvQtqpI070-10" vertex="1">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="yJ2jvNVVwV338_-RRMub-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aK0FY7as-frvQtqpI070-20" target="aK0FY7as-frvQtqpI070-11">
+        <mxCell id="yJ2jvNVVwV338_-RRMub-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="aK0FY7as-frvQtqpI070-20" target="aK0FY7as-frvQtqpI070-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="aK0FY7as-frvQtqpI070-20" value="Pokemon" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
@@ -22,7 +22,7 @@
         <mxCell id="aK0FY7as-frvQtqpI070-16" value="- name: String&#xa;- avgSize: String&#xa;- pokemonType: String &#xa;- region: String &#xa;- hp: Integer &#xa;- attack: Integer&#xa;- defense: Integer &#xa;- spDefense: Integer &#xa;- spAttack: Integer &#xa;- speed: Integer &#xa;- typeEffectiveness: String&#xa;- typeWeakeness: String " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="aK0FY7as-frvQtqpI070-20" vertex="1">
           <mxGeometry y="26" width="160" height="184" as="geometry" />
         </mxCell>
-        <mxCell id="yJ2jvNVVwV338_-RRMub-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aK0FY7as-frvQtqpI070-25" target="aK0FY7as-frvQtqpI070-59">
+        <mxCell id="yJ2jvNVVwV338_-RRMub-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="aK0FY7as-frvQtqpI070-25" target="aK0FY7as-frvQtqpI070-59" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="aK0FY7as-frvQtqpI070-25" value="Plant&#xa;&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=none;" parent="1" vertex="1">
@@ -37,7 +37,7 @@
         <mxCell id="aK0FY7as-frvQtqpI070-28" value="Photosynthesis(Boolean, Boolean): String&#xa;Grows(String,String, Boolean, Boolean): String&#xa;hasDied(String,String): String&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="aK0FY7as-frvQtqpI070-25" vertex="1">
           <mxGeometry y="128" width="260" height="62" as="geometry" />
         </mxCell>
-        <mxCell id="yJ2jvNVVwV338_-RRMub-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aK0FY7as-frvQtqpI070-33" target="aK0FY7as-frvQtqpI070-59">
+        <mxCell id="yJ2jvNVVwV338_-RRMub-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="aK0FY7as-frvQtqpI070-33" target="aK0FY7as-frvQtqpI070-59" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1060" y="300" />
@@ -62,7 +62,7 @@
         <mxCell id="aK0FY7as-frvQtqpI070-43" value="+ color: String &#xa;+ shape: String&#xa;# screenIsLitUp: Boolean &#xa;# pokemonsAndStuff: List &#xa;# tempPokemon: List " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="aK0FY7as-frvQtqpI070-42" vertex="1">
           <mxGeometry y="26" width="150" height="84" as="geometry" />
         </mxCell>
-        <mxCell id="yJ2jvNVVwV338_-RRMub-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="aK0FY7as-frvQtqpI070-54" target="aK0FY7as-frvQtqpI070-59">
+        <mxCell id="yJ2jvNVVwV338_-RRMub-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="aK0FY7as-frvQtqpI070-54" target="aK0FY7as-frvQtqpI070-59" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="aK0FY7as-frvQtqpI070-54" value="Bear" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;sketch=0;whiteSpace=wrap;" parent="1" vertex="1">
@@ -83,7 +83,7 @@
         <mxCell id="aK0FY7as-frvQtqpI070-60" value="# color: String &#xa;- datawriter: IDataWriter&#xa;- ID: String ID " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="aK0FY7as-frvQtqpI070-59" vertex="1">
           <mxGeometry y="26" width="140" height="64" as="geometry" />
         </mxCell>
-        <mxCell id="yJ2jvNVVwV338_-RRMub-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aK0FY7as-frvQtqpI070-71" target="aK0FY7as-frvQtqpI070-43">
+        <mxCell id="yJ2jvNVVwV338_-RRMub-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="aK0FY7as-frvQtqpI070-71" target="aK0FY7as-frvQtqpI070-43" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="aK0FY7as-frvQtqpI070-71" value="PokemonWithSecondAbility" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;sketch=0;html=0;" parent="1" vertex="1">
@@ -164,7 +164,7 @@
         <mxCell id="pPGJKXOKactijuvXDBP8-30" value="+ Create(PokedexItem): void&#xa;+ Read(String ID): PokedexItem&#xa;+Update(PokedexItem) : PokedexItem&#xa;+Delete(String ID) : Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pPGJKXOKactijuvXDBP8-27" vertex="1">
           <mxGeometry y="60" width="220" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="yJ2jvNVVwV338_-RRMub-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.036;entryY=0.361;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="aK0FY7as-frvQtqpI070-63" target="aK0FY7as-frvQtqpI070-43">
+        <mxCell id="yJ2jvNVVwV338_-RRMub-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.036;entryY=0.361;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="aK0FY7as-frvQtqpI070-63" target="aK0FY7as-frvQtqpI070-43" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="aK0FY7as-frvQtqpI070-63" value="ChallengerPokedex" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;sketch=0;html=0;" parent="1" vertex="1">
