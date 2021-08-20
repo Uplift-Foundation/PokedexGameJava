@@ -1,14 +1,20 @@
 package com.senecafoundation.DataHandler;
-
+import com.senecafoundation.Bear;
 import com.senecafoundation.PokedexItem;
+
+import java.util.Scanner;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class FileDataWriter extends DataWriter {
 
     private String fileLocation;
+    Scanner file;
 
     public FileDataWriter(String fileLocationFromUser) {
-        super();
         this.fileLocation = fileLocationFromUser;
+        this.file = new Scanner(fileLocationFromUser);
     }
 
     public String getFileLocation() {
@@ -19,40 +25,48 @@ public class FileDataWriter extends DataWriter {
         this.fileLocation = fileLocation;
     }
 
-
-
     @Override
     public void Create(PokedexItem item) {
-        // JSON psuedocode
-        // Open file location
-        // load proper json array from file (bear, plant, etc)
-        // deseralize json array to java array of objects
-        // add java object to java array of objects
-        // reseralize java array of objects to json array
-        // write json array back to file in correct location
-        //
-        // CSV pseudocode
-        // Open file location
-        // Serialize java object properties to CSV
-        // Write CSV row to file
+        try {
+            // See if it exists in the file already
+            this.Read(item.getID());
+        }
+        catch (Exception e) { // We catch the custom error here (from line 60)
+            if (e.getMessage() == "Item not found with that ID") {
+                // Was not found in the file - add it
+                BufferedWriter bw;
+                try {
+                    bw = new BufferedWriter(new FileWriter(this.fileLocation, true));
+                    bw.write(item.toString());
+                    bw.newLine();
+                    bw.flush();
+                    bw.close();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        }
     }
 
 
+
 	@Override
-    public PokedexItem Read(String ID) {
-        // JSON psuedocode
-        // Open file location
-        // load proper json array from file (bear, plant, etc)
-        // deseralize json array to java array of objects
-        // search java array of objects to find correct object with correct id
-        // return that object
-        //
-        // CSV pseudocode
-        // Open file location
-        // Iterate through rows in file to find row with matching ID
-        // Load text from that row into java object
-        // return that object
-        return null;
+    public PokedexItem Read(String ID) throws Exception {
+        //now read the file line by line...
+        int lineNum = 0;
+        while (this.file.hasNextLine()) {
+            String line = this.file.nextLine();
+            lineNum++;
+            if(line.contains(ID)) { 
+                String[] props = line.split(",");
+                if (props[0] == "Bear") {
+                    Bear bearToReturn = new Bear(props[1], props[2], Boolean.parseBoolean(props[3]), Integer.parseInt(props[4]), this);
+                    return bearToReturn;
+                }
+            }
+        }
+        // We throw a custom error here if we can't find anything with that ID
+        throw new Exception("Item not found with that ID");
     }
 
     @Override
@@ -63,6 +77,7 @@ public class FileDataWriter extends DataWriter {
 
     @Override
     public Boolean Delete(String ID) {
+        //throws {
         // Delete an item from a file
         return null;
     }

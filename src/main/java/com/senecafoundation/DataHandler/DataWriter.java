@@ -7,7 +7,7 @@ public abstract class DataWriter implements IDataWriter {
 	public abstract void Create(PokedexItem item);
 	
 	@Override
-	public abstract PokedexItem Read(String ID);
+	public abstract PokedexItem Read(String ID) throws Exception;
 
 	@Override
 	public abstract PokedexItem Update(PokedexItem itemToUpdate);

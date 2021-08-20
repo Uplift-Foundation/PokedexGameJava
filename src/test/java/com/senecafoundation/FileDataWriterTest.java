@@ -28,7 +28,7 @@ public class FileDataWriterTest {
         //asserts
     }
     @Test
-    void testRead(){
+    void testRead() throws Exception {
         this.testBear.getIDataWriter().Create(testBear);
         Bear readbBear = (Bear) this.testBear.getIDataWriter().Read(testBear.getID());
     }
@@ -37,7 +37,7 @@ public class FileDataWriterTest {
     void testDelete(){
         this.testBear.getIDataWriter().Create(testBear);
     }
-    
+
 
 
 }

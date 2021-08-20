@@ -14,10 +14,18 @@ public abstract class PokedexItem {
     public PokedexItem(String color, IDataWriter dataHolder)
     {
         this.setColor(color);
-        this.ID = UUID.randomUUID().toString();
+        this.setID(UUID.randomUUID().toString());
     }
 
-    public String getColor() {
+    public String getID() {
+		return ID;
+	}
+
+	public void setID(String iD) {
+		this.ID = iD;
+	}
+
+	public String getColor() {
         return color;
     }
 
@@ -27,5 +35,10 @@ public abstract class PokedexItem {
 
     public IDataWriter getIDataWriter() {
         return dataWriter;
+    }
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + "," + this.getID() + "," + this.getColor();
     }
 }
