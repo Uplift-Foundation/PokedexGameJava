@@ -78,4 +78,9 @@ public class Plant extends PokedexItem {  //add in PokedexItem as a parent to th
         return false; 
     }
 
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + "," + this.getID() + "," + this.getColor() + "," + this.getSmell() + "," + this.getHasLeaves().toString() + "," + this.getHasRoots().toString() + "," + this.getCollectsSunLight().toString() + "," + this.getMakesGlucose().toString();
+    }
+
 }

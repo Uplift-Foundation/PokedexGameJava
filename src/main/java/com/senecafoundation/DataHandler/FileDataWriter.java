@@ -83,8 +83,13 @@ public class FileDataWriter extends DataWriter {
 
     @Override
     public PokedexItem Update(PokedexItem itemToUpdate) {
-        // Update an item in a file
-        return null;
+        try {
+            this.Delete(itemToUpdate.getID());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        this.Create(itemToUpdate);
+        return itemToUpdate;
     }
 
     @Override
@@ -103,7 +108,7 @@ public class FileDataWriter extends DataWriter {
 
         BufferedWriter bw;
         try {
-            bw = new BufferedWriter(new FileWriter(this.fileLocation, true));
+            bw = new BufferedWriter(new FileWriter(this.fileLocation));
             lines.forEach(lineToWrite ->
                 { 
                     try {

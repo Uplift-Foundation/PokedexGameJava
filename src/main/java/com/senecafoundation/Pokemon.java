@@ -144,4 +144,9 @@ public class Pokemon extends ActualPokemon{
     {
         this.typeWeakeness = typeWeakness;
     }
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + "," + this.getID() + "," + this.getColor() + "," + this.getAvgSize() + "," + this.getPokemonType() + "," + this.getRegion() + "," + this.getHp().toString() + "," + this.getAttack().toString() + "," + this.getDefense().toString() + "," + this.getSpDefense().toString() + "," + this.getSpAttack().toString() + "," + this.getSpeed().toString() + "," + this.getAbility1() + "," + this.getTypeEffectiveness() + "," + this.getTypeWeakness();
+    }
 }

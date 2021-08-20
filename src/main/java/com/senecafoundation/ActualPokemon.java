@@ -19,4 +19,9 @@ public class ActualPokemon extends PokedexItem {
     {
         this.ability1 = ability1; 
     }
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + "," + this.getID() + "," + this.getColor() + "," + this.getAbility1();
+    }
 }

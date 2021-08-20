@@ -9,4 +9,12 @@ public class PokedexShapedItem extends PokedexItem {
         super(color, dataHolder);
         this.shape = shape;        
     }   
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + "," + this.getID() + "," + this.getColor(); 
+    }
+
+    //add getter and setter for PokedexShapedItem
+    //Or Refactor 
 }

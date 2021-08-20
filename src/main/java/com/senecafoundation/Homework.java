@@ -49,4 +49,9 @@ public class Homework extends PokedexItem {
     public String getAnExcuse() {
         return "My " + myCharmander.getName() + " ate it";
     }
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + "," + this.getID() + "," + this.getColor() + "," + this.getShape() + "," + this.getWords().toString() + "," + this.getFoldAction().toString();
+    }
 }

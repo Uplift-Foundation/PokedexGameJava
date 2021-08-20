@@ -1,6 +1,8 @@
 package com.senecafoundation;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.senecafoundation.DataHandler.FileDataWriter;
 
@@ -27,8 +29,9 @@ public class FileDataWriterTest {
         this.testBear.getIDataWriter().Create(testBear);
         this.testBear.setColor("Black");
         Bear updatedBear = (Bear) this.testBear.getIDataWriter().Update(testBear);
-        //asserts
+        assertEquals(updatedBear.getColor(), "Black");
     }
+
     @Test
     void testRead() throws Exception {
         try {
@@ -47,11 +50,9 @@ public class FileDataWriterTest {
         Bear readBear = (Bear) this.testBear.getIDataWriter().Read(testBear.getID());
         assertEquals(testBear.getID(), readBear.getID());
         this.testBear.getIDataWriter().Delete(testBear.getID());
-        readBear = (Bear) this.testBear.getIDataWriter().Read(testBear.getID());
+        Exception exception = assertThrows(Exception.class, () -> {
+             this.testBear.getIDataWriter().Read(testBear.getID()); 
+        });
+        assertEquals("Item not found with that ID", exception.getMessage());
     }
-
-
-
 }
-//read and delete methods 
-//asserts
