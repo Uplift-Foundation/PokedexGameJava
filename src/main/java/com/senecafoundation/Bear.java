@@ -54,4 +54,9 @@ public class Bear extends PokedexItem {
         }
         return "He will NOT roll";
     }
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + "," + this.getID() + "," + this.getColor() + "," + this.getShape() + "," + this.getScary().toString() + "," + this.getWeight().toString();
+    }
 }
