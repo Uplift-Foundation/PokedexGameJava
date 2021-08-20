@@ -11,8 +11,9 @@ public abstract class PokedexItem {
     private IDataWriter dataWriter; 
     //  public String Color { get => color; set => color = value; }
     
-    public PokedexItem(String color, IDataWriter dataHolder)
+    public PokedexItem(String color, IDataWriter dataHolder) 
     {
+        this.dataWriter = dataHolder;
         this.setColor(color);
         this.setID(UUID.randomUUID().toString());
     }

@@ -15,7 +15,6 @@ public class Bear extends PokedexItem {
         this.shape = shape;
         this.weight = weight;
         this.scary = scary;
-    
     } 
 
 
