@@ -4,17 +4,26 @@ import com.senecafoundation.PokedexItem;
 
 import java.util.Scanner;
 import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class FileDataWriter extends DataWriter {
 
     private String fileLocation;
-    Scanner file;
+    private File file;
+    Scanner scanner;
 
     public FileDataWriter(String fileLocationFromUser) {
         this.fileLocation = fileLocationFromUser;
-        this.file = new Scanner(fileLocationFromUser);
+        try {
+            this.file = new File(fileLocationFromUser);
+            this.scanner = new Scanner(this.file);
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 
     public String getFileLocation() {
@@ -53,15 +62,18 @@ public class FileDataWriter extends DataWriter {
 	@Override
     public PokedexItem Read(String ID) throws Exception {
         //now read the file line by line...
-        int lineNum = 0;
-        while (this.file.hasNextLine()) {
-            String line = this.file.nextLine();
-            lineNum++;
-            if(line.contains(ID)) { 
-                String[] props = line.split(",");
-                if (props[0] == "Bear") {
-                    Bear bearToReturn = new Bear(props[1], props[2], Boolean.parseBoolean(props[3]), Integer.parseInt(props[4]), this);
-                    return bearToReturn;
+        if (this.file != null) {
+            this.scanner = new Scanner(this.file);
+            int lineNum = 0;
+            while (this.scanner != null && this.scanner.hasNextLine()) {
+                String line = this.scanner.nextLine();
+                lineNum++;
+                if(line.contains(ID)) { 
+                    String[] props = line.split(",");
+                    if (props[0].equals("Bear")) {
+                        Bear bearToReturn = new Bear(props[1], props[2], Boolean.parseBoolean(props[3]), Integer.parseInt(props[4]), this);
+                        return bearToReturn;
+                    }
                 }
             }
         }

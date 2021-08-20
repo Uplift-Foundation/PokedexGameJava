@@ -13,6 +13,7 @@ public abstract class PokedexItem {
     
     public PokedexItem(String color, IDataWriter dataHolder)
     {
+        this.dataWriter = dataHolder;
         this.setColor(color);
         this.setID(UUID.randomUUID().toString());
     }
