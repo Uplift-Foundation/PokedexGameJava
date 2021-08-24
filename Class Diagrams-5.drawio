@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-08-21T23:08:17.647Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1 Safari/605.1.15" etag="UhucDXE_dSK1IDn1Mor1" version="14.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-24T17:36:07.362Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1 Safari/605.1.15" etag="ysEzCq9kJbrCAbamYMfN" version="14.9.8" type="github">
   <diagram id="O69VrWLyUkfvJmlE3TCs" name="Page-1">
-    <mxGraphModel dx="1228" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="648" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -45,7 +45,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="aK0FY7as-frvQtqpI070-33" value="Homework" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="760" y="280" width="200" height="130" as="geometry" />
+          <mxGeometry x="760" y="280" width="200" height="130" as="geometry">
+            <mxRectangle x="760" y="280" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="aK0FY7as-frvQtqpI070-34" value="- shape: String&#xa;- words: Integer &#xa;- foldAction: Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="aK0FY7as-frvQtqpI070-33" vertex="1">
           <mxGeometry y="30" width="200" height="50" as="geometry" />
@@ -66,7 +68,9 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="aK0FY7as-frvQtqpI070-54" value="Bear" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;sketch=0;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="760" y="130" width="210" height="130" as="geometry" />
+          <mxGeometry x="760" y="130" width="210" height="130" as="geometry">
+            <mxRectangle x="760" y="130" width="60" height="26" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="aK0FY7as-frvQtqpI070-55" value="- shape: String&#xa;- weight: Integer &#xa;- scary: Boolean " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="aK0FY7as-frvQtqpI070-54" vertex="1">
           <mxGeometry y="26" width="210" height="54" as="geometry" />
@@ -104,7 +108,7 @@
         <mxCell id="pPGJKXOKactijuvXDBP8-8" value="+ Create(PokedexItem): void&#xa;+ Read(String ID): PokedexItem&#xa;+Update(PokedexItem) : PokedexItem&#xa;+Delete(String ID) : Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pPGJKXOKactijuvXDBP8-5" vertex="1">
           <mxGeometry y="60" width="220" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="1t4iMB-UIaJ7H7SFuxBn-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.085;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="pPGJKXOKactijuvXDBP8-10" target="pPGJKXOKactijuvXDBP8-27">
+        <mxCell id="1t4iMB-UIaJ7H7SFuxBn-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.085;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="pPGJKXOKactijuvXDBP8-10" target="pPGJKXOKactijuvXDBP8-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pPGJKXOKactijuvXDBP8-10" value="IDataWriterCreate" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
@@ -119,7 +123,7 @@
         <mxCell id="pPGJKXOKactijuvXDBP8-13" value="+ Create(PokedexItem): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pPGJKXOKactijuvXDBP8-10" vertex="1">
           <mxGeometry y="60" width="180" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="1t4iMB-UIaJ7H7SFuxBn-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pPGJKXOKactijuvXDBP8-14" target="pPGJKXOKactijuvXDBP8-27">
+        <mxCell id="1t4iMB-UIaJ7H7SFuxBn-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pPGJKXOKactijuvXDBP8-14" target="pPGJKXOKactijuvXDBP8-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pPGJKXOKactijuvXDBP8-14" value="IDataWriterRead" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
@@ -134,7 +138,7 @@
         <mxCell id="pPGJKXOKactijuvXDBP8-17" value="+ Read(String ID): PokedexItem" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pPGJKXOKactijuvXDBP8-14" vertex="1">
           <mxGeometry y="60" width="190" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="1t4iMB-UIaJ7H7SFuxBn-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pPGJKXOKactijuvXDBP8-18" target="pPGJKXOKactijuvXDBP8-27">
+        <mxCell id="1t4iMB-UIaJ7H7SFuxBn-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pPGJKXOKactijuvXDBP8-18" target="pPGJKXOKactijuvXDBP8-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pPGJKXOKactijuvXDBP8-18" value="IDataWriterUpdate" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
@@ -149,7 +153,7 @@
         <mxCell id="pPGJKXOKactijuvXDBP8-21" value="+Update(PokedexItem) : PokedexItem" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pPGJKXOKactijuvXDBP8-18" vertex="1">
           <mxGeometry y="60" width="230" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="1t4iMB-UIaJ7H7SFuxBn-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pPGJKXOKactijuvXDBP8-23" target="pPGJKXOKactijuvXDBP8-27">
+        <mxCell id="1t4iMB-UIaJ7H7SFuxBn-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pPGJKXOKactijuvXDBP8-23" target="pPGJKXOKactijuvXDBP8-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pPGJKXOKactijuvXDBP8-23" value="IDataWriterDelete" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
