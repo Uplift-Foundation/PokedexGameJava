@@ -1,8 +1,12 @@
 package com.senecafoundation.DataHandler;
 import com.senecafoundation.Bear;
+import com.senecafoundation.Homework;
+import com.senecafoundation.Plant;
 import com.senecafoundation.PokedexItem;
+import com.senecafoundation.PokemonWithSecondAbility;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -14,7 +18,7 @@ public class FileDataWriter extends DataWriter {
 
     private String fileLocation;
     private File file;
-    Scanner scanner;
+    private Scanner scanner;
 
     public FileDataWriter(String fileLocationFromUser) {
         this.fileLocation = fileLocationFromUser;
@@ -81,6 +85,8 @@ public class FileDataWriter extends DataWriter {
         throw new Exception("Item not found with that ID");
     }
 
+    
+
     @Override
     public PokedexItem Update(PokedexItem itemToUpdate) {
         try {
@@ -128,5 +134,106 @@ public class FileDataWriter extends DataWriter {
         // We throw a custom error here if we can't find anything with that ID
         throw new Exception("Item not found with that ID");
     }
+
+    @Override
+    public List<PokedexItem> ReadAll() {
+        List<PokedexItem> pokedexItemstoReturn = new ArrayList<PokedexItem>();
+        try {
+            this.file = new File(fileLocation);
+            this.scanner = new Scanner(this.file);
+        } 
+        catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        while (this.scanner != null && this.scanner.hasNextLine()) {
+
+            String line = this.scanner.nextLine();
+
+            String[] props = line.split(",");
+
+            if(props[0].equals("PokemonWithSecondAbility")) {
+                PokemonWithSecondAbility pokemonToAdd = new PokemonWithSecondAbility(
+                    props[2], 
+                    props[3], 
+                    props[4], 
+                    props[5], 
+                    props[6], 
+                    Integer.parseInt(props[7]), 
+                    Integer.parseInt(props[8]), 
+                    Integer.parseInt(props[9]), 
+                    Integer.parseInt(props[10]), 
+                    Integer.parseInt(props[11]), 
+                    Integer.parseInt(props[12]), 
+                    props[13], 
+                    props[14], 
+                    props[15], 
+                    props[16], 
+                    this
+                );
+                pokemonToAdd.setID(props[1]);       
+                pokedexItemstoReturn.add(pokemonToAdd);
+            }
+            else if (props[0].equals("Bear")) {
+                Bear bearToAdd = new Bear(
+                    props[2],
+                    props[3],
+                    Boolean.parseBoolean(props[4]),
+                    Integer.parseInt(props[5]),
+                    this
+                );
+                bearToAdd.setID(props[1]);
+                pokedexItemstoReturn.add(bearToAdd);
+            }
+            else if (props[0].equals("Plant")) {
+                Plant plantToAdd = new Plant (
+                    props [2],
+                    props [3],
+                    Boolean.parseBoolean(props[4]),
+                    Boolean.parseBoolean(props[5]),
+                    Boolean.parseBoolean(props[6]),
+                    Boolean.parseBoolean(props[7]),
+                    this
+                );
+                plantToAdd.setID(props[1]);
+                pokedexItemstoReturn.add(plantToAdd);
+            }
+            else if (props[0].equals("Homework")) {
+                Homework homeworkToAdd = new Homework (
+                    props [2],
+                    props [3], 
+                    Integer.parseInt(props[4]),
+                    Boolean.parseBoolean(props[5]),
+                    new PokemonWithSecondAbility(
+                        props[6], 
+                        props[7], 
+                        props[8], 
+                        props[9], 
+                        props[10], 
+                        Integer.parseInt(props[11]), 
+                        Integer.parseInt(props[12]), 
+                        Integer.parseInt(props[13]), 
+                        Integer.parseInt(props[14]), 
+                        Integer.parseInt(props[15]), 
+                        Integer.parseInt(props[16]), 
+                        props[17], 
+                        props[18], 
+                        props[19], 
+                        props[20], 
+                        this
+                    ),
+                    this
+                );
+                homeworkToAdd.setID(props[1]);
+                pokedexItemstoReturn.add(homeworkToAdd);
+                
+            }
+        }
+        return pokedexItemstoReturn;
+    }   
+    
+
+
+
 
 }
