@@ -16,7 +16,14 @@ public class App
     {
         FileDataWriter dataWriter = new FileDataWriter("./");
         List<PokedexItem> PokedexContents = new ArrayList<PokedexItem>();
-        PokedexContents.add(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto,", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric, ice, and rock", dataWriter));
+
+        //create/ or load csv file 
+        //csv file(s) should have values in them, or we have to manually update the list with said values (which is our list)
+        //update all our code to now accept the csv file 
+        //Maybe delete the lines including Plant Bear Homework if we need to update the list for comparing our pokemon with challenger
+        
+
+        //PokedexContents.add(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto,", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric, ice, and rock", dataWriter));
         // PokedexContents.add(new PokemonWithSecondAbility("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","Ability2","grass, ice, bug, steel and fairy","water, ground, and rock" ));
         // PokedexContents.add(new PokemonWithSecondAbility("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Ability2","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
         // PokedexContents.add(new PokemonWithSecondAbility("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo","Ability2","None","Fighting and Ghost" ));
@@ -57,6 +64,8 @@ public class App
         // ChallengerContents.add(new PokemonWithSecondAbility("Snorlax","large","white and blue","normal","Kanto",160,110,65,110,65,30,"Immunity","Ability2","None","fighting"));
         // ChallengerContents.add(new PokemonWithSecondAbility("Lunatone", "large", "tan", "rock & psychic", "Hoenn", 90, 55, 65, 85, 95, 70, "Levitate","Ability2", "flying, bug, fire, ice, fighting, & poison", "fighting, ground, steel, psychic, & dark"));
         // ChallengerContents.add(new PokemonWithSecondAbility("Snivy","small","green","grass","Unova",45,45,55,55,45,63,"Overgrow","Ability2","Ground,Rock, and Water","Bug,Fire,Flying,Ice, Poison"));
+        
+        
         
         Scanner userScanner = new Scanner(System.in);
         System.out.println("It looks like you've found an object! Will you pick it up? (Yes or No)");
