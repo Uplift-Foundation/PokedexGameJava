@@ -52,6 +52,6 @@ public class Homework extends PokedexItem {
 
     @Override
     public String toString() {
-        return this.getClass().getSimpleName() + "," + this.getID() + "," + this.getColor() + "," + this.getShape() + "," + this.getWords().toString() + "," + this.getFoldAction().toString();
+        return this.getClass().getSimpleName() + "," + this.getID() + "," + this.getColor() + "," + this.getShape() + "," + this.getWords().toString() + "," + this.getFoldAction().toString() + "," + this.myCharmander.toString();
     }
 }
