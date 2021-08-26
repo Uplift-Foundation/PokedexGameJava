@@ -1,6 +1,19 @@
-PokemonWithSecondAbility,2248ecdb-a85f-4aae-8e67-251b51dd8936,Pidgey,small and chubby,brown,flying & normal,Kanto & Johto,40,45,40,35,35,56,Keen Eye,null,bug and grass,eletcric ice and rock
-PokemonWithSecondAbility,70ff63e1-913f-4bbb-bcee-a98ac8a2ae7b,Ponyta,small,yellow,fire,Galar,50,85,55,65,65,90,Flash Fire,null,grass ice bug steel and fairy,water ground and rock
-PokemonWithSecondAbility,d958936a-5ce7-43b5-998e-4114bbaa3306,Glameow,small,grey,normal,Sinnoh,49,55,42,37,42,85,Own Tempo,null,None,Fighting and Ghost
-PokemonWithSecondAbility,986ce76f-f751-44af-ba8a-08ff4e35f63f,Rufflet,small,white & dark blue,flying & normal,Unova,70,83,50,50,37,60,Sheer Force,null, Bug and Grass ,Electric Ice and Rock
-Bear,78ac9931-e411-4120-9697-353518c7e9c0,White,Fluffy,false,500
-Bear,27bf9037-22d3-4f58-9ebc-e91d42317c15,Black,Fluffy,false,500
+PokemonWithSecondAbility,8625bac5-b4f9-4145-87da-af2e51c0e297,Pidgey,small and chubby,brown,flying & normal,Kanto & Johto,40,45,40,35,35,56,Keen Eye,null,bug and grass,eletcric ice and rock
+PokemonWithSecondAbility,7ad4fdd3-5fe7-4173-ad29-55657d638995,Ponyta,small,yellow,fire,Galar,50,85,55,65,65,90,Flash Fire,null,grass ice bug steel and fairy,water ground and rock
+PokemonWithSecondAbility,324cef0e-90ae-417d-a60c-b87118d35069,Glameow,small,grey,normal,Sinnoh,49,55,42,37,42,85,Own Tempo,null,None,Fighting and Ghost
+PokemonWithSecondAbility,bb871615-53d6-435d-bbc1-fd913a6be60d,Rufflet,small,white & dark blue,flying & normal,Unova,70,83,50,50,37,60,Sheer Force,null, Bug and Grass ,Electric Ice and Rock
+Bear,dee555fd-7d42-40d6-a42a-a1872fd96d42,White,Fluffy,false,500
+Bear,847569a5-8c20-427e-b2c7-2c495544e456,Black,Fluffy,false,500
+PokemonWithSecondAbility,6f885f35-00c5-4daf-8a66-e6218d680db7,Pidgey,small and chubby,brown,flying & normal,Kanto & Johto,40,45,40,35,35,56,Keen Eye,null,bug and grass,eletcric ice and rock
+PokemonWithSecondAbility,f91880bb-2845-4405-a6fc-b4a41ef247f2,Ponyta,small,yellow,fire,Galar,50,85,55,65,65,90,Flash Fire,null,grass ice bug steel and fairy,water ground and rock
+PokemonWithSecondAbility,b3dde1c0-6a2c-46f4-8437-93b51a8cc456,Glameow,small,grey,normal,Sinnoh,49,55,42,37,42,85,Own Tempo,null,None,Fighting and Ghost
+PokemonWithSecondAbility,c56844c1-9e10-4f49-a7ae-bfaa54708904,Rufflet,small,white & dark blue,flying & normal,Unova,70,83,50,50,37,60,Sheer Force,null, Bug and Grass ,Electric Ice and Rock
+PokemonWithSecondAbility,c36c6a1f-9fa2-4c39-9843-aaa5b90ea6e0,Onix,humongous,grey,rock & ground,Kanto,35,45,160,45,30,70,Sturdy,null,Fire Electric Poison Bug Rock Steel Flying,Water Grass Fighting
+PokemonWithSecondAbility,eada71de-e194-47f3-9deb-2a64f9586b84,Mantine,humongous,blue & white,water & flying,Alola,85,40,70,140,80,70,Swift Swim,null,Fire Ground Fighting Rock Bug Grass,Electric
+Plant,3ed6c9b3-0bf5-466a-b1bd-572a2346f259,green,fresh,true,true,true,true
+Bear,c39ecb6b-b15e-4a42-8a2a-9e99c04b5863,brown,circle,true,200
+Homework,edcbdcb7-f53e-4348-9d86-3bfe25fa0eca,white,circle,20,true,PokemonWithSecondAbility,ed5dca4b-67a1-4645-b782-562854b8ea4c,Mantine,humongous,blue & white,water & flying,Alola,85,40,70,140,80,70,Swift Swim,null,Fire Ground Fighting Rock Bug Grass,Electric
+PokemonWithSecondAbility,a59a3256-7bea-4d7e-b0ac-541a2dc3e4d6,Squritle,small,blue,water,Kanto,44,48,65,64,50,43,Torrent,null,ground, rock, & dragon,water grass & dragon
+PokemonWithSecondAbility,c33fa026-8338-4353-8317-95f89b9bf251,Arbok,large,purple,poison,Kanto,60,95,69,79,65,80,Intimidate,null,grass & fairy,poison ground, rock ghost & steel
+PokemonWithSecondAbility,2c7302d8-00b9-4b5d-bdad-bfe5ca8c44c8,Deerling,small,pink & white with yellow accents,normal & grass,Unova,60,60,50,50,40,74,Ability2,null,ground rock & water,rock ghost steel flying poison bug fire grass & dragon
+PokemonWithSecondAbility,ec93a5e2-f99d-4900-9034-71c6c6ba4b38,Diglett,small,brown,ground,Kanto,10,55,25,45,35,95,Sand Veil,null,poison rock steel fire & electric,flying bug & grass

@@ -14,8 +14,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        FileDataWriter dataWriter = new FileDataWriter("./");
-        List<PokedexItem> PokedexContents = new ArrayList<PokedexItem>();
+        FileDataWriter dataWriter = new FileDataWriter("./PokedexContents.csv");
+        List<PokedexItem> PokedexContents = dataWriter.ReadAll();
 
         //create/ or load csv file 
         //csv file(s) should have values in them, or we have to manually update the list with said values (which is our list)
