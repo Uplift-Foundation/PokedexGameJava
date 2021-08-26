@@ -57,7 +57,7 @@ public class PlantTest {
     @Test 
     void GrowsIsTrue(){
         assertEquals(
-            "This is not a plant... not sure what in tarnation it's doing here",
+            "This is a plant... not sure what in tarnation it's doing here",
             systemUnderTest.Grows()
         );
     }
