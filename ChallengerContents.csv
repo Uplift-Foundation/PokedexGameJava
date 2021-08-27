@@ -1,52 +1,13 @@
-PokemonWithSecondAbility,12c4ec72-fa4e-4b08-900f-c7f67645f68d,Drowzee,small,yellow & brown,psychic,Kanto,60,48,45,90,43,42,Insomnia,null,fighting & poison,steel psychic & dark
-PokemonWithSecondAbility,dcc60bb6-fd2a-45cd-a413-e0600b487455,Eevee,small,brown,normal,Kanto,55,55,50,65,45,55,Adaptability,null,none,rock ghost & steel
-PokemonWithSecondAbility,0ae541ed-d7cf-43de-902a-18468719dd08,Ekans,small,purple & yellow,poison,Kanto,35,60,44,54,40,55,Shed Skin,null,grass & fairy,poison ground rock steel & ghost
-PokemonWithSecondAbility,1d61c9e0-16c8-4f8d-9bcf-d4ef522642f4,Fearow,large,brown,normal & flying,Kanto,65,90,65,61,61,100,Keen Eye,null,fighting bug & grass,rock steel & electric
-PokemonWithSecondAbility,f751b736-63e0-438f-a831-adbadc57c2b5,Tepig,small,orange and red,fire,Unova,65,63,45,45,45,45,Blaze,null,Grass Steel Bug and Ice,Ground Rock and Water
-PokemonWithSecondAbility,0e261ca5-b3eb-4e06-8a97-4728bb3a475a,Toldeen,small,white & orange,water,Kanto,45,67,60,50,35,63,Swift Swim,null,ground rock & fire,water grass & dragon
-PokemonWithSecondAbility,799411e2-bd20-4814-980e-42a189c6b7db,Illumise,small,blue, purple, & black,bug,Hoenn,65,47,75,85,73,85,Tinted Lense,null,grass psychic & dark,fighting flying poison ghost steel fire & fairy
-PokemonWithSecondAbility,72f3e642-7996-419f-87cc-0ad8c9d6107a,Kabuto,small,brown,rock & water,Kanto,30,80,90,45,55,55,Battle Armor,null,flying bug fire ice & ground,fighting ground steel water grass & dragon
-PokemonWithSecondAbility,6ade5ebf-1329-4f94-8afa-0cb38d490a77,Lapras,large,blue,water and ice,Kanto,130,85,80,95,85,60,Water Absorb,null,ground dragon flying rock,steel and rock
-PokemonWithSecondAbility,59ee91e8-2b49-4b04-bec3-4940ba27c545,Marill,small,blue and white,water and fairy,Johto,70,20,50,50,20,40,Thick Fat,null,fire rock ground fighting dark dragon,electric grass poison
-PokemonWithSecondAbility,f5202e7a-ab4d-4ce3-9b10-7a2a5f3f2e72,Snorlax,large,white and blue,normal,Kanto,160,110,65,110,65,30,Immunity,null,None,fighting
-PokemonWithSecondAbility,243cffde-2a69-439d-b1f0-f8c2ff43e656,Lunatone,large,tan,rock & psychic,Hoenn,90,55,65,85,95,70,Levitate,null,flying bug fire ice fighting & poison,fighting ground steel psychic & dark
-PokemonWithSecondAbility,31610e6a-c0ae-4668-ad56-da837ba0ecc8,Snivy,small,green,grass,Unova,45,45,55,55,45,63,Overgrow,null,Ground Rock and Water,Bug Fire Flying Ice Poison
-PokemonWithSecondAbility,0a3ee546-780c-4816-b4d5-ac766d30acf0,Drowzee,small,yellow & brown,psychic,Kanto,60,48,45,90,43,42,Insomnia,null,fighting & poison,steel psychic & dark
-PokemonWithSecondAbility,71976415-fa11-46b4-b964-f21cd5b0c3ba,Eevee,small,brown,normal,Kanto,55,55,50,65,45,55,Adaptability,null,none,rock ghost & steel
-PokemonWithSecondAbility,1a0719a0-ea41-4ad8-babb-cfed46be8bbe,Ekans,small,purple & yellow,poison,Kanto,35,60,44,54,40,55,Shed Skin,null,grass & fairy,poison ground rock steel & ghost
-PokemonWithSecondAbility,24959f10-fefa-494f-8f3d-feb80bb9169b,Fearow,large,brown,normal & flying,Kanto,65,90,65,61,61,100,Keen Eye,null,fighting bug & grass,rock steel & electric
-PokemonWithSecondAbility,8099f83d-8dfe-43d2-9848-b0ef95d71161,Tepig,small,orange and red,fire,Unova,65,63,45,45,45,45,Blaze,null,Grass Steel Bug and Ice,Ground Rock and Water
-PokemonWithSecondAbility,a9c46fc6-679b-483c-928f-70a3bed9f078,Toldeen,small,white & orange,water,Kanto,45,67,60,50,35,63,Swift Swim,null,ground rock & fire,water grass & dragon
-PokemonWithSecondAbility,cd371c99-5da6-4a20-885a-fda427e7ae02,Illumise,small,blue, purple, & black,bug,Hoenn,65,47,75,85,73,85,Tinted Lense,null,grass psychic & dark,fighting flying poison ghost steel fire & fairy
-PokemonWithSecondAbility,353e9d13-4913-48e7-9115-ff378bea8b02,Kabuto,small,brown,rock & water,Kanto,30,80,90,45,55,55,Battle Armor,null,flying bug fire ice & ground,fighting ground steel water grass & dragon
-PokemonWithSecondAbility,b39e49c8-bcd3-4862-9abf-bd53dfc6ba90,Lapras,large,blue,water and ice,Kanto,130,85,80,95,85,60,Water Absorb,null,ground dragon flying rock,steel and rock
-PokemonWithSecondAbility,fe00e5ef-01aa-4f56-84ce-94f7549f2c66,Marill,small,blue and white,water and fairy,Johto,70,20,50,50,20,40,Thick Fat,null,fire rock ground fighting dark dragon,electric grass poison
-PokemonWithSecondAbility,68dec0f8-f3cc-438c-9d8b-be831d161fe7,Snorlax,large,white and blue,normal,Kanto,160,110,65,110,65,30,Immunity,null,None,fighting
-PokemonWithSecondAbility,7e421a95-11ee-4d7a-913f-96a823d926b0,Lunatone,large,tan,rock & psychic,Hoenn,90,55,65,85,95,70,Levitate,null,flying bug fire ice fighting & poison,fighting ground steel psychic & dark
-PokemonWithSecondAbility,25de8f35-bbb5-482f-ac20-2a39a13a9382,Snivy,small,green,grass,Unova,45,45,55,55,45,63,Overgrow,null,Ground Rock and Water,Bug Fire Flying Ice Poison
-PokemonWithSecondAbility,a4b68540-c6a0-49e0-9474-79315bf136fa,Drowzee,small,yellow & brown,psychic,Kanto,60,48,45,90,43,42,Insomnia,null,fighting & poison,steel psychic & dark
-PokemonWithSecondAbility,b3f1bb77-1955-4ef4-a936-b8f26852ec42,Eevee,small,brown,normal,Kanto,55,55,50,65,45,55,Adaptability,null,none,rock ghost & steel
-PokemonWithSecondAbility,ef3fe80a-b436-4849-bc00-cfcaf90bdb74,Ekans,small,purple & yellow,poison,Kanto,35,60,44,54,40,55,Shed Skin,null,grass & fairy,poison ground rock steel & ghost
-PokemonWithSecondAbility,644ddbfd-749a-4230-9108-3088be49a4d8,Fearow,large,brown,normal & flying,Kanto,65,90,65,61,61,100,Keen Eye,null,fighting bug & grass,rock steel & electric
-PokemonWithSecondAbility,5efb83b2-35f2-427d-9f63-aeb5910cbdef,Tepig,small,orange and red,fire,Unova,65,63,45,45,45,45,Blaze,null,Grass Steel Bug and Ice,Ground Rock and Water
-PokemonWithSecondAbility,984c0ac2-953a-4cf5-aea4-bad6c2fe7178,Toldeen,small,white & orange,water,Kanto,45,67,60,50,35,63,Swift Swim,null,ground rock & fire,water grass & dragon
-PokemonWithSecondAbility,842b1807-d5a0-46a2-8ffa-b59dd85c2bfb,Illumise,small,blue, purple, & black,bug,Hoenn,65,47,75,85,73,85,Tinted Lense,null,grass psychic & dark,fighting flying poison ghost steel fire & fairy
-PokemonWithSecondAbility,e47a48af-b5d1-4f17-908a-1afa99e6a1d4,Kabuto,small,brown,rock & water,Kanto,30,80,90,45,55,55,Battle Armor,null,flying bug fire ice & ground,fighting ground steel water grass & dragon
-PokemonWithSecondAbility,2b1e1c85-b7df-4277-8974-5eeed7489473,Lapras,large,blue,water and ice,Kanto,130,85,80,95,85,60,Water Absorb,null,ground dragon flying rock,steel and rock
-PokemonWithSecondAbility,ccdaab13-3964-483a-8ba4-6b07f67c8574,Marill,small,blue and white,water and fairy,Johto,70,20,50,50,20,40,Thick Fat,null,fire rock ground fighting dark dragon,electric grass poison
-PokemonWithSecondAbility,484813bf-c0cd-4af5-bbc5-dec5ec89766e,Snorlax,large,white and blue,normal,Kanto,160,110,65,110,65,30,Immunity,null,None,fighting
-PokemonWithSecondAbility,5762b927-0a1a-49d8-be8f-aacc3bc0ab23,Lunatone,large,tan,rock & psychic,Hoenn,90,55,65,85,95,70,Levitate,null,flying bug fire ice fighting & poison,fighting ground steel psychic & dark
-PokemonWithSecondAbility,eb8bb0f4-3ab6-4662-bd36-53b5f0427848,Snivy,small,green,grass,Unova,45,45,55,55,45,63,Overgrow,null,Ground Rock and Water,Bug Fire Flying Ice Poison
-PokemonWithSecondAbility,99195008-5bfe-4a6b-9790-0e8018d09f3a,Drowzee,small,yellow & brown,psychic,Kanto,60,48,45,90,43,42,Insomnia,null,fighting & poison,steel psychic & dark
-PokemonWithSecondAbility,77aee968-2124-415c-9c38-d08749961e6a,Eevee,small,brown,normal,Kanto,55,55,50,65,45,55,Adaptability,null,none,rock ghost & steel
-PokemonWithSecondAbility,d646b92c-e084-4c92-af4b-3e425c5892f0,Ekans,small,purple & yellow,poison,Kanto,35,60,44,54,40,55,Shed Skin,null,grass & fairy,poison ground rock steel & ghost
-PokemonWithSecondAbility,027a3213-fa37-461d-be67-9d0e51f94525,Fearow,large,brown,normal & flying,Kanto,65,90,65,61,61,100,Keen Eye,null,fighting bug & grass,rock steel & electric
-PokemonWithSecondAbility,a7d45f10-983b-4c66-bf2f-f6613b890c6c,Tepig,small,orange and red,fire,Unova,65,63,45,45,45,45,Blaze,null,Grass Steel Bug and Ice,Ground Rock and Water
-PokemonWithSecondAbility,e7863070-ce81-4be2-8bbf-d55db1dd90da,Toldeen,small,white & orange,water,Kanto,45,67,60,50,35,63,Swift Swim,null,ground rock & fire,water grass & dragon
-PokemonWithSecondAbility,005d82a4-8d6f-4006-b434-fa16c79ee000,Illumise,small,blue, purple, & black,bug,Hoenn,65,47,75,85,73,85,Tinted Lense,null,grass psychic & dark,fighting flying poison ghost steel fire & fairy
-PokemonWithSecondAbility,c59b14fd-de86-46b6-bd34-3a5555562ab7,Kabuto,small,brown,rock & water,Kanto,30,80,90,45,55,55,Battle Armor,null,flying bug fire ice & ground,fighting ground steel water grass & dragon
-PokemonWithSecondAbility,12c79850-a8af-4947-b7ff-2787922594b4,Lapras,large,blue,water and ice,Kanto,130,85,80,95,85,60,Water Absorb,null,ground dragon flying rock,steel and rock
-PokemonWithSecondAbility,6554714f-2054-411a-912c-4dc38a73c7e1,Marill,small,blue and white,water and fairy,Johto,70,20,50,50,20,40,Thick Fat,null,fire rock ground fighting dark dragon,electric grass poison
-PokemonWithSecondAbility,d1b31ef6-1f82-4bb1-a4db-d15fd1d6b60c,Snorlax,large,white and blue,normal,Kanto,160,110,65,110,65,30,Immunity,null,None,fighting
-PokemonWithSecondAbility,66810e88-b49e-4602-bd0e-49de30d5b444,Lunatone,large,tan,rock & psychic,Hoenn,90,55,65,85,95,70,Levitate,null,flying bug fire ice fighting & poison,fighting ground steel psychic & dark
-PokemonWithSecondAbility,b63dd45d-80c6-42f5-bb5d-86c281023d5c,Snivy,small,green,grass,Unova,45,45,55,55,45,63,Overgrow,null,Ground Rock and Water,Bug Fire Flying Ice Poison
+PokemonWithSecondAbility,957e7684-010e-4a29-806e-76866470d547,Drowzee,small,yellow & brown,psychic,Kanto,60,48,45,90,43,42,Insomnia,null,fighting & poison,steel psychic & dark
+PokemonWithSecondAbility,85a748b4-d413-43f4-9248-8f56574da6be,Eevee,small,brown,normal,Kanto,55,55,50,65,45,55,Adaptability,null,none,rock ghost & steel
+PokemonWithSecondAbility,14fdad59-9429-469b-b782-60b309ea2ef4,Ekans,small,purple & yellow,poison,Kanto,35,60,44,54,40,55,Shed Skin,null,grass & fairy,poison ground rock steel & ghost
+PokemonWithSecondAbility,7eb20e3f-21ca-463e-8ac8-c2a63c2610bf,Fearow,large,brown,normal & flying,Kanto,65,90,65,61,61,100,Keen Eye,null,fighting bug & grass,rock steel & electric
+PokemonWithSecondAbility,443b1899-5402-4a45-80ee-81675bfad2e7,Tepig,small,orange and red,fire,Unova,65,63,45,45,45,45,Blaze,null,Grass Steel Bug and Ice,Ground Rock and Water
+PokemonWithSecondAbility,c40dba5f-87db-49e8-9ea8-1110f29e9d2a,Toldeen,small,white & orange,water,Kanto,45,67,60,50,35,63,Swift Swim,null,ground rock & fire,water grass & dragon
+PokemonWithSecondAbility,cb3afd28-848e-421b-95f3-a5cd375a0f6a,Illumise,small,blue purple & black,bug,Hoenn,65,47,75,85,73,85,Tinted Lense,null,grass psychic & dark,fighting flying poison ghost steel fire & fairy
+PokemonWithSecondAbility,2a7b1642-9492-40e8-8701-59ce6a04860a,Kabuto,small,brown,rock & water,Kanto,30,80,90,45,55,55,Battle Armor,null,flying bug fire ice & ground,fighting ground steel water grass & dragon
+PokemonWithSecondAbility,69e7524f-e199-415d-8038-44ebe272ad8f,Lapras,large,blue,water and ice,Kanto,130,85,80,95,85,60,Water Absorb,null,ground dragon flying rock,steel and rock
+PokemonWithSecondAbility,6df4321c-8b67-4bca-a45b-2418a79b3fc5,Marill,small,blue and white,water and fairy,Johto,70,20,50,50,20,40,Thick Fat,null,fire rock ground fighting dark dragon,electric grass poison
+PokemonWithSecondAbility,2d6cb901-9688-4206-a9e2-c7a0cbe27bfe,Snorlax,large,white and blue,normal,Kanto,160,110,65,110,65,30,Immunity,null,None,fighting
+PokemonWithSecondAbility,0743a002-b1f2-4c47-a4f3-f348aff2e298,Lunatone,large,tan,rock & psychic,Hoenn,90,55,65,85,95,70,Levitate,null,flying bug fire ice fighting & poison,fighting ground steel psychic & dark
+PokemonWithSecondAbility,f9faf435-0cf1-4944-a5a2-dca272648798,Snivy,small,green,grass,Unova,45,45,55,55,45,63,Overgrow,null,Ground Rock and Water,Bug Fire Flying Ice Poison
