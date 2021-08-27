@@ -94,6 +94,21 @@ public class FileDataWriterTest {
         this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Snivy","small","green","grass","Unova",45,45,55,55,45,63,"Overgrow","Ability2","Ground Rock and Water","Bug Fire Flying Ice Poison",this.systemUnderTest));
     }
 
+    @Test 
+    void testSeedTempPokemon(){
+        this.systemUnderTest = new FileDataWriter("./TempPokemon.csv");
+        this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric ice and rock", this.systemUnderTest));
+        this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Ponyta", "small", "yellow", "fire", "Galar",50,85,55,65,65,90,"Flash Fire","Ability2","grass ice bug steel and fairy","water ground and rock",this.systemUnderTest));
+        this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo","Ability2","None","Fighting and Ghost",this.systemUnderTest));
+        this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force","Ability2"," Bug and Grass ", "Electric Ice and Rock",this.systemUnderTest));
+        this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Ability2","Fire Electric Poison Bug Rock Steel Flying","Water Grass Fighting",this.systemUnderTest));
+        this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Ability2","Fire Ground Fighting Rock Bug Grass","Electric",this.systemUnderTest));
+        this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Squritle", "small", "blue", "water", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent","Ability2", "ground, rock, & dragon", "water grass & dragon",this.systemUnderTest));
+        this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate","Ability2", "grass & fairy", "poison ground, rock ghost & steel",this.systemUnderTest));
+        this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74,"Ability2","Chlorophyll", "ground rock & water", "rock ghost steel flying poison bug fire grass & dragon",this.systemUnderTest)); //stop
+        this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Diglett", "small", "brown", "ground", "Kanto", 10, 55, 25, 45, 35, 95, "Sand Veil","Ability2", "poison rock steel fire & electric", "flying bug & grass",this.systemUnderTest));
+    }
+
     @Test
     void testReadAll() {
         File fileToDelete = new File(this.systemUnderTest.getFileLocation());
