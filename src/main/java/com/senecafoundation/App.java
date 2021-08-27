@@ -17,9 +17,9 @@ public class App
         FileDataWriter dataWriter = new FileDataWriter("./PokedexContents.csv");
         List<PokedexItem> PokedexContents = dataWriter.ReadAll();
         FileDataWriter dataWriter2 = new FileDataWriter("./ChallengerContents.csv");
-        List<PokemonWithSecondAbility> ChallengerContents = dataWriter2.ReadAll2();
+        List<PokedexItem> ChallengerContents = dataWriter2.ReadAll();
         FileDataWriter dataWriter3 = new FileDataWriter("./TempPokemon.csv");
-        List<PokemonWithSecondAbility> TempPokemon = dataWriter3.ReadAll3();
+        List<PokedexItem> TempPokemon = dataWriter3.ReadAll();
 
         //create/ or load csv file 
         //csv file(s) should have values in them, or we have to manually update the list with said values (which is our list)
@@ -82,7 +82,7 @@ public class App
             
 //pokedex 2
             ChallengerPokedex StrangerPokedex = new ChallengerPokedex(true); //changing ChallengerPokedex file seemed to fix this. 
-            StrangerPokedex.setChallengerContents(ChallengerContents); 
+            //StrangerPokedex.setChallengerContents(ChallengerContents); 
             Random rd = new Random(); 
 
             System.out.println("You might have found a pokedex...what shape is it?");
@@ -96,7 +96,7 @@ public class App
                     //do {
                     if(userResponse.equals("Yes")) {
                         while (userResponse.equals("Yes")) {
-                            PokedexItem randomPokemonItem = PokedexContents.get(rd.nextInt(12)); 
+                            PokedexItem randomPokemonItem = PokedexContents.get(rd.nextInt(PokedexContents.size())); 
                             if (randomPokemonItem instanceof Plant) { 
                                 System.out.println(((Plant)randomPokemonItem).Grows());
                             }
@@ -120,8 +120,8 @@ public class App
                     userResponse = userScanner.nextLine();
                     if (userResponse.equals("Yes")) {
                         while (userResponse.equals("Yes")) { //chooses random Pokemon from TempList
-                            PokemonWithSecondAbility randomTempPokemon = TempPokemon.get(rd.nextInt(9)); 
-                            PokemonWithSecondAbility randomActualPokemon = ChallengerContents.get(rd.nextInt(13));
+                            PokemonWithSecondAbility randomTempPokemon = (PokemonWithSecondAbility) TempPokemon.get(rd.nextInt(TempPokemon.size())); 
+                            PokemonWithSecondAbility randomActualPokemon = (PokemonWithSecondAbility) ChallengerContents.get(rd.nextInt(ChallengerContents.size()));
                            
                             Comparer ComparePokemon1And2 = new Comparer();
                             ComparePokemon1And2.comparePokemon(randomTempPokemon, randomActualPokemon);

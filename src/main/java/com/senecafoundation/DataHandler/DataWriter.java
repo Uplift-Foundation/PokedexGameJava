@@ -25,18 +25,4 @@ public abstract class DataWriter implements IDataWriter {
 	public String GetTypeOfProvider() {
 		return this.toString();
 	}
-
-	@Override 
-	public abstract List<PokemonWithSecondAbility> ReadAll2();
-
-	public String GetTypeOfProivder2() {
-		return this.toString();
-	}
-
-	@Override
-	public abstract List<PokemonWithSecondAbility> ReadAll3();
-
-	public String GetTypeOfProvider3() {
-		return this.toString();
-	}
 }
