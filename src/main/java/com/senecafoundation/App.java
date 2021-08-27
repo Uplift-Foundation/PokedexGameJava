@@ -16,6 +16,10 @@ public class App
     {
         FileDataWriter dataWriter = new FileDataWriter("./PokedexContents.csv");
         List<PokedexItem> PokedexContents = dataWriter.ReadAll();
+        FileDataWriter dataWriter2 = new FileDataWriter("./ChallengerContents.csv");
+        List<PokemonWithSecondAbility> ChallengerContents = dataWriter2.ReadAll2();
+        FileDataWriter dataWriter3 = new FileDataWriter("./TempPokemon.csv");
+        List<PokemonWithSecondAbility> TempPokemon = dataWriter3.ReadAll3();
 
         //create/ or load csv file 
         //csv file(s) should have values in them, or we have to manually update the list with said values (which is our list)
@@ -37,7 +41,7 @@ public class App
         // PokedexContents.add(new PokemonWithSecondAbility("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate","Ability2", "grass & fairy", "poison, ground, rock, ghost, & steel"));
         // PokedexContents.add(new PokemonWithSecondAbility("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74,"Ability2","Chlorophyll", "ground, rock, & water", "rock, ghost, steel, flying, poison, bug, fire, grass, & dragon")); //stop
 
-        List<PokemonWithSecondAbility> TempPokemon = new ArrayList<PokemonWithSecondAbility>();
+        //List<PokemonWithSecondAbility> TempPokemon = new ArrayList<PokemonWithSecondAbility>();
         // // TempPokemon.add(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric, ice, and rock"));
         // // TempPokemon.add(new PokemonWithSecondAbility("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","Ability2","grass, ice, bug, steel and fairy","water, ground, and rock" ));
         // // TempPokemon.add(new PokemonWithSecondAbility("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Ability2","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
@@ -49,7 +53,7 @@ public class App
         // // TempPokemon.add(new PokemonWithSecondAbility("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate","Ability2", "grass & fairy", "poison, ground, rock, ghost, & steel"));
         // // TempPokemon.add(new PokemonWithSecondAbility("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74, "Chlorophyll","Ability2", "ground, rock, & water", "rock, ghost, steel, flying, poison, bug, fire, grass, & dragon"));
 
-        List<PokemonWithSecondAbility> ChallengerContents = new ArrayList<PokemonWithSecondAbility>();
+        //List<PokemonWithSecondAbility> ChallengerContents = new ArrayList<PokemonWithSecondAbility>();
         // ChallengerContents.add(new PokemonWithSecondAbility("Diglett", "small", "brown", "ground", "Kanto", 10, 55, 25, 45, 35, 95, "Sand Veil","Ability2", "poison, rock, steel ,fire, & electric", "flying, bug, & grass"));
         // ChallengerContents.add(new PokemonWithSecondAbility("Drowzee", "small", "yellow & brown", "psychic", "Kanto", 60, 48,45, 90, 43, 42, "Insomnia","Ability2", "fighting & poison", "steel, psychic, & dark"));
         // ChallengerContents.add(new PokemonWithSecondAbility("Eevee", "small", "brown", "normal", "Kanto", 55, 55, 50, 65, 45, 55, "Adaptability","Ability2", "none", "rock, ghost, & steel"));
@@ -77,7 +81,7 @@ public class App
             foundPokedex.setTempPokemon(TempPokemon);
             
 //pokedex 2
-            ChallengerPokedex StrangerPokedex = new ChallengerPokedex(true);
+            ChallengerPokedex StrangerPokedex = new ChallengerPokedex(true); //changing ChallengerPokedex file seemed to fix this. 
             StrangerPokedex.setChallengerContents(ChallengerContents); 
             Random rd = new Random(); 
 
