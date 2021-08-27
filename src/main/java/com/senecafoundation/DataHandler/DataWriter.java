@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.List;
 
 import com.senecafoundation.PokedexItem;
+import com.senecafoundation.PokemonWithSecondAbility;
 
 public abstract class DataWriter implements IDataWriter {
 	@Override
@@ -22,6 +23,20 @@ public abstract class DataWriter implements IDataWriter {
 	public abstract List<PokedexItem> ReadAll(); 
 
 	public String GetTypeOfProvider() {
+		return this.toString();
+	}
+
+	@Override 
+	public abstract List<PokemonWithSecondAbility> ReadAll2();
+
+	public String GetTypeOfProivder2() {
+		return this.toString();
+	}
+
+	@Override
+	public abstract List<PokemonWithSecondAbility> ReadAll3();
+
+	public String GetTypeOfProvider3() {
 		return this.toString();
 	}
 }
