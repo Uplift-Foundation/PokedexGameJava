@@ -97,6 +97,7 @@ public class FileDataWriterTest {
     @Test 
     void testSeedTempPokemon(){
         this.systemUnderTest = new FileDataWriter("./TempPokemon.csv");
+        this.testBear = new Bear("White", "Fluff", false, 500, this.systemUnderTest);
         this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric ice and rock", this.systemUnderTest));
         this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Ponyta", "small", "yellow", "fire", "Galar",50,85,55,65,65,90,"Flash Fire","Ability2","grass ice bug steel and fairy","water ground and rock",this.systemUnderTest));
         this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo","Ability2","None","Fighting and Ghost",this.systemUnderTest));
@@ -120,5 +121,17 @@ public class FileDataWriterTest {
 
         ArrayList<PokedexItem> allItemsFromFile = (ArrayList<PokedexItem>) this.systemUnderTest.ReadAll();
         assertEquals(allItemsFromFile.size(), 4);
+    }
+
+    @Test 
+    void testReadAll2() {
+        File fileToDelete = new File(this.systemUnderTest.getFileLocation());
+        fileToDelete.delete();
+        this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric ice and rock", this.systemUnderTest));
+        this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Ponyta", "small", "yellow", "fire", "Galar",50,85,55,65,65,90,"Flash Fire","Ability2","grass ice bug steel and fairy","water ground and rock",this.systemUnderTest));
+
+        ArrayList<PokemonWithSecondAbility> allItemsFromFile = (ArrayList<PokemonWithSecondAbility>) this.systemUnderTest.ReadAll3();
+        assertEquals(allItemsFromFile.size(), 2);
+
     }
 }
