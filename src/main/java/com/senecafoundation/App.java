@@ -20,56 +20,6 @@ public class App
         List<PokedexItem> ChallengerContents = dataWriter2.ReadAll();
         FileDataWriter dataWriter3 = new FileDataWriter("./TempPokemon.csv");
         List<PokedexItem> TempPokemon = dataWriter3.ReadAll();
-
-        //create/ or load csv file 
-        //csv file(s) should have values in them, or we have to manually update the list with said values (which is our list)
-        //update all our code to now accept the csv file 
-        //Maybe delete the lines including Plant Bear Homework if we need to update the list for comparing our pokemon with challenger
-        
-
-        //PokedexContents.add(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto,", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric, ice, and rock", dataWriter));
-        // PokedexContents.add(new PokemonWithSecondAbility("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","Ability2","grass, ice, bug, steel and fairy","water, ground, and rock" ));
-        // PokedexContents.add(new PokemonWithSecondAbility("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Ability2","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
-        // PokedexContents.add(new PokemonWithSecondAbility("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo","Ability2","None","Fighting and Ghost" ));
-        // PokedexContents.add(new PokemonWithSecondAbility("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force","Ability2"," Bug and Grass ", "Electric, Ice, and Rock"));
-        // PokedexContents.add(new PokemonWithSecondAbility("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Ability2","Fire, Electric, Poison, Bug, Rock, Steel, Flying","Water, Grass, Fighting"));
-        // PokedexContents.add(new PokemonWithSecondAbility("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Ability2","Fire,Ground,Fighting,Rock,Bug,Grass","Electric"));
-        // PokedexContents.add(new Plant("green","fresh", true, true, true, true));
-        // PokedexContents.add(new Bear("brown", "circle", true, 200)); //swap 200 and true. Did we write this the same way as C#???? Some of the Strings/Booleans/Integers might not be in the right place. 
-        // PokedexContents.add(new Homework("white","circle" ,20, true, new PokemonWithSecondAbility("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Ability2","Fire,Ground,Fighting,Rock,Bug,Grass","Electric")));
-        // PokedexContents.add(new PokemonWithSecondAbility("Squritle", "small", "blue", "water", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent","Ability2", "ground, rock, & dragon", "water, grass, & dragon"));
-        // PokedexContents.add(new PokemonWithSecondAbility("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate","Ability2", "grass & fairy", "poison, ground, rock, ghost, & steel"));
-        // PokedexContents.add(new PokemonWithSecondAbility("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74,"Ability2","Chlorophyll", "ground, rock, & water", "rock, ghost, steel, flying, poison, bug, fire, grass, & dragon")); //stop
-
-        //List<PokemonWithSecondAbility> TempPokemon = new ArrayList<PokemonWithSecondAbility>();
-        // // TempPokemon.add(new PokemonWithSecondAbility("Pidgey", "small and chubby", "brown", "flying & normal", "Kanto & Johto, ", 40, 45, 40, 35, 35, 56, "Keen Eye","Ability2", "bug and grass","eletcric, ice, and rock"));
-        // // TempPokemon.add(new PokemonWithSecondAbility("Ponyta", "small", "yellow", "fire", " Galar ",50,85,55,65,65,90,"Flash Fire","Ability2","grass, ice, bug, steel and fairy","water, ground, and rock" ));
-        // // TempPokemon.add(new PokemonWithSecondAbility("Charmander", "small", "orange", "fire", "Kanto", 39,52,43,50,60,62,"Blaze","Ability2","Grass, Ice, Bug, Steel, Fairy","Water,Ground,Rock"));
-        // // TempPokemon.add(new PokemonWithSecondAbility("Glameow", "small", "grey", "normal", "Sinnoh",49,55,42,37,42,85,"Own Tempo","Ability2", "None","Fighting and Ghost" ));
-        // // TempPokemon.add(new PokemonWithSecondAbility("Rufflet", "small", "white & dark blue", "flying & normal", "Unova",70,83,50,50,37,60,"Sheer Force","Ability2"," Bug and Grass ", "Electric, Ice, and Rock"));
-        // // TempPokemon.add(new PokemonWithSecondAbility("Onix", "humongous", "grey", "rock & ground", "Kanto",35,45,160,45,30,70,"Sturdy","Ability2","Fire, Electric, Poison, Bug, Rock, Steel, Flying","Water, Grass, Fighting"));
-        // // TempPokemon.add(new PokemonWithSecondAbility("Mantine", "humongous", "blue & white", "water & flying", "Alola",85,40,70,140,80,70,"Swift Swim","Ability2","Fire,Ground,Fighting,Rock,Bug,Grass","Electric"));
-        // // TempPokemon.add(new PokemonWithSecondAbility("Squritle", "small", "blue", "water", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent","Ability2", "ground, rock, & dragon", "water, grass, & dragon"));
-        // // TempPokemon.add(new PokemonWithSecondAbility("Arbok", "large", "purple", "poison", "Kanto", 60, 95, 69, 79, 65, 80, "Intimidate","Ability2", "grass & fairy", "poison, ground, rock, ghost, & steel"));
-        // // TempPokemon.add(new PokemonWithSecondAbility("Deerling", "small", "pink & white with yellow accents", "normal & grass", "Unova", 60, 60, 50, 50, 40, 74, "Chlorophyll","Ability2", "ground, rock, & water", "rock, ghost, steel, flying, poison, bug, fire, grass, & dragon"));
-
-        //List<PokemonWithSecondAbility> ChallengerContents = new ArrayList<PokemonWithSecondAbility>();
-        // ChallengerContents.add(new PokemonWithSecondAbility("Diglett", "small", "brown", "ground", "Kanto", 10, 55, 25, 45, 35, 95, "Sand Veil","Ability2", "poison, rock, steel ,fire, & electric", "flying, bug, & grass"));
-        // ChallengerContents.add(new PokemonWithSecondAbility("Drowzee", "small", "yellow & brown", "psychic", "Kanto", 60, 48,45, 90, 43, 42, "Insomnia","Ability2", "fighting & poison", "steel, psychic, & dark"));
-        // ChallengerContents.add(new PokemonWithSecondAbility("Eevee", "small", "brown", "normal", "Kanto", 55, 55, 50, 65, 45, 55, "Adaptability","Ability2", "none", "rock, ghost, & steel"));
-        // ChallengerContents.add(new PokemonWithSecondAbility("Ekans", "small", "purple & yellow", "poison", "Kanto", 35, 60, 44, 54, 40, 55, "Shed Skin","Ability2", "grass & fairy", "poison, ground, rock, steel, & ghost"));
-        // ChallengerContents.add(new PokemonWithSecondAbility("Fearow", "large", "brown", "normal & flying", "Kanto", 65, 90, 65, 61, 61, 100, "Keen Eye","Ability2", "fighting, bug, & grass", "rock, steel , & electric"));
-        // ChallengerContents.add(new PokemonWithSecondAbility("Tepig","small","orange and red","fire","Unova",65,63,45,45,45,45,"Blaze","Ability2","Grass, Steel, Bug, and Ice","Ground, Rock, and Water"));
-        // ChallengerContents.add(new PokemonWithSecondAbility("Toldeen", "small", "white & orange", "water", "Kanto", 45, 67, 60, 50, 35, 63, "Swift Swim","Ability2", "ground, rock, & fire", "water, grass, & dragon"));
-        // ChallengerContents.add(new PokemonWithSecondAbility("Illumise", "small", "blue, purple, & black", "bug", "Hoenn", 65, 47, 75, 85, 73, 85, "Tinted Lense","Ability2", "grass, psychic, & dark", "fighting, flying, poison, ghost, steel, fire, & fairy"));
-        // ChallengerContents.add(new PokemonWithSecondAbility("Kabuto", "small", "brown", "rock & water", "Kanto", 30, 80, 90, 45, 55, 55, "Battle Armor","Ability2", "flying, bug, fire, ice, & ground", "fighting, ground, steel, water, grass, & dragon"));
-        // ChallengerContents.add(new PokemonWithSecondAbility("Lapras","large","blue","water and ice","Kanto",130,85,80,95,85,60,"Water Absorb","Ability2","ground, dragon, flying, rock","steel and rock"));
-        // ChallengerContents.add(new PokemonWithSecondAbility("Marill","small","blue and white","water and fairy","Johto",70,20,50,50,20,40,"Thick Fat","Ability2","fire,rock,ground,fighting,dark,dragon","electric, grass, poison"));
-        // ChallengerContents.add(new PokemonWithSecondAbility("Snorlax","large","white and blue","normal","Kanto",160,110,65,110,65,30,"Immunity","Ability2","None","fighting"));
-        // ChallengerContents.add(new PokemonWithSecondAbility("Lunatone", "large", "tan", "rock & psychic", "Hoenn", 90, 55, 65, 85, 95, 70, "Levitate","Ability2", "flying, bug, fire, ice, fighting, & poison", "fighting, ground, steel, psychic, & dark"));
-        // ChallengerContents.add(new PokemonWithSecondAbility("Snivy","small","green","grass","Unova",45,45,55,55,45,63,"Overgrow","Ability2","Ground,Rock, and Water","Bug,Fire,Flying,Ice, Poison"));
-        
-        
         
         Scanner userScanner = new Scanner(System.in);
         System.out.println("It looks like you've found an object! Will you pick it up? (Yes or No)");
@@ -81,7 +31,7 @@ public class App
             foundPokedex.setTempPokemon(TempPokemon);
             
 //pokedex 2
-            ChallengerPokedex StrangerPokedex = new ChallengerPokedex(true); //changing ChallengerPokedex file seemed to fix this. 
+            ChallengerPokedex StrangerPokedex = new ChallengerPokedex(true); 
             //StrangerPokedex.setChallengerContents(ChallengerContents); 
             Random rd = new Random(); 
 
@@ -119,7 +69,7 @@ public class App
                     System.out.println("...A stranger approaches, they ask if you would like to compare pokemon. Would you like to? (Yes or No)");
                     userResponse = userScanner.nextLine();
                     if (userResponse.equals("Yes")) {
-                        while (userResponse.equals("Yes")) { //chooses random Pokemon from TempList
+                        while (userResponse.equals("Yes")) { 
                             PokemonWithSecondAbility randomTempPokemon = (PokemonWithSecondAbility) TempPokemon.get(rd.nextInt(TempPokemon.size())); 
                             PokemonWithSecondAbility randomActualPokemon = (PokemonWithSecondAbility) ChallengerContents.get(rd.nextInt(ChallengerContents.size()));
                            
