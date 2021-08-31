@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-08-24T17:36:07.362Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1 Safari/605.1.15" etag="ysEzCq9kJbrCAbamYMfN" version="14.9.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-31T18:53:59.892Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1 Safari/605.1.15" etag="d6OHDtmX-Z53bj7FvX2m" version="15.0.4" type="github">
   <diagram id="O69VrWLyUkfvJmlE3TCs" name="Page-1">
-    <mxGraphModel dx="648" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="705" dy="554" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -97,7 +97,7 @@
           <mxGeometry y="26" width="180" height="26" as="geometry" />
         </mxCell>
         <mxCell id="pPGJKXOKactijuvXDBP8-5" value="DataWriter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="170" y="220" width="220" height="140" as="geometry" />
+          <mxGeometry x="275" y="220" width="220" height="140" as="geometry" />
         </mxCell>
         <mxCell id="pPGJKXOKactijuvXDBP8-6" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pPGJKXOKactijuvXDBP8-5" vertex="1">
           <mxGeometry y="26" width="220" height="26" as="geometry" />
@@ -184,10 +184,22 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="aK0FY7as-frvQtqpI070-63" value="ChallengerPokedex" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;sketch=0;html=0;" parent="1" vertex="1">
-          <mxGeometry x="310" y="52" width="180" height="50" as="geometry" />
+          <mxGeometry x="310" y="52" width="180" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="aK0FY7as-frvQtqpI070-64" value="+ pokemons: List " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="aK0FY7as-frvQtqpI070-63" vertex="1">
-          <mxGeometry y="26" width="180" height="24" as="geometry" />
+        <mxCell id="aK0FY7as-frvQtqpI070-64" value="+ pokemonsfortrainers: List &#xa;&#xa;Delete? " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="aK0FY7as-frvQtqpI070-63" vertex="1">
+          <mxGeometry y="26" width="180" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="Atam3ASnr2XlAgB-xZKA-1" value="PokemonTrainer " style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="105" y="20" width="170" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Atam3ASnr2XlAgB-xZKA-2" value="- datawriter: IDataWriter &#xa;- ID: String ID &#xa;# pokemonfortrainers: List &#xa;- Name: String " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Atam3ASnr2XlAgB-xZKA-1">
+          <mxGeometry y="26" width="170" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="Atam3ASnr2XlAgB-xZKA-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Atam3ASnr2XlAgB-xZKA-1">
+          <mxGeometry y="100" width="170" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Atam3ASnr2XlAgB-xZKA-4" value="+ method(type): type&#xa;+ Greeting(String): String " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Atam3ASnr2XlAgB-xZKA-1">
+          <mxGeometry y="108" width="170" height="72" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
