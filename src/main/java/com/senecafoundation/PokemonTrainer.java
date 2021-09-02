@@ -2,6 +2,7 @@ package com.senecafoundation;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.UUID;
 
 import com.senecafoundation.DataHandler.IDataWriter;
@@ -24,6 +25,15 @@ public class PokemonTrainer {
         return dataWriter;
     }
 
+    public void populateFromRandom(IDataWriter fileThatContainsLongListOfPokemon) {
+        Random rd = new Random();
+        List<PokedexItem> ChallengerContents = fileThatContainsLongListOfPokemon.ReadAll();
+        for (int i = 0; i < 6; i++ ){
+            PokedexItem itemToAdd = ChallengerContents.get(rd.nextInt(ChallengerContents.size()));
+            SixPokemon.add(itemToAdd);            
+            this.dataWriter.Create(itemToAdd);
+        }
+    }
 
     public String getID(){
         return ID; 
@@ -47,8 +57,5 @@ public class PokemonTrainer {
 
     public void setSixPokemon(List<PokedexItem> SixPokemon) {
         this.SixPokemon = SixPokemon; 
-    }
-
-
-    
+    }    
 }

@@ -9,7 +9,7 @@ import com.senecafoundation.DataHandler.FileDataWriter;
 
 import org.junit.jupiter.api.BeforeEach;
 
-public class BearTest {
+public class BearTest { //Bear Test
 
     private Bear systemUnderTest;
     @Mock private transient FileDataWriter fileDataWriter;
