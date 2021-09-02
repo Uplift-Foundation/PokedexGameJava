@@ -1,7 +1,7 @@
 package com.senecafoundation;
 
 //import java.time.temporal.Temporal;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
@@ -31,7 +31,7 @@ public class App
             foundPokedex.setTempPokemon(TempPokemon);
             
 //pokedex 2
-            ChallengerPokedex StrangerPokedex = new ChallengerPokedex(true); 
+            //ChallengerPokedex StrangerPokedex = new ChallengerPokedex(true); 
             //StrangerPokedex.setChallengerContents(ChallengerContents); 
             Random rd = new Random(); 
 
