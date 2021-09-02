@@ -11,7 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 
 public class PokemonTrainerTest {
 
-    private PokemonTrainer systemUnderTest;
+    private StrangerTrainer systemUnderTest;
     private FileDataWriter randomPokemonFile;
     private Bear testBear;
 
@@ -34,7 +34,7 @@ public class PokemonTrainerTest {
         this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Lunatone", "large", "tan", "rock & psychic", "Hoenn", 90, 55, 65, 85, 95, 70, "Levitate","Ability2", "flying bug fire ice fighting & poison", "fighting ground steel psychic & dark",this.randomPokemonFile));
         this.testBear.getIDataWriter().Create(new PokemonWithSecondAbility("Snivy","small","green","grass","Unova",45,45,55,55,45,63,"Overgrow","Ability2","Ground Rock and Water","Bug Fire Flying Ice Poison",this.randomPokemonFile));
         
-        this.systemUnderTest = new PokemonTrainer(new FileDataWriter("./Mary.csv"), "Mary");
+        this.systemUnderTest = new StrangerTrainer (new FileDataWriter("./Mary.csv"), "Mary");
     }
 
     @Test
