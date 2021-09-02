@@ -21,17 +21,24 @@ public class App
         FileDataWriter dataWriter3 = new FileDataWriter("./TempPokemon.csv");
         List<PokedexItem> TempPokemon = dataWriter3.ReadAll();
         
+        PokemonTrainer playerTrainer = new PokemonTrainer(dataWriter, "Player");
+        PokemonTrainer makaylaTrainer = new StrangerTrainer(dataWriter2, "Makayla");
+        PokemonTrainer cristianTrainer = new StrangerTrainer(dataWriter2, "Cristian");
+        PokemonTrainer edgardoTrainer = new StrangerTrainer(dataWriter2, "Edgardo");
+        PokemonTrainer terrenceTrainer = new StrangerTrainer(dataWriter2, "Terrence");
+        PokemonTrainer warrenTrainer = new StrangerTrainer(dataWriter2, "Warren");
+        
         Scanner userScanner = new Scanner(System.in);
         System.out.println("It looks like you've found an object! Will you pick it up? (Yes or No)");
         String userResponse = userScanner.nextLine();
         if(userResponse.equals("Yes")) {
-//pokedex 1
+// //pokedex 1
             Pokedex foundPokedex = new Pokedex(true);
             foundPokedex.setPokemonsAndStuff(PokedexContents);
             foundPokedex.setTempPokemon(TempPokemon);
             
-//pokedex 2
-            ChallengerPokedex StrangerPokedex = new ChallengerPokedex(true); 
+// //pokedex 2
+//             ChallengerPokedex StrangerPokedex = new ChallengerPokedex(true); 
             //StrangerPokedex.setChallengerContents(ChallengerContents); 
             Random rd = new Random(); 
 
@@ -66,15 +73,19 @@ public class App
                     else {
                         System.out.println("Aw, okay. Maybe another time.");
                     }
-                    System.out.println("...A stranger approaches, they ask if you would like to compare pokemon. Would you like to? (Yes or No)");
+                    System.out.println("...A stranger approaches, they ask if you would like to compare pokemon."); 
+                    System.out.println("Would you like to? (Yes or No)");
                     userResponse = userScanner.nextLine();
                     if (userResponse.equals("Yes")) {
                         while (userResponse.equals("Yes")) { 
-                            PokemonWithSecondAbility randomTempPokemon = (PokemonWithSecondAbility) TempPokemon.get(rd.nextInt(TempPokemon.size())); 
-                            PokemonWithSecondAbility randomActualPokemon = (PokemonWithSecondAbility) ChallengerContents.get(rd.nextInt(ChallengerContents.size()));
+                            PokemonWithSecondAbility playersPokemon = (PokemonWithSecondAbility) playerTrainer.getSixPokemon().get(rd.nextInt(playerTrainer.getSixPokemon().size()));
+                            PokemonWithSecondAbility strangersPokemon = (PokemonWithSecondAbility) makaylaTrainer.getSixPokemon().get(rd.nextInt(playerTrainer.getSixPokemon().size()));
+                            
+                            // PokemonWithSecondAbility randomTempPokemon = (PokemonWithSecondAbility) TempPokemon.get(rd.nextInt(TempPokemon.size())); 
+                            // PokemonWithSecondAbility randomActualPokemon = (PokemonWithSecondAbility) ChallengerContents.get(rd.nextInt(ChallengerContents.size()));
                            
                             Comparer ComparePokemon1And2 = new Comparer();
-                            ComparePokemon1And2.comparePokemon(randomTempPokemon, randomActualPokemon);
+                            ComparePokemon1And2.comparePokemon(playersPokemon, strangersPokemon);
                             System.out.println("Would you like to compare another pokemon?");
                             userResponse = userScanner.nextLine();
                         }
