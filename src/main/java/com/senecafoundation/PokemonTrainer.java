@@ -20,6 +20,10 @@ public class PokemonTrainer {
         this.setID(UUID.randomUUID().toString());
     }
 
+    public IDataWriter getIDataWriter() {
+        return dataWriter;
+    }
+
 
     public String getID(){
         return ID; 
@@ -27,6 +31,22 @@ public class PokemonTrainer {
 
     private void setID(String id) {
         this.ID = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public List<PokedexItem> getSixPokemon() {
+        return SixPokemon;
+    }
+
+    public void setSixPokemon(List<PokedexItem> SixPokemon) {
+        this.SixPokemon = SixPokemon; 
     }
 
 
