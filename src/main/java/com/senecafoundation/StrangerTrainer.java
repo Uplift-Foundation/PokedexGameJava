@@ -18,6 +18,6 @@ public class StrangerTrainer extends PokemonTrainer {
             PokedexItem itemToAdd = ChallengerContents.get(rd.nextInt(ChallengerContents.size()));
             SixPokemon.add(itemToAdd);            
             this.getIDataWriter().Create(itemToAdd);
-        }
+        } //add command so we don't add two of the same lines from the list 
     }
 }
