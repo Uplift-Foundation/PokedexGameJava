@@ -1,5 +1,7 @@
 package com.senecafoundation;
 
+import com.senecafoundation.DataHandler.IDataWriter;
+
 public class Bear extends PokedexItem {
 
     //states
@@ -8,12 +10,11 @@ public class Bear extends PokedexItem {
     private Boolean scary;
 
 
-    public Bear(String color, String shape, Boolean scary, Integer weight) {
-        super(color);
+    public Bear(String color, String shape, Boolean scary, Integer weight, IDataWriter dataHolder) {
+        super(color, dataHolder);
         this.shape = shape;
         this.weight = weight;
         this.scary = scary;
-    
     } 
 
 
@@ -52,5 +53,10 @@ public class Bear extends PokedexItem {
         
         }
         return "He will NOT roll";
+    }
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + "," + this.getID() + "," + this.getColor() + "," + this.getShape() + "," + this.getScary().toString() + "," + this.getWeight().toString();
     }
 }

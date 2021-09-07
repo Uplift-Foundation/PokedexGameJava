@@ -1,11 +1,13 @@
 package com.senecafoundation;
 
+import com.senecafoundation.DataHandler.IDataWriter;
+
 public class ActualPokemon extends PokedexItem {
    
     private String ability1; 
      
-    public ActualPokemon(String color,String ability1) {
-        super(color);
+    public ActualPokemon(String color,String ability1, IDataWriter dataHolder) {
+        super(color, dataHolder);
         this.ability1 = ability1;
     }
     
@@ -16,5 +18,10 @@ public class ActualPokemon extends PokedexItem {
     public void setAbility1(String ability1)
     {
         this.ability1 = ability1; 
+    }
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + "," + this.getID() + "," + this.getColor() + "," + this.getAbility1();
     }
 }

@@ -1,5 +1,7 @@
 package com.senecafoundation;
 
+import com.senecafoundation.DataHandler.IDataWriter;
+
 public class Pokemon extends ActualPokemon{
     private String name;
     private String avgSize; 
@@ -28,9 +30,10 @@ public class Pokemon extends ActualPokemon{
         Integer speed,
         String ability1, 
         String typeEffectiveness, 
-        String typeWeakness
+        String typeWeakness,
+        IDataWriter dataHolder
         ) {
-        super(color, ability1);
+        super(color, ability1, dataHolder);
         this.setName(name);
         this.setAvgSize(avgSize);
         this.setPokemonType(pokemonType);
@@ -141,4 +144,9 @@ public class Pokemon extends ActualPokemon{
     {
         this.typeWeakeness = typeWeakness;
     }
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + "," + this.getID() + "," + this.getColor() + "," + this.getAvgSize() + "," + this.getPokemonType() + "," + this.getRegion() + "," + this.getHp().toString() + "," + this.getAttack().toString() + "," + this.getDefense().toString() + "," + this.getSpDefense().toString() + "," + this.getSpAttack().toString() + "," + this.getSpeed().toString() + "," + this.getAbility1() + "," + this.getTypeEffectiveness() + "," + this.getTypeWeakness();
+    } 
 }

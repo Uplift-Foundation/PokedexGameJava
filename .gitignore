@@ -76,3 +76,9 @@ nb-configuration.xml
 ##############################
 .DS_Store
 {"mode":"full","isActive":false}
+##############################
+## Custom exclusion 
+##############################
+PokedexContents.csv
+ChallengerContents.csv
+TempPokemon.csv

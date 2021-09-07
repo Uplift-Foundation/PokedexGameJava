@@ -8,7 +8,7 @@ public class Pokedex {
     public static final String color = "Red";
     boolean screenIsLitUp;
     List<PokedexItem> pokemonsAndStuff = new ArrayList<PokedexItem>();
-    List<PokemonWithSecondAbility> tempPokemon = new ArrayList<PokemonWithSecondAbility>();
+    List<PokedexItem> tempPokemon = new ArrayList<PokedexItem>();
 
     public Pokedex(boolean screenIsLitUp) {
         this.screenIsLitUp = screenIsLitUp;
@@ -37,11 +37,11 @@ public class Pokedex {
         this.pokemonsAndStuff = pokemonsAndStuff;
     }
 
-    public List<PokemonWithSecondAbility> getTempPokemon() {
+    public List<PokedexItem> getTempPokemon() {
         return tempPokemon;
     }
 
-    public void setTempPokemon(List<PokemonWithSecondAbility> tempPokemon) {
+    public void setTempPokemon(List<PokedexItem> tempPokemon) {
         this.tempPokemon = tempPokemon;
     }
 }

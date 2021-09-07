@@ -8,10 +8,14 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import static org.mockito.Mockito.when;
 
+import com.senecafoundation.DataHandler.FileDataWriter;
+
 public class HomeworkTest {
 
     private Homework systemUnderTest;
     @Mock private transient PokemonWithSecondAbility myChander;
+    @Mock private transient FileDataWriter fileDataWriter;
+
     
     @BeforeEach
     void assignHomework() {
@@ -23,7 +27,8 @@ public class HomeworkTest {
             "Rectangle",
             500,
             true,
-            myChander
+            myChander,
+            fileDataWriter
         );
     }
 

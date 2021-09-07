@@ -1,5 +1,7 @@
 package com.senecafoundation;
 
+import com.senecafoundation.DataHandler.IDataWriter;
+
 public class Plant extends PokedexItem {  //add in PokedexItem as a parent to this. Plant is the child 
 
     private String smell;
@@ -13,8 +15,8 @@ public class Plant extends PokedexItem {  //add in PokedexItem as a parent to th
     private Boolean makesGlucose;
     
 
-    public Plant(String color, String smell, Boolean hasLeaves, Boolean hasRoots, Boolean collectsSunLight, Boolean makesGlucose) { 
-        super(color);
+    public Plant(String color, String smell, Boolean hasLeaves, Boolean hasRoots, Boolean collectsSunLight, Boolean makesGlucose, IDataWriter dataHolder) { 
+        super(color, dataHolder);
         this.smell = smell;
         this.hasLeaves = hasLeaves;
         this.hasRoots = hasRoots;
@@ -74,6 +76,11 @@ public class Plant extends PokedexItem {  //add in PokedexItem as a parent to th
             return true;
         }
         return false; 
+    }
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + "," + this.getID() + "," + this.getColor() + "," + this.getSmell() + "," + this.getHasLeaves().toString() + "," + this.getHasRoots().toString() + "," + this.getCollectsSunLight().toString() + "," + this.getMakesGlucose().toString();
     }
 
 }

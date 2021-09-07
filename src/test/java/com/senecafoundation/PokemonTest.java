@@ -1,30 +1,37 @@
 package com.senecafoundation;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import com.senecafoundation.DataHandler.FileDataWriter;
+
 import org.junit.jupiter.api.BeforeEach;
 
 public class PokemonTest {
     
     private Pokemon systemUnderTest;  
+    @Mock private transient FileDataWriter fileDataWriter;
 
     @BeforeEach
     void assignPokemon() {
         this.systemUnderTest = new Pokemon(
-        "meow",
-        "small",
-        "yellow",
-        "cat",
-        "Kanto",
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        "big meow",
-        "kat",
-        "kitty"
+            "meow",
+            "small",
+            "yellow",
+            "cat",
+            "Kanto",
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            "big meow",
+            "kat",
+            "kitty",
+            fileDataWriter
         );
     }
 
