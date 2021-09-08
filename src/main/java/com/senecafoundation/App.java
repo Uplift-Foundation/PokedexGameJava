@@ -374,7 +374,7 @@ public class App
                             + "Speed: " + ((Pokemon)randomTempPokemon).getSpeed() + System.lineSeparator() 
                             + "Ability: " + ((Pokemon)randomTempPokemon).getAbility1() + System.lineSeparator() 
                             //+ "Type: " + ((Pokemon)randomTempPokemon).getPokemonType() + System.lineSeparator()
-                            + "Type"
+                            + "Type(s): "
                             //+ "Effectiveness: " + ((Pokemon)randomTempPokemon).getTypeEffectiveness() + System.lineSeparator()
                             + "Effectivness"
                             //+ "Weakness: " + ((Pokemon)randomTempPokemon).getTypeWeakness()

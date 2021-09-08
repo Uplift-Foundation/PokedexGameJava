@@ -122,4 +122,24 @@ public class Pokemon extends ActualPokemon{
     {
         this.types = types;
     }
+    
+public String PrintType (Pokemon toPrint) {
+    String output = "Type: "
+    int numTypes pokemon.types.count
+    int i = 0
+    foreach type in Pokemon.types {
+        i++
+        output =  output + PokemonType;
+        if (i < numTypes) {
+            + ,
+        }
+    }
+    //for loop
+    //pass in chosen pokemon
+    //loop through types
+    //when type found add to string "Type:" 
+    //if 2nd type is found add "& chosentype" to string
+    //print final string
+}
+
 }
