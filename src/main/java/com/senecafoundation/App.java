@@ -361,6 +361,7 @@ public class App
                     userResponse = userScanner.nextLine();
                     if (userResponse.equals("Yes")) {
                         while (userResponse.equals("Yes")) { //chooses random Pokemon from TempList
+                            PrintType TempPokemonType = new PrintType();
                             ActualPokemon randomTempPokemon = TempPokemon.get(rd.nextInt(9)); 
 
                                 // { display table with player's pokemon stats }
