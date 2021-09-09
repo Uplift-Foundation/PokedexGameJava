@@ -123,31 +123,13 @@ public class Pokemon extends ActualPokemon{
         this.types = types;
     }
     
-public String PrintType (Pokemon toPrint) {
-    String output = "Type: "
-    int numTypes pokemon.types.count
-    int i = 0
-    foreach type in Pokemon.types {
-        i++
-        output =  output + PokemonType;
-        if (i < numTypes) {
-            + ,
+    public String PrintType () {
+        String PrintedTypes = "Type: ";
+        for (PokemonType pokemontype : this.types) {
+            PrintedTypes += pokemontype.getName();
+            PrintedTypes += ", ";
         }
+        PrintedTypes = PrintedTypes.substring(0, PrintedTypes.length()-2);
+        return PrintedTypes;        
     }
-}
-//     - Method String "Print Type" -
-//          * "Print Type" = a pokemon called "toPrint"
-//          * Start w/ String "Type: "
-//          * int called "numTypes" = pokemon.types.count
-//          * int called "i" starts at 0
-//     - foreach loop -
-//          * foreach type the chosen pokemon has
-//              * i++ (int value plus 1)
-//              * output  = "Type: " + 1st pokemon type
-//              * if (i < numTypes) {
-//                  + ","
-//                } (if i is less than the number of types the pokemon has then add a comma to the string)
-//              * else{
-//                  Print completed String to console
-//                  }
 }
