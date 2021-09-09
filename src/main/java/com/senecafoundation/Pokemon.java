@@ -134,12 +134,20 @@ public String PrintType (Pokemon toPrint) {
             + ,
         }
     }
-    //for loop
-    //pass in chosen pokemon
-    //loop through types
-    //when type found add to string "Type:" 
-    //if 2nd type is found add "& chosentype" to string
-    //print final string
 }
-
+//     - Method String "Print Type" -
+//          * "Print Type" = a pokemon called "toPrint"
+//          * Start w/ String "Type: "
+//          * int called "numTypes" = pokemon.types.count
+//          * int called "i" starts at 0
+//     - foreach loop -
+//          * foreach type the chosen pokemon has
+//              * i++ (int value plus 1)
+//              * output  = "Type: " + 1st pokemon type
+//              * if (i < numTypes) {
+//                  + ","
+//                } (if i is less than the number of types the pokemon has then add a comma to the string)
+//              * else{
+//                  Print completed String to console
+//                  }
 }
