@@ -61,6 +61,8 @@ public class BattleSystem {
         this.ChooseAMove = ChooseAMove;
     }
 
+    //Methods 
+    
 
     
 }
