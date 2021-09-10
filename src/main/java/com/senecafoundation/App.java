@@ -1,14 +1,10 @@
 package com.senecafoundation;
 
-//import java.time.temporal.Temporal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
-
 import com.senecafoundation.DataHandler.FileDataWriter;
-
-//import javax.swing.RowFilter.ComparisonType;
 
 public class App 
 {
@@ -17,16 +13,18 @@ public class App
         FileDataWriter dataWriter = new FileDataWriter("./PokedexContents.csv");
         List<PokedexItem> PokedexContents = dataWriter.ReadAll();
         FileDataWriter dataWriter2 = new FileDataWriter("./ChallengerContents.csv");
-        List<PokedexItem> ChallengerContents = dataWriter2.ReadAll();
         FileDataWriter dataWriter3 = new FileDataWriter("./TempPokemon.csv");
         List<PokedexItem> TempPokemon = dataWriter3.ReadAll();
         
         PokemonTrainer playerTrainer = new PokemonTrainer(dataWriter, "Player");
-        PokemonTrainer makaylaTrainer = new StrangerTrainer(dataWriter2, "Makayla");
-        PokemonTrainer cristianTrainer = new StrangerTrainer(dataWriter2, "Cristian");
-        PokemonTrainer edgardoTrainer = new StrangerTrainer(dataWriter2, "Edgardo");
-        PokemonTrainer terrenceTrainer = new StrangerTrainer(dataWriter2, "Terrence");
-        PokemonTrainer warrenTrainer = new StrangerTrainer(dataWriter2, "Warren");
+        playerTrainer.getSixPokemon().add(new PokemonWithSecondAbility("Squirtle", "Small", "blue", "water", "Kanto", 44, 48, 65, 64, 50, 43, "Torrent", "null", "ground", "water grass & dragon", dataWriter));
+
+        List<StrangerTrainer> allPossibleTrainers = new ArrayList<StrangerTrainer>();
+        allPossibleTrainers.add(new StrangerTrainer(dataWriter2, "Makayla"));
+        allPossibleTrainers.add(new StrangerTrainer(dataWriter2, "Cristian"));
+        allPossibleTrainers.add(new StrangerTrainer(dataWriter2, "Edgardo"));
+        allPossibleTrainers.add(new StrangerTrainer(dataWriter2, "Terrence"));
+        allPossibleTrainers.add(new StrangerTrainer(dataWriter2, "Warren"));
         
         Scanner userScanner = new Scanner(System.in);
         System.out.println("It looks like you've found an object! Will you pick it up? (Yes or No)");
@@ -73,19 +71,19 @@ public class App
                     else {
                         System.out.println("Aw, okay. Maybe another time.");
                     }
-                    System.out.println("...A stranger approaches, they ask if you would like to compare pokemon."); 
+                    
+                    StrangerTrainer aiChosenTrainer = allPossibleTrainers.get(rd.nextInt(allPossibleTrainers.size()));
+
+                    System.out.println("...A stranger approaches.  Their name is " + aiChosenTrainer.getName() + ".  They ask if you would like to compare pokemon."); 
                     System.out.println("Would you like to? (Yes or No)");
                     userResponse = userScanner.nextLine();
                     if (userResponse.equals("Yes")) {
                         while (userResponse.equals("Yes")) { 
                             PokemonWithSecondAbility playersPokemon = (PokemonWithSecondAbility) playerTrainer.getSixPokemon().get(rd.nextInt(playerTrainer.getSixPokemon().size()));
-                            PokemonWithSecondAbility strangersPokemon = (PokemonWithSecondAbility) makaylaTrainer.getSixPokemon().get(rd.nextInt(playerTrainer.getSixPokemon().size()));
-                            
-                            // PokemonWithSecondAbility randomTempPokemon = (PokemonWithSecondAbility) TempPokemon.get(rd.nextInt(TempPokemon.size())); 
-                            // PokemonWithSecondAbility randomActualPokemon = (PokemonWithSecondAbility) ChallengerContents.get(rd.nextInt(ChallengerContents.size()));
-                           
-                            Comparer ComparePokemon1And2 = new Comparer();
-                            ComparePokemon1And2.comparePokemon(playersPokemon, strangersPokemon);
+                            aiChosenTrainer.populateFromRandom(dataWriter2);
+                            PokemonWithSecondAbility strangersPokemon = (PokemonWithSecondAbility) aiChosenTrainer.getSixPokemon().get(rd.nextInt(aiChosenTrainer.getSixPokemon().size()));
+                            Comparer ComparePokemon1And2 = new Comparer(playersPokemon, strangersPokemon, aiChosenTrainer.getName());
+                            ComparePokemon1And2.comparePokemon();
                             System.out.println("Would you like to compare another pokemon?");
                             userResponse = userScanner.nextLine();
                         }
@@ -93,20 +91,16 @@ public class App
                     }
                     else {
                         System.out.println("The stranger looks disappointed, but they wish you a good day and walk off"); 
-                    }
-                    
-                //what color is it?
+                    }                    
                 }  
                 else {
                     System.out.println("I'm sorry I don't think that's a Pokedex.");
                 }
-            //what shape is it?  
             }
             else {
                 System.out.println("hmm...I don't think that's a pokedex. Better luck next time.");
             }
         } 
-        //will you pick it up?   
         else {
             System.out.println("You needed to enter Yes or No, the instructions were pretty simple...not sure how you messed that one up.");
         } 
