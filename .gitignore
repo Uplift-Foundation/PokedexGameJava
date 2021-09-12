@@ -81,4 +81,5 @@ nb-configuration.xml
 ##############################
 PokedexContents.csv
 ChallengerContents.csv
-TempPokemon.csv
+TempPokemon.csv 
+*.csv 
