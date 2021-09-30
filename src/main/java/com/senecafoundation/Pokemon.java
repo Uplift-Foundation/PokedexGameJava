@@ -131,5 +131,5 @@ public class Pokemon extends ActualPokemon{
         }
         PrintedTypes = PrintedTypes.substring(0, PrintedTypes.length()-2);
         return PrintedTypes;        
-    } //ok soooooooooo um how do we call it in the proogram file? it is giving me an error and I'm not sure how to resolve line 364
+    } 
 }
